@@ -1,0 +1,20 @@
+{
+    "title": "Destiny Sets",
+    "image": "/images/parallel/DestinySets.svg",
+    "description": "Track your missing gear, armor sets, and pursuit badges.",
+    "site": "https://destinysets.com",
+    "contributors": [
+        {
+            "name": "Jakosaur",
+            "link": "https://twitter.com/Jakosaur",
+            "role": "Developer",
+            "bold": true
+        },
+        {
+            "name": "joshhunt",
+            "link": "https://twitter.com/joshhunt",
+            "role": "Developer",
+            "bold": true
+        }
+    ]
+}

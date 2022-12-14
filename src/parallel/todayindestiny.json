@@ -1,0 +1,19 @@
+{
+    "title": "TodayInDestiny",
+    "image": "/images/parallel/TodayInDestiny.png",
+    "description": "A summary of what's available in Destiny today.",
+    "site": "https://www.todayindestiny.com",
+    "contributors": [
+        {
+            "name": "CthulhuReigns",
+            "link": "https://www.bungie.net/7/en/User/Profile/254/20614816?bgn=CthulhuReigns",
+            "role": "Community Support"
+        },
+        {
+            "name": "JpDeathBlade",
+            "link": "https://twitter.com/JPDeathBlade",
+            "role": "Developer",
+            "bold": true
+        }
+    ]
+}

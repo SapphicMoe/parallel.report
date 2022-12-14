@@ -1,0 +1,14 @@
+---
+import '@assets/parallel.css';
+
+const { class: className } = Astro.props;
+---
+
+<div class={className}>
+  <slot name="project-name" />
+  <slot name="project-icon" />
+  <slot name="project-description" />
+  <hr />
+
+  <slot />
+</div>

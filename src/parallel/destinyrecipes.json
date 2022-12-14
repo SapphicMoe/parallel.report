@@ -1,0 +1,54 @@
+{
+    "title": "Destiny Recipes",
+    "image": "/images/parallel/DestinyRecipes.svg",
+    "description": "A collection of tools for Destiny. Destiny Recipes includes the Pre-seasonal checklist, a Vault Cleaner, and a Loot Companion.",
+    "site": "https://destinyrecipes.com",
+    "contributors": [
+        {
+            "name": "ARTES",
+            "link": "https://www.bungie.net/7/en/User/Profile/254/24744287/ARTES",
+            "role": "Polish (pl-PL) translator"
+        },
+        {
+            "name": "Catchup",
+            "link": "https://www.bungie.net/7/en/User/Profile/254/20726422/Catchup",
+            "role": "German (de-DE) translator"
+        },
+        {
+            "name": "Fly",
+            "link": "https://twitter.com/iNotFly",
+            "role": "Italian (it-IT) translator"
+        },
+        {
+            "name": "Frozty",
+            "link": "https://twitter.com/Frozty4628",
+            "role": "Chinese (zh-CN) translator"
+        },
+        {
+            "name": "gevoup",
+            "link": "https://www.bungie.net/7/en/User/Profile/3/4611686018483638871/gevoup",
+            "role": "Russian (ru-RU) translator"
+        },
+        {
+            "name": "HerrExion",
+            "link": "https://twitter.com/HerrExion",
+            "role": "Founder",
+            "bold": true
+        },
+        {
+            "name": "R4NDO",
+            "link": "https://twitter.com/R4ndomizor",
+            "role": "Japanese (ja-JP) translator"
+        },
+        {
+            "name": "Sho",
+            "link": "https://twitter.com/TheBossManSho",
+            "role": "Serbian (sr-SP) translator"
+        },
+        {
+            "name": "ThePanicEnd",
+            "link": "https://www.bungie.net/7/en/User/Profile/254/8270684/ThePanicEnd",
+            "role": "Mexican-Spanish (es-MX) translator"
+        }
+    ]
+}

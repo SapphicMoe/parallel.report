@@ -1,0 +1,20 @@
+{
+    "title": "Felicity",
+    "image": "/images/parallel/Felicity.jpg",
+    "description": "A multi-purpose Destiny Discord bot, which includes features like Twitch/YouTube feeds, a roll finder, Collections guide, and more.",
+    "link": "https://tryfelicity.one",
+    "contributors": [
+        {
+            "name": "Leaf",
+            "link": "https://leafhub.dev",
+            "role": "Developer",
+            "bold": true
+        },
+        {
+            "name": "MeGl",
+            "link": "https://github.com/EndGameGl",
+            "role": "Developer",
+            "bold": true
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "title": "Destiny Insights",
+    "image": "/images/parallel/DestinyInsights.png",
+    "description": "A Twitter bot, providing insightful info, such as how many times a specific mod was sold/when it made its last appearance.",
+    "site": "https://www.destinyinsights.com",
+    "contributors": [
+        {
+            "name": "Matt Jarett",
+            "link": "https://mattjarrett.dev/",
+            "role": "Founder",
+            "bold": true
+        },
+        {
+            "name": "TinCanBeef",
+            "link": "https://twitter.com/TinCanBeef",
+            "role": "Contributor"
+        }
+    ]
+}

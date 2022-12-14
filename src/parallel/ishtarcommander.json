@@ -1,0 +1,34 @@
+{
+    "title": "Ishtar Commander",
+    "image": "/images/parallel/Ishtar.svg",
+    "description": "Tap into your Guardian's arsenal, vault, and inventory; all from your device.",
+    "site": "https://ishtar.app",
+    "contributors": [
+        {
+            "name": "cowgod77",
+            "link": "https://twitter.com/cowgod77",
+            "role": "Contributor"
+        },
+        {
+            "name": "Daskeladden",
+            "link": "https://www.bungie.net/7/en/User/Profile/254/8338415?bgn=Daskeladden",
+            "role": "Contributor"
+        },
+        {
+            "name": "Ethan_e_e_e",
+            "link": "https://twitter.com/asacre45",
+            "role": "Japanese (ja-JP) translator"
+        },
+        {
+            "name": "Nigel Hietala",
+            "link": "https://twitter.com/IshtarCommander",
+            "role": "Founder",
+            "bold": true
+        },
+        {
+            "name": "WhiskyEnjoyer",
+            "link": "https://www.bungie.net/7/en/User/Profile/254/9691563?bgn=WhiskyEnjoyer",
+            "role": "Contributor"
+        }
+    ]
+}

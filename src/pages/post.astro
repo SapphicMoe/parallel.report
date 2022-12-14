@@ -1,0 +1,27 @@
+---
+// import project, { contributors } from '../parallel/destinyitemmanager.json'
+
+import { readdir, readFile } from 'fs/promises';
+import { join } from 'path';
+
+let projects = [];
+
+const files = await readdir(join('src', 'parallel'));
+
+for (const file of files) {
+  const pushed = await readFile(`src/parallel/${file}`, 'utf-8');
+  const parsed = JSON.parse(pushed);
+
+  projects.push(parsed);
+};
+
+---
+
+{
+    projects.map(projs => {
+        return (
+            <h1>{projs.title}</h1>
+            <p>{projs.description}</p>
+        )
+    })
+}
