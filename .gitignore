@@ -27,3 +27,5 @@ lerna-debug.log*
 # Windows-specific files
 desktop.ini
 
+# Temporary
+src/parallel

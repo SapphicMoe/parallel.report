@@ -25,7 +25,7 @@ _GitHub Pages is not recommended for deploying this site._
 
 ## Hosting in a local environment
 
-**Node.js 18+** or newer is required for this site.
+**Node.js 18+** or newer is required to be installed for this site.
 
 1. `git clone https://github.com/solelychloe/parallel.report`
 2. `corepack enable`
