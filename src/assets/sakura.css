@@ -13,6 +13,8 @@ Licensed under MIT.
 }
 
 /* Custom */
+svg[astro-icon="mdi:external-link"] { margin-bottom: 10px; }
+
 hr {
   border-color: var(--accent-color);
 }
@@ -81,7 +83,7 @@ body {
   font-size: 1.8rem;
   line-height: 1.5;
   margin: auto;
-  max-width: 53em;
+  max-width: 51.9em;
   padding: 13px;
 }
 

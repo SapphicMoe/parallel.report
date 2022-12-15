@@ -2,12 +2,12 @@
 # Domains that redirect to domains not in this list may not be in complete control.
 # Content outside of these domains cannot be guarenteed to be owned or managed by Chloe.
 
-# Last updated: December 14, 2022, 6:05:52 PM (UTC+5)
+# Last updated: December 16, 2022, 1:25:41 AM (UTC+5)
 
 # You are here! Parallel Program Report. (donated by Leaf, thank you!)
 parallel.report
 
-# Chloe/solely
+# Chloe Arciniega/solely
 arciniega.one
 
 # Unused

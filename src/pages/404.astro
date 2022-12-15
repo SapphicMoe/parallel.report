@@ -1,6 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import Footer from '@components/footer.astro';
+import { Icon } from 'astro-icon';
 ---
 
 <Layout
@@ -11,8 +12,10 @@ import Footer from '@components/footer.astro';
   title="404 | Parallel Program Report"
 >
 <header>
-    <h2 class="underline">404 | Page Not Found</h2>
+    <h2 class="underline">Page Not Found</h2>
     <p>The page you were looking for does not reside here, unfortunately.</p>
+
+    <a href="/"><Icon size={20} name="mdi:arrow-left" /> Go Home</a>
 </header>
 </Layout>
 <Footer />
