@@ -1,3 +1,9 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/js/script.js",
+      "destination": "https://stats.ovy.sh/js/script.js"
+    }
+  ]
 }
