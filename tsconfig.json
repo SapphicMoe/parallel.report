@@ -8,7 +8,5 @@
       "@components/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"]
     },
-    // Temporary. Seems to be broken without this? /shrug
-    "moduleResolution": "node16",
   }
 }
