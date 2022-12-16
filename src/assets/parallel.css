@@ -87,9 +87,7 @@ Licensed under MIT.
   border-color: var(--trialsreport);
 }
 
-#ishtarcomm {
-  filter: grayscale(1);
-}
+#ishtarcomm { filter: grayscale(1); }
 
 .parallel > div {
   float: left;
@@ -102,9 +100,7 @@ Licensed under MIT.
   margin-bottom: 0px;
 }
 
-.parallel-img {
-  float: right;
-}
+.parallel-img { float: right; }
 .parallel-img-alt {
   float: right;
   margin-top: 20px;

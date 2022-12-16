@@ -1,6 +1,6 @@
 {
   "name": "parallel-report",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "author": "Chloe Arciniega <solely@riseup.net>",
   "license": "MIT",
   "type": "module",

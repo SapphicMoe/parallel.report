@@ -1,7 +1,9 @@
 ---
 import { SEO } from 'astro-seo';
-import '@assets/sakura.css'
+
 import '@fontsource/inter';
+import '@assets/normalize.css';
+import '@assets/sakura.css'
 
 export interface Props {
   color: string;
@@ -39,7 +41,7 @@ const { color, description, icon, siteName, title } = Astro.props;
           description,
         },
         image: {
-          alt: 'A pink love heart with stars around it, making it look like it is sparkling or shimmering.',
+          alt: 'The Parallel Program emblem icon.',
         },
       }}
       twitter={{
