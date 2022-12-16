@@ -9,6 +9,6 @@
       "@layouts/*": ["src/layouts/*"]
     },
     // Temporary. Seems to be broken without this? /shrug
-    "moduleResolution": "NodeNext",
+    "moduleResolution": "node16",
   }
 }
