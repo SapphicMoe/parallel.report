@@ -9,6 +9,17 @@ export const base = {
         // File name for the favicon (for example, /favicon.png)
         fileName: '/favicon.png',
     },
+    // SEO information
+    seo: {
+        // Keywords for search engines
+        keywords: [
+            'parallel program emblem',
+            'parallel program destiny 2',
+            'parallel program emblem destiny 2',
+            'destiny 2 parallel program',
+            'destiny 2 parallel program emblem',
+        ],
+    },
 };
 
 // URL variables for the home page
