@@ -19,10 +19,9 @@ yarn-error.log*
 .env
 .env.production
 
-# OS-specific files
-.DS_Store
-desktop.ini
+# lock
+package-lock.json
+yarn.lock
 
-# Temporary
-src/parallel
-src/pages/post.astro
+# README
+README.md

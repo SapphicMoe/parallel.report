@@ -1,11 +1,29 @@
-<footer class="text-center p-2.5">
-  <slot />
-  <hr />
-  <span>© 2021-present <a href="https://www.arciniega.one" title="Chloe Arciniega's website (arciniega.one)" target="_blank">Chloe Arciniega/solely</a>.</span>
-  <br />
-  <a href="credits.txt" title="Credits" target="_blank">Credits</a>
-  |
-  <a href="domains.txt" title="Domain List" target="_blank">Domain List</a>
-  |
-  <a href="https://github.com/solelychloe/parallel.report/blob/master/LICENSE" title="MIT License" target="_blank">License</a>
+---
+import Link from '@components/link.astro';
+---
+
+<footer>
+    <slot />
+    <hr />
+
+    <span
+        >© {new Date().getFullYear()}
+        <Link href="https://www.arciniega.one" title="Chloe Arciniega (arciniega.one)" target="_blank">
+            Chloe Arciniega
+        </Link>
+        .
+    </span>
+
+    <nav>
+        <Link href="/credits.txt" title="Credits" rel="prefetch">Credits</Link> |
+        <Link href="/domains.txt" title="Domains" rel="prefetch">Domains</Link> |
+        <Link href="https://github.com/solelychloe/parallel.report" title="Source code" target="_blank">Source</Link>
+    </nav>
 </footer>
+
+<style>
+    footer {
+        margin-top: 1em;
+        text-align: center;
+    }
+</style>

@@ -1,0 +1,59 @@
+---
+import { SEO } from 'astro-seo';
+
+import { base, socials } from '~/constants.cjs';
+
+interface Props {
+    description: string;
+    siteName: string;
+    title: string;
+}
+
+// Favicon
+const image = new URL(Astro.site!);
+image.pathname = base.favicon?.fileName || '/favicon.png';
+
+const { description, siteName, title } = Astro.props as Props;
+---
+
+<!-- Base -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<meta name="generator" content={Astro.generator} />
+
+<!-- Flavor -->
+<meta name="theme-color" content={base.color} />
+
+<!-- SEO -->
+<SEO
+    title={title}
+    description={description}
+    openGraph={{
+        basic: {
+            title: title,
+            type: 'website',
+            image: image?.toString(),
+        },
+        optional: {
+            siteName,
+            description,
+        },
+        image: {
+            alt: base.favicon?.alt,
+        },
+    }}
+    twitter={{
+        card: 'summary',
+        creator: socials?.twitter || '',
+    }}
+    extend={{
+        link: [
+            // Icon
+            { rel: 'icon', href: image?.pathname },
+
+            // Mastodon verification
+            { rel: 'me', href: `${socials?.mastodon.link}` || '' },
+        ],
+    }}
+/>

@@ -1,0 +1,14 @@
+---
+import { Icon } from 'astro-icon';
+
+export interface Props extends astroHTML.JSX.AnchorHTMLAttributes {
+    icon?: string;
+}
+
+const { icon, href, class: className, ...props } = Astro.props;
+---
+
+<a href={href} class:list={[className]} {...props}>
+    <slot />
+    {props.target ? <Icon size={10} name="mdi:external-link" /> : null}
+</a>
