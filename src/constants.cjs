@@ -20,6 +20,8 @@ export const base = {
             'destiny 2 parallel program emblem',
         ],
     },
+    // The site name. Used for Plausible Analytics (will appear as https://example.com)
+    siteName: 'parallel.report',
 };
 
 // URL variables for the home page
