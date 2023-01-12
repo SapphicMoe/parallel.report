@@ -1,12 +1,14 @@
 <h2 class="underline">
     <slot />
-</h2>
+  </h2>
 
-<style>
+  <style lang="scss">
+    @import '../styles/custom';
+
     .underline {
-        border-bottom: 0.1em solid;
-        border-bottom-color: var(--accent-color);
-        padding-bottom: 0.2em;
-        width: fit-content;
+      border-bottom: 0.1em solid;
+      border-bottom-color: $accent;
+      padding-bottom: 0.2em;
+      width: fit-content;
     }
-</style>
+  </style>

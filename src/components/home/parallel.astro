@@ -1,14 +1,14 @@
 ---
-import '@styles/parallel.css';
+import '@styles/parallel.scss';
 
 const { class: className } = Astro.props;
 ---
 
 <div class={className}>
-    <slot name="project-name" />
-    <slot name="project-icon" />
-    <slot name="project-description" />
-    <hr />
+  <slot name="project-name" />
+  <slot name="project-icon" />
+  <slot name="project-description" />
+  <hr />
 
-    <slot />
+  <slot />
 </div>

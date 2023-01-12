@@ -4,9 +4,9 @@ import { SEO } from 'astro-seo';
 import { base, socials } from '~/constants.cjs';
 
 interface Props {
-    description: string;
-    siteName: string;
-    title: string;
+  description: string;
+  siteName: string;
+  title: string;
 }
 
 // Favicon
@@ -16,54 +16,58 @@ image.pathname = base.favicon?.fileName || '/favicon.png';
 const { description, siteName, title } = Astro.props as Props;
 ---
 
-<!-- Compatibility -->
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+    <!-- Compatibility -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<!-- Astro metadata & Plausible analytics information -->
-<meta name="generator" content={Astro.generator} />
-{
-    import.meta.env.MODE === 'production' && !!base.siteName && (
-        <script defer data-domain={base.siteName} data-api="/api/event" src="/js/script.js" />
-    )
-}
+    <!-- Metadata & analytics -->
+    <meta name="generator" content={Astro.generator} />
+    {
+      import.meta.env.MODE === 'production' && !!base.plausible.analytics && !!base.site && (
+        <script defer data-domain={base.site} data-api="/api/event" src="/js/script.js" />
+      )
+    }
 
-<!-- Flavor -->
-<meta name="theme-color" content={base.color} />
+    <!-- Flavor -->
+    <meta name="theme-color" content={base.color} />
 
-<!-- SEO -->
-<SEO
-    title={title}
-    description={description}
-    openGraph={{
+    <!-- SEO -->
+    <SEO
+      title={title}
+      description={description}
+      openGraph={{
         basic: {
-            title: title,
-            type: 'website',
-            image: image?.toString(),
+          title,
+          type: 'website',
+          image: image?.toString(),
         },
         optional: {
-            siteName,
-            description,
+          siteName,
+          description,
         },
         image: {
-            alt: base.favicon?.alt,
+          alt: base.favicon?.alt,
         },
-    }}
-    twitter={{
+      }}
+      twitter={{
         card: 'summary',
         creator: socials?.twitter || '',
-    }}
-    extend={{
+      }}
+      extend={{
         meta: [
-            // Keywords
-            { name: 'keywords', content: `${base.seo.keywords}` || '' },
+          // Keywords
+          { name: 'keywords', content: `${base.seo.keywords}` || '' },
         ],
         link: [
-            // Icon
-            { rel: 'icon', href: image?.pathname },
+          // Icon
+          { rel: 'icon', href: image?.pathname },
 
-            // Mastodon verification
-            { rel: 'me', href: `${socials?.mastodon.link}` || '' },
+          // Mastodon verification
+          { rel: 'me', href: `${socials?.mastodon.link}` || '' },
         ],
-    }}
-/>
+      }}
+    />
+
+    <slot />
+  </head>

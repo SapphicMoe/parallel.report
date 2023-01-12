@@ -1,34 +1,39 @@
 {
-    "name": "parallel-report",
-    "version": "1.2.6",
-    "author": "Chloe Arciniega <solely@riseup.net>",
-    "license": "MIT",
-    "type": "module",
-    "private": true,
-    "scripts": {
-        "astro": "astro",
-        "astro:check": "astro check",
-        "build": "yarn build:check && yarn lint && astro build",
-        "build:check": "yarn astro:check && tsc --noEmit",
-        "lint": "prettier --write .",
-        "start": "yarn lint && astro preview",
-        "start:dev": "yarn lint && astro dev"
-    },
-    "dependencies": {
-        "@astrojs/mdx": "^0.13.0",
-        "@astrojs/prefetch": "^0.1.1",
-        "@astrojs/sitemap": "^1.0.0",
-        "@fontsource/inter": "^4.5.14",
-        "astro": "^1.6.0",
-        "astro-compress": "^1.1.1",
-        "astro-icon": "^0.8.0",
-        "astro-seo": "^0.6.0"
-    },
-    "devDependencies": {
-        "@types/prettier": "^2.7.1",
-        "autoprefixer": "^10.4.13",
-        "postcss": "^8.4.18",
-        "prettier-plugin-astro": "^0.7.0",
-        "svgo": "2.8.0"
-    }
+  "name": "parallel-report",
+  "version": "1.3.0",
+  "type": "module",
+  "author": "Chloe Arciniega <solely@riseup.net>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "astro": "astro",
+    "astro:check": "astro check",
+    "build": "yarn build:check && yarn lint && astro build",
+    "build:check": "yarn astro:check && tsc --noEmit",
+    "dev": "yarn start:dev",
+    "lint": "prettier --write .",
+    "start": "yarn lint && astro preview",
+    "start:dev": "yarn lint && astro dev"
+  },
+  "packageManager": "yarn@3.3.1",
+  "dependencies": {
+    "@astrojs/mdx": "^0.14.0",
+    "@astrojs/prefetch": "^0.1.1",
+    "@astrojs/sitemap": "^1.0.0",
+    "@fontsource/inter": "^4.5.14",
+    "astro": "^1.9.2",
+    "astro-compress": "^1.1.25",
+    "astro-icon": "^0.8.0",
+    "astro-seo": "^0.6.1",
+    "autoprefixer": "^10.4.13",
+    "cssnano": "^5.1.14",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.2"
+  },
+  "devDependencies": {
+    "prettier-plugin-astro": "^0.7.2",
+    "sass": "^1.57.1",
+    "svgo": "2.8.0",
+    "typescript": "^4.9.4"
+  }
 }

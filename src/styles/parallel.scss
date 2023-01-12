@@ -1,0 +1,71 @@
+/*
+    © 2023 Chloe Arciniega <https://www.arciniega.one>
+    Licensed under MIT.
+*/
+
+$charlemagne: #e2dbdbb2;
+$destinyitemmanager: #f37422;
+$destinyinsights: #c0316e;
+$destinyrecipes: #c8435d;
+$destinysets: #57b2ad;
+$destinytracker: #e34525;
+$ghostoverlay: #ffffffd2;
+$guardiantheater: #b798c9;
+$ishtarcollective: #4485c4;
+$ishtarcommander: #d6d6d6c5;
+$levante: #87d3c6;
+$littlelight: #9e88ffcc;
+$lostsector: #8880b6;
+$scrublandeux: #9fdd18;
+$todayindestiny: #51a8a8;
+$trialsreport: #ead884;
+
+@mixin parallel($name, $color) {
+  #{$name} :is(h2 a, li a, hr) {
+    color: $color;
+    border-color: $color;
+  }
+}
+
+$parallels: (
+  '.charlemagne': $charlemagne,
+  '.destinyitemmanager': $destinyitemmanager,
+  '.destinyinsights': $destinyinsights,
+  '.destinyrecipes': $destinyrecipes,
+  '.destinysets': $destinysets,
+  '.destinytracker': $destinytracker,
+  '.ghostoverlay': $ghostoverlay,
+  '.guardiantheater': $guardiantheater,
+  '.ishtarcollective': $ishtarcollective,
+  '.ishtarcommander': $ishtarcommander,
+  '.levante': $levante,
+  '.littlelight': $littlelight,
+  '.lostsector': $lostsector,
+  '.scrublandeux': $scrublandeux,
+  '.todayindestiny': $todayindestiny,
+  '.trialsreport': $trialsreport,
+);
+
+@each $class, $color in $parallels {
+  @include parallel($class, $color);
+}
+
+#ishtarcomm {
+  filter: grayscale(1);
+}
+
+.parallel {
+  div {
+    float: left;
+    padding-right: 12px;
+  }
+
+  img {
+    max-width: 100px;
+    border-radius: 100%;
+    margin-bottom: 0px;
+  }
+}
+.parallel-img {
+  float: right;
+}
