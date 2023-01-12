@@ -1,7 +1,5 @@
 // Base configuration for this website.
 export const base = {
-  // The accent color for this website
-  color: '#ca2197',
   // The favicon for this website
   favicon: {
     // Alt text for the favicon
@@ -18,6 +16,8 @@ export const base = {
   },
   // SEO information
   seo: {
+    // The site's accent color that will appear in embeds
+    color: '#ca2197',
     // Keywords for search engines
     keywords: [
       'parallel program emblem',

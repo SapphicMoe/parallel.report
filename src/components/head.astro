@@ -29,45 +29,44 @@ const { description, siteName, title } = Astro.props as Props;
       )
     }
 
-    <!-- Flavor -->
-    <meta name="theme-color" content={base.color} />
+  <!-- Flavor -->
+  <meta name="theme-color" content={(base.seo && base.seo.color)} />
 
-    <!-- SEO -->
-    <SEO
-      title={title}
-      description={description}
-      openGraph={{
-        basic: {
-          title,
-          type: 'website',
-          image: image?.toString(),
-        },
-        optional: {
-          siteName,
-          description,
-        },
-        image: {
-          alt: base.favicon?.alt,
-        },
-      }}
-      twitter={{
-        card: 'summary',
-        creator: socials?.twitter || '',
-      }}
-      extend={{
-        meta: [
-          // Keywords
-          { name: 'keywords', content: `${base.seo.keywords}` || '' },
-        ],
-        link: [
-          // Icon
-          { rel: 'icon', href: image?.pathname },
+  <!-- SEO -->
+  <SEO
+    title={title}
+    description={description}
+    openGraph={{
+      basic: {
+        title,
+        type: 'website',
+        image: image.toString(),
+      },
+      optional: {
+        siteName,
+        description,
+      },
+      image: {
+        alt: (base.favicon && base.favicon.alt),
+      },
+    }}
+    twitter={{
+      card: 'summary',
+      creator: (socials && socials.twitter),
+    }}
+    extend={{
+      meta: [
+        // Keywords
+        { name: 'keywords', content: `${(base.seo && base.seo.keywords)}`  },
+      ],
+      link: [
+        // Icon
+        { rel: 'icon', href: image?.pathname },
 
-          // Mastodon verification
-          { rel: 'me', href: `${socials?.mastodon.link}` || '' },
-        ],
-      }}
-    />
+        // Mastodon verification
+        { rel: 'me', href: socials && `${socials.mastodon.link}` },
+      ],
+    }}
+  />
 
-    <slot />
   </head>
