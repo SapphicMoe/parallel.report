@@ -1,0 +1,20 @@
+{
+  "title": "Ghost Overlay",
+  "prefix": "Ghost Overlay",
+  "image": "/images/parallel/GhostOverlay.png",
+  "description": "A mini app that lets you pin bounties, triumphs, and quests on top of Destiny 2.",
+  "site": "https://ghostoverlay.com",
+  "contributors": [
+    {
+      "name": "joshhunt",
+      "link": "https://twitter.com/joshhunt",
+      "role": "Developer",
+      "bold": true
+    },
+    {
+      "name": "kapowaz",
+      "link": "https://www.bungie.net/7/en/User/Profile/254/66567?bgn=kapowaz",
+      "role": "Contributor"
+    }
+  ]
+}

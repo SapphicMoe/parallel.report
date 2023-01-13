@@ -24,7 +24,3 @@ yarn-error.log*
 # OS-specific files
 .DS_Store
 desktop.ini
-
-# Temporary
-src/parallel
-src/pages/post.astro

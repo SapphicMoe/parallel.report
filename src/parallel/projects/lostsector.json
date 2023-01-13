@@ -1,0 +1,67 @@
+{
+  "title": "Lost Sector",
+  "prefix": "Lost Sector",
+  "image": "/images/parallel/LostSector.png",
+  "description": "Your daily Destiny 2 Legend & Master Lost Sector report.",
+  "site": "https://twitter.com/D2LostSector",
+  "contributors": [
+    {
+      "name": "AbnormalBenjy7",
+      "link": "https://twitter.com/",
+      "role": "Community Support"
+    },
+    {
+      "name": "Bazz1984",
+      "link": "https://www.bungie.net/7/en/User/Profile/",
+      "role": "Translator"
+    },
+    {
+      "name": "Fauxres",
+      "link": "https://github.com",
+      "role": "Maintainer",
+      "bold": true
+    },
+    {
+      "name": "knight2qb3",
+      "link": "https://github.com",
+      "role": "Maintainer",
+      "bold": true
+    },
+    {
+      "name": "Nerfs",
+      "link": "https://github.com",
+      "role": "Maintainer",
+      "bold": true
+    },
+    {
+      "name": "Papilli0n",
+      "link": "https://github.com",
+      "role": "Maintainer",
+      "bold": true
+    },
+    {
+      "name": "Quiff Boy",
+      "link": "https://github.com",
+      "role": "Maintainer",
+      "bold": true
+    },
+    {
+      "name": "Raver boyz",
+      "link": "https://github.com",
+      "role": "Maintainer",
+      "bold": true
+    },
+    {
+      "name": "Sep7ember",
+      "link": "https://github.com",
+      "role": "Maintainer",
+      "bold": true
+    },
+    {
+      "name": "Syriis",
+      "link": "https://github.com",
+      "role": "Maintainer",
+      "bold": true
+    }
+  ]
+}

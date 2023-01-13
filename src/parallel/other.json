@@ -1,0 +1,281 @@
+{
+  "title": "Other Projects",
+  "description": "Other projects.",
+  "authors": [
+    {
+      "name": "abarrachs",
+      "link": "https://twitter.com/Vault_Destiny",
+      "projects": [
+        {
+          "name": "Vault Item Manager",
+          "description": "a lightning-fast item manager app for Destiny.",
+          "link": "https://twitter.com/Vault_Destiny"
+        }
+      ]
+    },
+    {
+      "name": "afpac",
+      "link": "https://github.com/afpac",
+      "projects": [
+        {
+          "name": "light.gg",
+          "description": "the large Destiny 2 database. Find weapons, quests, and more.",
+          "link": "https://light.gg"
+        }
+      ]
+    },
+    {
+      "name": "BlazeBoss17",
+      "link": "https://twitter.com/BlazeBoss17",
+      "projects": [
+        {
+          "name": "Raid Report",
+          "description": "a summary of Raid statistics for Destiny. Look up raid clears, speedruns, and sherpas.",
+          "link": "https://raid.report/"
+        }
+      ]
+    },
+    {
+      "name": "Chris Fried",
+      "link": "https://chrisfried.com/@chrisfried",
+      "projects": [
+        {
+          "name": "Party Randomizer",
+          "description": "a fun tool to randomize your Destiny 2 loadout! ",
+          "link": "https://chrisfried.github.io/party-randomizer/"
+        }
+      ]
+    },
+    {
+      "name": "dre",
+      "link": "https://twitter.com/aundre_kerr",
+      "projects": [
+        {
+          "name": "D2Gunsmith",
+          "description": "a Destiny 2 weapon crafting simulation tool.",
+          "link": "https://d2gunsmith.com/"
+        }
+      ]
+    },
+    {
+      "name": "DrGodroll",
+      "link": "https://twitter.com/Rollfinder",
+      "projects": [
+        {
+          "name": "Rollfinder",
+          "description": "a tool for finding your god rolls in Destiny. Has unique filters, the option search per stats and an up-to-date database!",
+          "link": "https://rollfinder.net/"
+        }
+      ]
+    },
+    {
+      "name": "Dweezil",
+      "link": "https://www.bungie.net/7/en/User/Profile/254/2283837?bgn=E5%2520Dweezil",
+      "projects": [
+        {
+          "name": "D2Checklist",
+          "description": "a report on Destiny 2 progress & stats. Includes PvP, Raids, weekly PvE activities, and more.",
+          "link": "https://www.d2checklist.com/"
+        }
+      ]
+    },
+    {
+      "name": "Fate",
+      "link": "https://github.com/nxtlo",
+      "projects": [
+        {
+          "name": "aiobungie",
+          "description": "an API wrapper for Destiny 2, utilizing Python and asyncio.",
+          "link": "https://github.com/nxtlo/aiobungie"
+        }
+      ]
+    },
+    {
+      "name": "FraWolf",
+      "link": "https://twitter.com/FraWolf__",
+      "projects": [
+        {
+          "name": "Quria",
+          "description": "a user-friendly Destiny 2 API wrapper, written in TypeScript.",
+          "link": "https://github.com/FraWolf/quria"
+        }
+      ]
+    },
+    {
+      "name": "Jansten",
+      "link": "https://twitter.com/Jansten",
+      "projects": [
+        {
+          "name": "Destiny Emblem Collector",
+          "description": "the ultimate repository for Destiny emblems: how they look like, how to get them, and whether they're still available.",
+          "link": "https://destinyemblemcollector.com/"
+        }
+      ]
+    },
+    {
+      "name": "KramRM",
+      "link": "https://twitter.com/KramRM",
+      "projects": [
+        {
+          "name": "The Cosmodrome",
+          "description": "a directory of third-party Destiny resources. ",
+          "link": "https://destinyemblemcollector.com/"
+        }
+      ]
+    },
+    {
+      "name": "Leaf",
+      "link": "https://whaskell.pw/",
+      "projects": [
+        {
+          "name": "Felicity",
+          "description": "a multi-purpose Destiny Discord bot, which includes features like Twitch/YouTube feeds, a roll finder, Collections guide, and more.",
+          "link": "https://tryfelicity.one/"
+        }
+      ]
+    },
+    {
+      "name": "Legionless",
+      "link": "https://twitter.com/LegionlessTV",
+      "projects": [
+        {
+          "name": "Legionless",
+          "description": "helping Destiny players conquer various Lost Sectors across the Sol System.",
+          "link": "https://legionless.substack.com/"
+        }
+      ]
+    },
+    {
+      "name": "Lieuwe Berg",
+      "link": "https://lieuweberg.com/",
+      "projects": [
+        {
+          "name": "rich-destiny",
+          "description": "a Discord rich presence tool for Destiny 2 (PC).",
+          "link": "https://richdestiny.app/"
+        }
+      ]
+    },
+    {
+      "name": "lowlines",
+      "link": "https://lowlidev.com.au/",
+      "projects": [
+        {
+          "name": "lowlidev",
+          "description": "a multi-purpose tool for Destiny 2, which includes collectibles, Gear Viewer, maps, and more.",
+          "link": "https://legionless.substack.com/"
+        }
+      ]
+    },
+    {
+      "name": "Mal",
+      "link": "https://twitter.com/mal027",
+      "projects": [
+        {
+          "name": "Shattered Vault",
+          "description": "a Destiny resource that aims to provide weekly reset information, essential guides, and links to popular third-party apps.",
+          "link": "https://shatteredvault.com/"
+        }
+      ]
+    },
+    {
+      "name": "MeGl",
+      "link": "https://github.com/EndGameGl",
+      "projects": [
+        {
+          "name": "DotNetBungieAPI",
+          "description": "a .NET Destiny API wrapper.",
+          "link": "https://github.com/EndGameGl/DotNetBungieAPI"
+        }
+      ]
+    },
+    {
+      "name": "mesh",
+      "link": "https://twitter.com/mesh",
+      "projects": [
+        {
+          "name": "Redrix",
+          "description": "a Destiny app which provides tools to improve your PvP skills. Also includes leaderboards!",
+          "link": "https://redrix.io/"
+        }
+      ]
+    },
+    {
+      "name": "Mijago",
+      "link": "https://twitter.com/MijagoCoding",
+      "projects": [
+        {
+          "name": "D2ArmorPicker",
+          "description": "a powerful tool to optimize your Destiny 2 loadout stats with just a few clicks.",
+          "link": "https://d2armorpicker.com/"
+        }
+      ]
+    },
+    {
+      "name": "Myjulot",
+      "link": "https://github.com/julesrx/",
+      "projects": [
+        {
+          "name": "glory.report",
+          "description": "a resource of PvP tools for Destiny. Includes player encounters, daily reports, and more.",
+          "link": "https://glory.report/"
+        }
+      ]
+    },
+    {
+      "name": "niv",
+      "link": "https://twitter.com/Niven5111",
+      "projects": [
+        {
+          "name": "Destiny History",
+          "description": "a tool to highlight the history of Destiny, with a timeline tailored for you.",
+          "link": "https://destinyhistory.com/"
+        }
+      ]
+    },
+    {
+      "name": "Terrii",
+      "link": "https://twitter.com/Marvindotgg",
+      "projects": [
+        {
+          "name": "",
+          "description": "",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "name": "Tom Chapman",
+      "link": "https://twitter.com/justrealmilk",
+      "projects": [
+        {
+          "name": "Braytech",
+          "description": "a powerful Destiny application that allows users to view and map checklists, track and view triumphs, inspect collectibles, and so much more.",
+          "link": "https://bray.tech/"
+        }
+      ]
+    },
+    {
+      "name": "xgerhard",
+      "link": "https://gerhard.dev/",
+      "projects": [
+        {
+          "name": "Destiny Command",
+          "description": "a chat bot that you can install anywhere. It allows you and your viewers to check stats across Destiny, be it Trials stats, K/D, loadout or even just medals.",
+          "link": "https://destinycommand.com/"
+        }
+      ]
+    },
+    {
+      "name": "Zeta",
+      "link": "https://twitter.com/ZetaTauEpsilon",
+      "projects": [
+        {
+          "name": "strike.farm",
+          "description": "a Destiny tool that allows you to make the daily Strike modifiers work in your favor!",
+          "link": "https://strike.farm/"
+        }
+      ]
+    }
+  ]
+}

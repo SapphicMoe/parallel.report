@@ -1,0 +1,20 @@
+{
+  "title": "Destiny Insights",
+  "prefix": "Destiny Insights",
+  "image": "/images/parallel/DestinyInsights_50.png",
+  "description": "An app that provides insightful info for mods: their quantity and last appearance.",
+  "site": "https://twitter.com/DestinyInsights",
+  "contributors": [
+    {
+      "name": "Matt Jarett",
+      "link": "https://mattjarrett.dev/",
+      "role": "Founder",
+      "bold": true
+    },
+    {
+      "name": "TinCanBeef",
+      "link": "https://twitter.com/TinCanBeef",
+      "role": "Contributor"
+    }
+  ]
+}
