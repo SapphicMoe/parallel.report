@@ -40,13 +40,14 @@ You're now up and running!
 
 ## License
 
-This website is licensed under the [MIT](https://github.com/solelychloe/parallel.report/blob/main/LICENSE) License.
+This website is licensed under the [zlib][license] License.
 
 © 2023 [Chloe Arciniega][chloe].
 
 [astro]: https://astro.build 'Astro'
 [chloe]: https://www.arciniega.one 'Chloe Arciniega'
 [issue]: https://github.com/solelychloe/parallel.report/issues/new?assignees=&labels=&template=parallel-program-request.md&title=Parallel+Program+Request 'GitHub issue link'
+[license]: https://github.com/solelychloe/parallel.report/blob/main/LICENSE 'zlib License'
 [parallel]: https://destinyemblemcollector.com/emblem?id=3936625542 'Parallel Program emblem'
 [site]: https://www.parallel.report 'parallel.report'
 
