@@ -11,115 +11,99 @@
   "contributors": [
     {
       "name": "alexcerlini",
-      "link": "https://twitter.com/",
-      "role": "Community Support"
+      "link": "https://www.bungie.net/7/en/User/Profile/3/4611686018487414074?bgn=alexcerlini",
+      "role": "Brazillian-Portuguese (pt-BR) translator"
     },
     {
       "name": "alexfa55",
-      "link": "https://www.bungie.net/7/en/User/Profile/",
-      "role": "Translator"
+      "link": "https://www.bungie.net/7/en/User/Profile/254/13201753",
+      "role": "Spanish (es-ES) translator"
     },
     {
       "name": "Azared",
       "link": "https://github.com",
-      "role": "Maintainer",
-      "bold": true
+      "role": "Wishlist Curator"
     },
     {
       "name": "Beenlab",
       "link": "https://github.com",
-      "role": "Maintainer",
-      "bold": true
+      "role": "Wishlist Curator"
     },
     {
       "name": "Big Bird",
       "link": "https://github.com",
-      "role": "Maintainer",
-      "bold": true
+      "role": "Wishlist Curator"
     },
     {
       "name": "Eysenor",
       "link": "https://github.com",
-      "role": "Maintainer",
-      "bold": true
+      "role": "Italian (it-IT) translator"
     },
     {
       "name": "iMahou",
       "link": "https://github.com",
-      "role": "Maintainer",
-      "bold": true
+      "role": "Wishlist Curator"
     },
     {
       "name": "iMatcha",
       "link": "https://github.com",
-      "role": "Maintainer",
-      "bold": true
+      "role": "Wishlist Curator"
     },
     {
       "name": "jaoryuken",
-      "link": "https://github.com",
-      "role": "Maintainer",
+      "link": "https://github.com/joaopmarquesini",
+      "role": "Developer",
       "bold": true
     },
     {
       "name": "Juarez Turrini",
       "link": "https://github.com",
-      "role": "Maintainer",
-      "bold": true
+      "role": "Brazillian-Portuguese (pt-BR) translator"
     },
     {
       "name": "kj415j45",
       "link": "https://github.com",
-      "role": "Maintainer",
-      "bold": true
+      "role": "Chinese (zh-CN) translator"
     },
     {
       "name": "Lazycoder",
       "link": "https://github.com",
-      "role": "Maintainer",
-      "bold": true
+      "role": "Russian (ru-RU) translator"
     },
     {
       "name": "MyNameIsAlph",
       "link": "https://github.com",
-      "role": "Maintainer",
-      "bold": true
+      "role": "Wishlist Curator"
     },
     {
       "name": "Nicolas",
       "link": "https://github.com",
-      "role": "Maintainer",
-      "bold": true
+      "role": "Polish (pl-PL) translator"
     },
     {
       "name": "PandaPaxxy",
       "link": "https://github.com",
-      "role": "Maintainer",
-      "bold": true
+      "role": "Wishlist Curator"
     },
     {
       "name": "RaSSieL",
       "link": "https://github.com",
-      "role": "Maintainer",
-      "bold": true
+      "role": "Spanish (es-ES) translator"
     },
     {
       "name": "Reign",
       "link": "https://github.com",
-      "role": "Maintainer",
-      "bold": true
+      "role": "Polish (pl-PL) translator"
     },
     {
       "name": "riceOtaku",
       "link": "https://github.com",
-      "role": "Maintainer",
-      "bold": true
+      "role": "Japanese (ja-JP) translator"
     },
     {
       "name": "Viridis Draco",
       "link": "https://github.com",
-      "role": "Maintainer",
-      "bold": true
+      "role": "Italian (it-IT) translator"
     }
   ]
 }

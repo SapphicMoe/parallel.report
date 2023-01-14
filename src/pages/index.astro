@@ -2,24 +2,25 @@
 import Layout from '@layouts/page.astro';
 import Footer from '@components/footer.astro';
 
+import { Icon } from 'astro-icon';
+
+import Header from '@components/home/header.md';
 import Project from '@components/home/parallel.astro';
 import Line from '@components/underline.astro';
 
 import { readdir, readFile } from 'fs/promises';
 import { join } from 'path';
 
-import { Icon } from 'astro-icon';
-
 interface Contributor {
-    bold?: Boolean;
-    link: string;
-    name: string;
-    role: string;
+  bold?: Boolean;
+  link: string;
+  name: string;
+  role: string;
 }
 
-let projects = [];
-
 import other from '../parallel/other.json';
+
+let projects = [];
 const files = await readdir(join('src', 'parallel', 'projects'));
 
 for (const file of files) {
@@ -31,102 +32,71 @@ for (const file of files) {
 ---
 
 <Layout
-  description="This site covers Guardians who contributed to Destiny 2 in a meaningful way, and have received the Parallel Program emblem."
+  description="This site covers Guardians who contributed to Destiny 2 and/or its API in a meaningful way, and have received the Parallel Program emblem."
   siteName="parallel.report"
   title="Parallel Program Report"
 >
+  <Header />
 
-<header class="parallel">
-  <div>
-    <img src="/favicon.png" alt="Parallel Program Emblem" title="Parallel Program Emblem" />
-  </div>
-  <h1>Parallel Program Report</h1>
-  <p>
-    This site covers Guardians who contributed to Destiny 2 in a meaningful way, and have received the <a
-      href="https://destinyemblemcollector.com/emblem?id=3936625542"
-      title="Parallel Program Emblem"
-      target="_blank">Parallel Program emblem</a
-    >.
-  </p>
+  {
+    projects.map((project) => {
+      return (
+        <Project class={project.title.replace(/\s+/g, '').toLowerCase()}>
+          <h2 slot="project-name">
+            <a href={project.site} title={project.title} target="_blank">
+              {project.title}
+              <Icon size={15} name="mdi:external-link" />
+            </a>
 
-  <p>
-    Have the emblem, but not on this list? Or would you simply like to send feedback? Make a GitHub issue <a
-      href={`https://github.com/solelychloe/parallel.report/issues/new?assignees=&labels=&template=parallel-program-request.md&title=Parallel+Program+Request`}
-      title="GitHub Issue link"
-      target="_blank">here</a
-    >, or visit <a href="https://arciniega.one" title="Chloe Arciniega's website (arciniega.one)" target="_blank"
-      >arciniega.one</a
-    > for various ways to contact me.
-  </p>
-</header>
+            <img
+              slot="project-icon"
+              class="parallel-img"
+              src={project.image.file}
+              width={project.image.width}
+              height={project.image.height}
+              alt={`${project.title} Logo`}
+              title={`${project.title} Logo`}
+            />
+          </h2>
 
-{
-  projects.map((project) => {
-    return (
-      <Project class={project.title.replace(/\s+/g, '').toLowerCase()}>
-        <h2 slot="project-name">
-          <a href={project.site} title={project.title} target="_blank">
-            {project.title}
-            <Icon size={15} name="mdi:external-link" />
-          </a>
+          <p slot="project-description">{project.description}</p>
 
-          <img
-          slot="project-icon"
-          class="parallel-img"
-          src={project.image.file}
-          width={project.image.width}
-          height={project.image.height}
-          alt={`${project.title} Logo`}
-          title={`${project.title} Logo`}
-        />
-
-        </h2>
-
-        <p slot="project-description">{project.description}</p>
-
-        <ul>
-          {project.contributors.map((contributor: Contributor) => {
-            return (
+          <ul>
+            {project.contributors.map((contributor: Contributor) => {
+              return (
                 <>
-                {contributor.bold ? (
-                <li class="maintainer">
-                  <b>
-                    <a href={contributor.link} title={contributor.name}>{contributor.name}</a>: {project.prefix} {contributor.role}
-                  </b>
-                </li>
-                ) : (
-                <li class="contributor">
-                  <span>
-                    <a href={contributor.link} title={contributor.name}>{contributor.name}</a>: {project.prefix} {contributor.role}
-                  </span>
-                </li>
-                )}
+                  <li class:list={['contributor', { maintainer: contributor.bold }]}>
+                    {/* prettier-ignore */}
+                    <span>
+                      <a href={contributor.link} title={contributor.name} target="_blank">{contributor.name}</a>: {project.prefix} {contributor.role}
+                    </span>
+                    {/* prettier-ignore */}
+                  </li>
                 </>
-            );
-          })}
-        </ul>
-
-      </Project>
-    );
-  })
-}
-
-<Line>Other resources</Line>
-<ul>
-{
-    other.authors.map((author) => {
-        return (
-            <li>
-                <a href={author.link} title={author.name}>{author.name}</a>:
-                <a href={author.projects[0].link} title={author.projects[0].name}>{author.projects[0].name}</a>,
-                {author.projects[0].description}
-            </li>
-        )
+              );
+            })}
+          </ul>
+        </Project>
+      );
     })
-}
-</ul>
+  }
 
-<Footer>
+  <Line>Other resources</Line>
+  <ul>
+    {
+      other.authors.map((author) => {
+        return (
+          /* prettier-ignore */ <li>
+            <a href={author.link} title={author.name} target="_blank">{author.name}</a>:
+            <a href={author.projects[0].link} title={author.projects[0].name} target="_blank">{author.projects[0].name}</a>,
+            {author.projects[0].description}
+          </li> /* prettier-ignore */
+        );
+      })
+    }
+  </ul>
+
+  <Footer>
     <hr />
     <p>
       Destiny, Destiny 2, and the Destiny logo are registered trademarks of Bungie.
@@ -148,4 +118,10 @@ for (const file of files) {
       </b>
     </p>
   </Footer>
+
+  <style>
+    .maintainer {
+      font-weight: bold;
+    }
+  </style>
 </Layout>

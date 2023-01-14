@@ -119,13 +119,13 @@
         {
           "name": "The Cosmodrome",
           "description": "a directory of third-party Destiny resources. ",
-          "link": "https://destinyemblemcollector.com/"
+          "link": "https://cosmodrome.page"
         }
       ]
     },
     {
       "name": "Leaf",
-      "link": "https://whaskell.pw/",
+      "link": "https://leafhub.dev/",
       "projects": [
         {
           "name": "Felicity",
@@ -163,7 +163,7 @@
         {
           "name": "lowlidev",
           "description": "a multi-purpose tool for Destiny 2, which includes collectibles, Gear Viewer, maps, and more.",
-          "link": "https://legionless.substack.com/"
+          "link": "https://lowlidev.com.au/destiny"
         }
       ]
     },

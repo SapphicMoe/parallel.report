@@ -31,14 +31,6 @@ export const base = {
   site: 'parallel.report',
 };
 
-// URL variables for the home page
-export const links = {
-  bungie: 'https://www.bungie.net/7/en/User/Profile',
-  github: 'https://github.com',
-  twitch: 'https://twitch.tv',
-  twitter: 'https://twitter.com',
-};
-
 // Social links for SEO information.
 // If you don't want to link anything here, leave this object empty. Don't uncomment or remove this, as you'll face errors!
 export const socials = {

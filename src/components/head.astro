@@ -1,7 +1,7 @@
 ---
 import { SEO } from 'astro-seo';
 
-import { base, socials } from '~/constants.cjs';
+import { base, socials } from '@config';
 
 interface Props {
   description: string;
@@ -19,20 +19,20 @@ const { description, siteName, title } = Astro.props as Props;
 ---
 
 <head>
-    <!-- Compatibility -->
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Compatibility -->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Metadata & analytics -->
-    <meta name="generator" content={Astro.generator} />
-    {
-      IS_PRODUCTION && !!base.plausible.analytics && !!base.site && (
-        <script defer data-domain={base.site} data-api="/api/event" src="/js/script.js" />
-      )
-    }
+  <!-- Metadata & analytics -->
+  <meta name="generator" content={Astro.generator} />
+  {
+    IS_PRODUCTION && !!base.plausible.analytics && !!base.site && (
+      <script defer data-domain={base.site} data-api="/api/event" src="/js/script.js" />
+    )
+  }
 
   <!-- Flavor -->
-  <meta name="theme-color" content={(base.seo && base.seo.color)} />
+  <meta name="theme-color" content={base.seo && base.seo.color} />
 
   <!-- SEO -->
   <SEO
@@ -49,17 +49,17 @@ const { description, siteName, title } = Astro.props as Props;
         description,
       },
       image: {
-        alt: (base.favicon && base.favicon.alt),
+        alt: base.favicon && base.favicon.alt,
       },
     }}
     twitter={{
       card: 'summary',
-      creator: (socials && socials.twitter),
+      creator: socials && socials.twitter,
     }}
     extend={{
       meta: [
         // Keywords
-        { name: 'keywords', content: `${(base.seo && base.seo.keywords)}`  },
+        { name: 'keywords', content: `${base.seo && base.seo.keywords}` },
       ],
       link: [
         // Icon
@@ -70,5 +70,4 @@ const { description, siteName, title } = Astro.props as Props;
       ],
     }}
   />
-
-  </head>
+</head>

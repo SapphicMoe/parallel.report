@@ -8,7 +8,7 @@ $destinyitemmanager: #f37422;
 $destinyinsights: #c0316e;
 $destinyrecipes: #c8435d;
 $destinysets: #57b2ad;
-$destinytracker: #e2263C;
+$destinytracker: #e2263c;
 $felicity: #ff4351;
 $ghostoverlay: #ffffffd2;
 $guardiantheater: #b798c9;
@@ -56,17 +56,9 @@ $parallels: (
   filter: grayscale(1);
 }
 
-.parallel {
-  div {
+h1 > img {
     float: left;
     padding-right: 12px;
-  }
-
-  img {
-    max-width: 100px;
-    border-radius: 100%;
-    margin-bottom: 0px;
-  }
 }
 
 .parallel-img {
