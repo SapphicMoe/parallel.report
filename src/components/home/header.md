@@ -8,6 +8,6 @@ visit [arciniega.one][chloe] for various ways to contact me.
 
 <!-- prettier-ignore-start -->
 [chloe]: https://www.arciniega.one 'Chloe Arciniega\'s website (https://www.arciniega.one)'
-[issue]: 'https://github.com/solelychloe/parallel.report/issues/new?assignees=&labels=&template=parallel-program-request.md&title=Parallel+Program+Request' 'File a GitHub issue here'
+[issue]: https://github.com/solelychloe/parallel.report/issues/new?assignees=&labels=&template=parallel-program-request.md&title=Parallel+Program+Request' 'File a GitHub issue here'
 [emblem]: https://destinyemblemcollector.com/emblem?id=3936625542 'Parallel Program emblem'
 <!-- prettier-ignore-end -->
