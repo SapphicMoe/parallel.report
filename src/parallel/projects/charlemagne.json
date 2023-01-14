@@ -1,7 +1,11 @@
 {
   "title": "Charlemagne",
   "prefix": "Charlemagne",
-  "image": "/images/parallel/Charlemagne.png",
+  "image": {
+    "file": "/images/parallel/Charlemagne.png",
+    "height": "50",
+    "width": "50"
+  },
   "description": "A Discord bot that provides detailed Destiny 2 information. Check profile stats, clan ranking and schedule LFG posts.",
   "site": "https://warmind.io",
   "contributors": [

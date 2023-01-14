@@ -1,7 +1,11 @@
 {
   "title": "Ishtar Collective",
   "prefix": "Ishtar Collective",
-  "image": "/images/parallel/Ishtar.svg",
+  "image": {
+    "file": "/images/parallel/Ishtar.svg",
+    "height": "45",
+    "width": "45"
+  },
   "description": "Categorizing Destiny Lore.",
   "site": "https://ishtar-collective.net",
   "contributors": [

@@ -1,7 +1,11 @@
 {
   "title": "Ishtar Commander",
   "prefix": "Ishtar Commander",
-  "image": "/images/parallel/Ishtar.svg",
+  "image": {
+    "file": "/images/parallel/Ishtar.svg",
+    "height": "45",
+    "width": "45"
+  },
   "description": "Tap into your Guardian's arsenal, vault, and inventory; all from your device.",
   "site": "https://ishtar.app",
   "contributors": [

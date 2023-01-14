@@ -8,7 +8,8 @@ $destinyitemmanager: #f37422;
 $destinyinsights: #c0316e;
 $destinyrecipes: #c8435d;
 $destinysets: #57b2ad;
-$destinytracker: #e34525;
+$destinytracker: #e2263C;
+$felicity: #ff4351;
 $ghostoverlay: #ffffffd2;
 $guardiantheater: #b798c9;
 $ishtarcollective: #4485c4;
@@ -34,6 +35,7 @@ $parallels: (
   '.destinyrecipes': $destinyrecipes,
   '.destinysets': $destinysets,
   '.destinytracker': $destinytracker,
+  '.felicity': $felicity,
   '.ghostoverlay': $ghostoverlay,
   '.guardiantheater': $guardiantheater,
   '.ishtarcollective': $ishtarcollective,
@@ -50,7 +52,7 @@ $parallels: (
   @include parallel($class, $color);
 }
 
-.ishtarcommander > img {
+.ishtarcommander > h2 > img {
   filter: grayscale(1);
 }
 

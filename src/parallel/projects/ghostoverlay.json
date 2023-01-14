@@ -1,7 +1,11 @@
 {
   "title": "Ghost Overlay",
   "prefix": "Ghost Overlay",
-  "image": "/images/parallel/GhostOverlay.png",
+  "image": {
+    "file": "/images/parallel/GhostOverlay.png",
+    "height": "40",
+    "width": "40"
+  },
   "description": "A mini app that lets you pin bounties, triumphs, and quests on top of Destiny 2.",
   "site": "https://ghostoverlay.com",
   "contributors": [

@@ -1,7 +1,11 @@
 {
   "title": "TodayInDestiny",
   "prefix": "TodayInDestiny",
-  "image": "/images/parallel/TodayInDestiny.png",
+  "image": {
+    "file": "/images/parallel/TodayInDestiny.png",
+    "height": "50",
+    "width": "50"
+  },
   "description": "A summary of what's available in Destiny today.",
   "site": "https://www.todayindestiny.com",
   "contributors": [

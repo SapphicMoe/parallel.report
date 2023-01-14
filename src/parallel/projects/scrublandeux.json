@@ -1,7 +1,11 @@
 {
   "title": "Scrublandeux",
   "prefix": "Scrublandeux",
-  "image": "/images/parallel/Scrublandeux.png",
+  "image": {
+    "file": "/images/parallel/Scrublandeux.png",
+    "height": "35",
+    "width": "35"
+  },
   "description": "A calendar heatmap of time spent playing Destiny 2.",
   "site": "https://chrisfried.github.io/secret-scrublandeux",
   "contributors": [

@@ -1,8 +1,12 @@
 {
   "title": "Destiny Recipes",
   "prefix": "Destiny Recipes",
-  "image": "/images/parallel/DestinyRecipes.svg",
-  "description": "A collection of tools for Destiny. Destiny Recipes includes the Pre-seasonal checklist, a Vault Cleaner, and a Loot Companion.",
+  "image": {
+    "file": "/images/parallel/DestinyRecipes.png",
+    "height": "50",
+    "width": "50"
+  },
+  "description": "A collection of useful tools for Destiny 2. Prep for future seasons with the Pre-seasonal Checklist, clean your vault with the Vault Cleaner, and more!",
   "site": "https://destinyrecipes.com",
   "contributors": [
     {

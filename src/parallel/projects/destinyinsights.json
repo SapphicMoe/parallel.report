@@ -1,8 +1,12 @@
 {
   "title": "Destiny Insights",
   "prefix": "Destiny Insights",
-  "image": "/images/parallel/DestinyInsights_50.png",
-  "description": "An app that provides insightful info for mods: their quantity and last appearance.",
+  "image": {
+    "file": "/images/parallel/DestinyInsights.png",
+    "height": "35",
+    "width": "35"
+  },
+  "description": "An app that provides insightful info for mods: how many times they were sold, and when they made their last appearance.",
   "site": "https://twitter.com/DestinyInsights",
   "contributors": [
     {

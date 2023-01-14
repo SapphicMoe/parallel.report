@@ -1,7 +1,11 @@
 {
   "title": "Levante",
   "prefix": "Levante",
-  "image": "/images/parallel/Levante.png",
+  "image": {
+    "file": "/images/parallel/Levante.png",
+    "height": "45",
+    "width": "45"
+  },
   "description": "A multi-purpose Destiny Discord bot. Track daily rotations, emblems, and more.",
   "site": "https://www.levante.dev",
   "contributors": [

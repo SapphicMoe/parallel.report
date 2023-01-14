@@ -1,7 +1,11 @@
 {
   "title": "DestinyTracker",
   "prefix": "DestinyTracker",
-  "image": "/images/parallel/DestinyTracker.png",
+  "image": {
+    "file": "/images/parallel/DestinyTracker.png",
+    "height": "45",
+    "width": "45"
+  },
   "description": "The website for detailed profile and weapon statistics. Compete against the top players in featured leaderboards.",
   "site": "https://destinytracker.com",
   "contributors": [
@@ -28,7 +32,7 @@
     {
       "name": "MoreofJay",
       "link": "https://twitter.com/JayDTR01",
-      "role": "Social Media Lead & Content Manager",
+      "role": "Media Lead & Content Manager",
       "bold": true
     },
     {

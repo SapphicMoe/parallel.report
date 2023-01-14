@@ -1,9 +1,13 @@
 {
   "title": "Felicity",
   "prefix": "Felicity",
-  "image": "/images/parallel/Felicity.jpg",
+  "image": {
+    "file": "/images/parallel/Felicity.png",
+    "height": "40",
+    "width": "40"
+  },
   "description": "A multi-purpose Destiny Discord bot, which includes features like Twitch/YouTube feeds, a roll finder, Collections guide, and more.",
-  "link": "https://tryfelicity.one",
+  "site": "https://tryfelicity.one",
   "contributors": [
     {
       "name": "Leaf",

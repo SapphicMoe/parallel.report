@@ -1,8 +1,12 @@
 {
   "title": "Destiny Item Manager",
   "prefix": "DIM",
-  "image": "/images/parallel/DIM.png",
-  "description": "Build the loadout, swap items and check stats at any time to Become Legend.",
+  "image": {
+    "file": "/images/parallel/DIM.png",
+    "height": "45",
+    "width": "45"
+  },
+  "description": "Build the loadout you've always wanted, transfer items with ease, and check stats at any time to Become Legend.",
   "site": "https://destinyitemmanager.com",
   "contributors": [
     {

@@ -1,7 +1,11 @@
 {
   "title": "Little Light",
   "prefix": "Little Light",
-  "image": "/images/parallel/LittleLight.png",
+  "image": {
+    "file": "/images/parallel/LittleLight.png",
+    "height": "45",
+    "width": "45"
+  },
   "description": "An item manager for Destiny 2 that will make your Guardian's life a lot easier.",
   "site": "https://littlelight.club",
   "contributors": [

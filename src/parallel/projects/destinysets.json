@@ -1,8 +1,12 @@
 {
   "title": "Destiny Sets",
   "prefix": "Destiny Sets",
-  "image": "/images/parallel/DestinySets.svg",
-  "description": "Track your missing gear, armor sets, and pursuit badges.",
+  "image": {
+    "file": "/images/parallel/DestinySets.svg",
+    "height": "45",
+    "width": "45"
+  },
+  "description": "Destiny Sets allows you to track your missing Collections gear, armor sets, and pursuit badges.",
   "site": "https://destinysets.com",
   "contributors": [
     {

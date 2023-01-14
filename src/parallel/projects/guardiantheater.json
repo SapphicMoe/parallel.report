@@ -1,7 +1,11 @@
 {
   "title": "Guardian Theater",
   "prefix": "Guardian Theater",
-  "image": "/images/parallel/GuardianTheater.png",
+  "image": {
+    "file": "/images/parallel/GuardianTheater.png",
+    "height": "50",
+    "width": "50"
+  },
   "description": "Find yourself in the Twitch VODs that your Destiny 2 teammates and opponents recorded.",
   "site": "https://guardian.theater",
   "contributors": [

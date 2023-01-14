@@ -69,20 +69,20 @@ for (const file of files) {
             {project.title}
             <Icon size={15} name="mdi:external-link" />
           </a>
-        </h2>
 
-        <img
+          <img
           slot="project-icon"
           class="parallel-img"
-          src={project.image}
-          width="50"
-          height="50"
+          src={project.image.file}
+          width={project.image.width}
+          height={project.image.height}
           alt={`${project.title} Logo`}
           title={`${project.title} Logo`}
         />
 
-        <p slot="project-description">{project.description}</p>
+        </h2>
 
+        <p slot="project-description">{project.description}</p>
 
         <ul>
           {project.contributors.map((contributor: Contributor) => {
@@ -91,13 +91,13 @@ for (const file of files) {
                 {contributor.bold ? (
                 <li class="maintainer">
                   <b>
-                    <a href={contributor.link}>{contributor.name}</a>: {project.prefix} {contributor.role}
+                    <a href={contributor.link} title={contributor.name}>{contributor.name}</a>: {project.prefix} {contributor.role}
                   </b>
                 </li>
                 ) : (
                 <li class="contributor">
                   <span>
-                    <a href={contributor.link}>{contributor.name}</a>: {project.prefix} {contributor.role}
+                    <a href={contributor.link} title={contributor.name}>{contributor.name}</a>: {project.prefix} {contributor.role}
                   </span>
                 </li>
                 )}
@@ -105,6 +105,7 @@ for (const file of files) {
             );
           })}
         </ul>
+
       </Project>
     );
   })
@@ -116,8 +117,8 @@ for (const file of files) {
     other.authors.map((author) => {
         return (
             <li>
-                <a href={author.link}>{author.name}</a>:
-                <a href={author.projects[0].link}>{author.projects[0].name}</a>,
+                <a href={author.link} title={author.name}>{author.name}</a>:
+                <a href={author.projects[0].link} title={author.projects[0].name}>{author.projects[0].name}</a>,
                 {author.projects[0].description}
             </li>
         )
@@ -144,7 +145,7 @@ for (const file of files) {
         <a href="https://destinyemblemcollector.com/" title="Destiny Emblem Collector" target="_blank"
           >Destiny Emblem Collector <Icon size={10} name="mdi:external-link" />
         </a>
-      </b>.
+      </b>
     </p>
   </Footer>
 </Layout>

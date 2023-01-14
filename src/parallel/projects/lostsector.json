@@ -1,7 +1,11 @@
 {
   "title": "Lost Sector",
   "prefix": "Lost Sector",
-  "image": "/images/parallel/LostSector.png",
+  "image": {
+    "file": "/images/parallel/LostSector.png",
+    "height": "40",
+    "width": "40"
+  },
   "description": "Your daily Destiny 2 Legend & Master Lost Sector report.",
   "site": "https://twitter.com/D2LostSector",
   "contributors": [
