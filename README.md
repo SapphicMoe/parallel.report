@@ -1,4 +1,4 @@
-# <img src='public/favicon.png' width='20' height='20' /> [Parallel Program Report][site]
+# <img src='public/favicon.png' title='Parallel Program emblem' alt='Parallel Program emblem' width='20' height='20' /> [Parallel Program Report][site]
 
 This site covers Guardians who contributed to Destiny 2 and/or its API in a meaningful way, and have received the [Parallel
 Program emblem][parallel].

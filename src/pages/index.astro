@@ -5,11 +5,13 @@ import Footer from '@components/footer.astro';
 import { Icon } from 'astro-icon';
 
 import Header from '@components/home/header.md';
-import Project from '@components/home/parallel.astro';
+import Notice from '@components/home/notice.mdx';
+import Resource from '@components/home/parallel.astro';
 import Line from '@components/underline.astro';
 
 import { readdir, readFile } from 'fs/promises';
-import { join } from 'path';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
 
 interface Contributor {
   bold?: Boolean;
@@ -20,14 +22,16 @@ interface Contributor {
 
 import other from '../parallel/other.json';
 
-let projects = [];
-const files = await readdir(join('src', 'parallel', 'projects'));
+const path = fileURLToPath(dirname(import.meta.url));
+
+let resources = [];
+const files = await readdir(join(path, '..', 'parallel', 'resources'));
 
 for (const file of files) {
-  const pushed = await readFile(`src/parallel/projects/${file}`, 'utf-8');
+  const pushed = await readFile(`src/parallel/resources/${file}`, 'utf-8');
   const parsed = JSON.parse(pushed);
 
-  projects.push(parsed);
+  resources.push(parsed);
 }
 ---
 
@@ -39,36 +43,38 @@ for (const file of files) {
   <Header />
 
   {
-    projects.map((project) => {
+    resources.map((resource) => {
       return (
-        <Project class={project.title.replace(/\s+/g, '').toLowerCase()}>
-          <h2 slot="project-name">
-            <a href={project.site} title={project.title} target="_blank">
-              {project.title}
+        <Resource class={resource.title.replace(/\s+/g, '').toLowerCase()}>
+          <h2 class="resource-name" slot="resource-name">
+            <a href={resource.site} title={resource.title} target="_blank">
+              {resource.title}
               <Icon size={15} name="mdi:external-link" />
             </a>
 
             <img
-              slot="project-icon"
+              slot="resource-icon"
               class="parallel-img"
-              src={project.image.file}
-              width={project.image.width}
-              height={project.image.height}
-              alt={`${project.title} Logo`}
-              title={`${project.title} Logo`}
+              src={resource.image.file}
+              width={resource.image.width}
+              height={resource.image.height}
+              alt={`${resource.title} Logo`}
+              title={`${resource.title} Logo`}
             />
           </h2>
 
-          <p slot="project-description">{project.description}</p>
+          <p class="resource-description" slot="resource-description">
+            {resource.description}
+          </p>
 
-          <ul>
-            {project.contributors.map((contributor: Contributor) => {
+          <ul class="contributors">
+            {resource.contributors.map((contributor: Contributor) => {
               return (
                 <>
                   <li class:list={['contributor', { maintainer: contributor.bold }]}>
                     {/* prettier-ignore */}
                     <span>
-                      <a href={contributor.link} title={contributor.name} target="_blank">{contributor.name}</a>: {project.prefix} {contributor.role}
+                      <a href={contributor.link} title={contributor.name} target="_blank">{contributor.name}</a>: {resource.prefix} {contributor.role}
                     </span>
                     {/* prettier-ignore */}
                   </li>
@@ -76,20 +82,20 @@ for (const file of files) {
               );
             })}
           </ul>
-        </Project>
+        </Resource>
       );
     })
   }
 
   <Line>Other resources</Line>
-  <ul>
+  <ul class="other-resources">
     {
       other.authors.map((author) => {
         return (
           /* prettier-ignore */ <li>
             <a href={author.link} title={author.name} target="_blank">{author.name}</a>:
-            <a href={author.projects[0].link} title={author.projects[0].name} target="_blank">{author.projects[0].name}</a>,
-            {author.projects[0].description}
+            <a href={author.resources[0].link} title={author.resources[0].name} target="_blank">{author.resources[0].name}</a>,
+            {author.resources[0].description}
           </li> /* prettier-ignore */
         );
       })
@@ -97,26 +103,7 @@ for (const file of files) {
   </ul>
 
   <Footer>
-    <hr />
-    <p>
-      Destiny, Destiny 2, and the Destiny logo are registered trademarks of Bungie.
-      <br />Some content and images are the property of Bungie.
-    </p>
-
-    <p>
-      Compiled with the help of
-      <b>
-        <a href="https://bray.tech" title="Braytech" target="_blank">
-          Braytech <Icon size={10} name="mdi:external-link" />
-        </a>
-      </b>
-      and
-      <b>
-        <a href="https://destinyemblemcollector.com/" title="Destiny Emblem Collector" target="_blank"
-          >Destiny Emblem Collector <Icon size={10} name="mdi:external-link" />
-        </a>
-      </b>
-    </p>
+    <Notice />
   </Footer>
 
   <style>
