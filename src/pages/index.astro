@@ -1,17 +1,17 @@
 ---
 import Layout from '@layouts/page.astro';
-import Footer from '@components/footer.astro';
 
 import { Icon } from 'astro-icon';
 
-import Header from '@components/home/header.md';
-import Notice from '@components/home/notice.mdx';
+import Footer from '@components/footer.astro';
 import Resource from '@components/home/parallel.astro';
 import Line from '@components/underline.astro';
 
-import { readdir, readFile } from 'fs/promises';
-import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
+import Header from '@components/home/header.md';
+import Notice from '@components/home/notice.mdx';
+
+import { readdir, readFile } from 'node:fs/promises';
+import { join } from 'node:path';
 
 interface Contributor {
   bold?: Boolean;
@@ -20,12 +20,10 @@ interface Contributor {
   role: string;
 }
 
-import other from '../parallel/other.json';
-
-const path = fileURLToPath(dirname(import.meta.url));
-
 let resources = [];
-const files = await readdir(join(path, '..', 'parallel', 'resources'));
+
+import other from '../parallel/other.json';
+const files = await readdir(join('src', 'parallel', 'resources'));
 
 for (const file of files) {
   const pushed = await readFile(`src/parallel/resources/${file}`, 'utf-8');

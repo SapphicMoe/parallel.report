@@ -1,6 +1,6 @@
 {
   "name": "parallel-report",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "type": "module",
   "author": "Chloe Arciniega <solely@riseup.net>",
   "license": "zlib",
@@ -28,7 +28,8 @@
     "autoprefixer": "^10.4.13",
     "cssnano": "^5.1.14",
     "postcss": "^8.4.21",
-    "prettier": "^2.8.2"
+    "prettier": "^2.8.2",
+    "rehype-external-links": "^2.0.1"
   },
   "devDependencies": {
     "@types/prettier": "^2.7.2",
