@@ -10,27 +10,10 @@ import Line from '@components/underline.astro';
 import Header from '@components/home/header.md';
 import Notice from '@components/home/notice.mdx';
 
-import { readdir, readFile } from 'node:fs/promises';
-import { join } from 'node:path';
+import type { Contributor, Resources } from '~/types';
 
-interface Contributor {
-  bold?: Boolean;
-  link: string;
-  name: string;
-  role: string;
-}
-
-let resources = [];
-
+const resources = await Astro.glob<Resources>('../parallel/resources/*.json');
 import other from '../parallel/other.json';
-const files = await readdir(join('src', 'parallel', 'resources'));
-
-for (const file of files) {
-  const pushed = await readFile(`src/parallel/resources/${file}`, 'utf-8');
-  const parsed = JSON.parse(pushed);
-
-  resources.push(parsed);
-}
 ---
 
 <Layout
@@ -65,7 +48,7 @@ for (const file of files) {
             {resource.description}
           </p>
 
-          <ul class="contributors">
+          <ul class="resource-contributors" slot="resource-contributors">
             {resource.contributors.map((contributor: Contributor) => {
               return (
                 <>
