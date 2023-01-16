@@ -14,8 +14,7 @@ export default defineConfig({
   site: 'https://www.parallel.report',
   integrations: [
     mdx({
-      extendPlugins: true,
-      rehypePlugins: [externalLinks, { target: '_blank', rel: ['nofollow', 'noopener'] }],
+      rehypePlugins: [[externalLinks, { target: '_blank', rel: ['nofollow', 'noopener'] }]],
     }),
     prefetch(),
     sitemap(),
