@@ -124,17 +124,6 @@
       ]
     },
     {
-      "name": "Leaf",
-      "link": "https://leafhub.dev/",
-      "resources": [
-        {
-          "name": "Felicity",
-          "description": "a multi-purpose Destiny Discord bot, which includes features like Twitch/YouTube feeds, a roll finder, Collections guide, and more.",
-          "link": "https://tryfelicity.one/"
-        }
-      ]
-    },
-    {
       "name": "Legionless",
       "link": "https://twitter.com/LegionlessTV",
       "resources": [
