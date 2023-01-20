@@ -486,10 +486,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fontsource/inter@npm:^4.5.14":
-  version: 4.5.14
-  resolution: "@fontsource/inter@npm:4.5.14"
-  checksum: 4e2eb9e54f8de0025bca7ad8e0822549f1873c5d9a634b8f99630d7bba750b1c86263229bae99375fc82489daa38df41e0304c77c3efda2d9a2f78d0eba3ec56
+"@fontsource/inter@npm:^4.5.15":
+  version: 4.5.15
+  resolution: "@fontsource/inter@npm:4.5.15"
+  checksum: d4330957c0a23a6c6a47f6f628b89c5603deec6305f28458fd3277bb652913dc77b31ac454bba96beeaecddef87eaf4b60befa2aad040ebb8c22c39ee33a2cf1
   languageName: node
   linkType: hard
 
@@ -1147,9 +1147,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro-compress@npm:^1.1.25":
-  version: 1.1.25
-  resolution: "astro-compress@npm:1.1.25"
+"astro-compress@npm:^1.1.27":
+  version: 1.1.27
+  resolution: "astro-compress@npm:1.1.27"
   dependencies:
     "@types/csso": 5.0.0
     "@types/html-minifier-terser": 7.0.0
@@ -1160,7 +1160,7 @@ __metadata:
     sharp: 0.31.3
     svgo: 3.0.2
     terser: 5.16.1
-  checksum: bcad26d35c94649f81b7c7ddd9598e28969f88a2526a917503e380dbefa164943fe1b8803b9473c7069723062ba8bcb0bfd2e3263564ea729a76fdf17246b298
+  checksum: ad9987d67c61511f79273a5eebc85d722c288995ceb20eae3d3a4bf6b198d9410c109e6bb52d57ca52cf835f9773563148b3604aecc6237f13c82257ffb8db91
   languageName: node
   linkType: hard
 
@@ -1175,10 +1175,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro-seo@npm:^0.6.1":
-  version: 0.6.1
-  resolution: "astro-seo@npm:0.6.1"
-  checksum: 3172e13664e9f9a769f62b7dbd747f81e20f0946a7c55415c5c3e10b6f98b952ebd21724b5b6759b9e9048c441f4dd0916978790ede9fc62b8dffa9416fd6e60
+"astro-seo@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "astro-seo@npm:0.7.0"
+  checksum: 1f63fdeb7ed862e55a4575364ca332e435f06ee419b8537c28c91209fb964767fe16ca88810cf3c228bed9a03a5f3b0672ed484ebc04644326307559380c3861
   languageName: node
   linkType: hard
 
@@ -4936,16 +4936,16 @@ __metadata:
     "@astrojs/prefetch": ^0.1.1
     "@astrojs/sitemap": ^1.0.0
     "@fontsource/atkinson-hyperlegible": ^4.5.11
-    "@fontsource/inter": ^4.5.14
+    "@fontsource/inter": ^4.5.15
     "@types/prettier": ^2.7.2
     astro: ^1.9.2
-    astro-compress: ^1.1.25
+    astro-compress: ^1.1.27
     astro-icon: ^0.8.0
-    astro-seo: ^0.6.1
+    astro-seo: ^0.7.0
     autoprefixer: ^10.4.13
     cssnano: ^5.1.14
     postcss: ^8.4.21
-    prettier: ^2.8.2
+    prettier: ^2.8.3
     prettier-plugin-astro: ^0.7.2
     rehype-external-links: ^2.0.1
     sass: ^1.57.1
@@ -5494,12 +5494,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.7.1, prettier@npm:^2.8.2":
+"prettier@npm:^2.7.1":
   version: 2.8.2
   resolution: "prettier@npm:2.8.2"
   bin:
     prettier: bin-prettier.js
   checksum: 740c56c2128d587d656ea1dde9bc9c3503dfc94db4f3ac387259215eeb2e216680bdad9d18a0c9feecc6b42cfa188d6fa777df4c36c1d00cedd4199074fbfbd2
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^2.8.3":
+  version: 2.8.3
+  resolution: "prettier@npm:2.8.3"
+  bin:
+    prettier: bin-prettier.js
+  checksum: 92f2ceb522d454370e02082aa74ad27388672f7cee8975028b59517c069fe643bdc73e322675c8faf2ff173d7a626d1a6389f26b474000308e793aa25fff46e5
   languageName: node
   linkType: hard
 
