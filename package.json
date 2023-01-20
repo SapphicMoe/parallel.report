@@ -20,6 +20,7 @@
     "@astrojs/mdx": "^0.14.0",
     "@astrojs/prefetch": "^0.1.1",
     "@astrojs/sitemap": "^1.0.0",
+    "@fontsource/atkinson-hyperlegible": "^4.5.11",
     "@fontsource/inter": "^4.5.14",
     "astro": "^1.9.2",
     "astro-compress": "^1.1.25",

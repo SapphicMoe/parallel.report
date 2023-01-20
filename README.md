@@ -54,7 +54,7 @@ You're now up and running!
 
 This website is licensed under the [zlib][license] License.
 
-© 2023 [Chloe Arciniega][chloe].
+&copy; 2023 [Chloe Arciniega][chloe].
 
 [astro]: https://astro.build 'Astro'
 [chloe]: https://www.arciniega.one 'Chloe Arciniega'
