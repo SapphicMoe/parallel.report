@@ -1,19 +1,20 @@
 {
   "name": "parallel-report",
-  "version": "2.0.3",
+  "version": "2.0.5",
   "type": "module",
   "author": "Chloe Arciniega <solely@riseup.net>",
   "license": "zlib",
   "private": true,
   "scripts": {
-    "astro": "astro",
     "astro:check": "astro check",
     "build": "yarn build:check && astro build",
     "build:check": "yarn astro:check && tsc --noEmit",
     "dev": "yarn start:dev",
-    "lint": "prettier --w --plugin-search-dir=. .",
+    "format:prettier": "prettier --w --plugin-search-dir=. .",
+    "lint:eslint": "eslint --fix src/**/*.{ts,astro}",
     "start": "astro preview",
-    "start:dev": "astro dev"
+    "start:dev": "astro dev",
+    "test": "eslint src/**/*.{ts,astro} && prettier --c ."
   },
   "packageManager": "yarn@3.3.1",
   "dependencies": {
