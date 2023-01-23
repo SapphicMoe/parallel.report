@@ -4,16 +4,17 @@ import Layout from '@layouts/page.astro';
 import { Icon } from 'astro-icon';
 
 import Footer from '@components/footer.astro';
-import Resource from '@components/home/parallel.astro';
+import Resource from '@components/home/resource.astro';
 import Line from '@components/underline.astro';
 
 import Header from '@components/home/header.md';
-import Notice from '@components/home/notice.mdx';
+import Notice from '@components/home/notice.md';
 
 import type { Contributor, Resources } from '~/types';
 
-const resources = await Astro.glob<Resources>('../parallel/resources/*.json');
 import other from '../parallel/other.json';
+
+const resources = await Astro.glob<Resources>('../parallel/resources/*.json');
 ---
 
 <Layout
@@ -37,10 +38,10 @@ import other from '../parallel/other.json';
               slot="resource-icon"
               class="parallel-img"
               src={resource.image.file}
-              width={resource.image.width}
               height={resource.image.height}
-              alt={`${resource.title} Logo`}
-              title={`${resource.title} Logo`}
+              width={resource.image.width}
+              alt={`Logo of ${resource.title}`}
+              title={`Logo of ${resource.title}`}
             />
           </h2>
 
@@ -73,19 +74,18 @@ import other from '../parallel/other.json';
     {
       other.authors.map((author) => {
         return (
-          /* prettier-ignore */ <li>
+          /* prettier-ignore */ <li class={author.resources[0].name.replace(/\s+/g, '').toLowerCase()}>
             <a href={author.link} title={author.name} target="_blank">{author.name}</a>:
             <a href={author.resources[0].link} title={author.resources[0].name} target="_blank">{author.resources[0].name}</a>,
             {author.resources[0].description}
-          </li> /* prettier-ignore */
+          </li>
+          /* prettier-ignore */
         );
       })
     }
   </ul>
 
-  <Footer>
-    <Notice />
-  </Footer>
+  <Footer><Notice /></Footer>
 
   <style>
     .maintainer {

@@ -1147,9 +1147,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro-compress@npm:^1.1.27":
-  version: 1.1.27
-  resolution: "astro-compress@npm:1.1.27"
+"astro-compress@npm:^1.1.28":
+  version: 1.1.28
+  resolution: "astro-compress@npm:1.1.28"
   dependencies:
     "@types/csso": 5.0.0
     "@types/html-minifier-terser": 7.0.0
@@ -1160,7 +1160,7 @@ __metadata:
     sharp: 0.31.3
     svgo: 3.0.2
     terser: 5.16.1
-  checksum: ad9987d67c61511f79273a5eebc85d722c288995ceb20eae3d3a4bf6b198d9410c109e6bb52d57ca52cf835f9773563148b3604aecc6237f13c82257ffb8db91
+  checksum: 2836e32fefac7a1c0079ec6ba18606eb696aa667d82d0406e00189ed88351c784e60c524b939729e6f04a2b56f3a4d025ab4dae5767d9e04a7b6af91ea73b933
   languageName: node
   linkType: hard
 
@@ -4939,7 +4939,7 @@ __metadata:
     "@fontsource/inter": ^4.5.15
     "@types/prettier": ^2.7.2
     astro: ^1.9.2
-    astro-compress: ^1.1.27
+    astro-compress: ^1.1.28
     astro-icon: ^0.8.0
     astro-seo: ^0.7.0
     autoprefixer: ^10.4.13
