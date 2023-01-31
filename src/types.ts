@@ -28,17 +28,8 @@ export interface Resources {
  * Contributor(s) for a 3rd-party resource
  */
 export interface Contributor {
-  bold?: Boolean;
+  bold?: boolean;
   link: string;
   name: string;
   role: string;
-}
-
-/**
- * Properties for a page
- */
-export interface PageProps {
-  description: string;
-  siteName: string;
-  title: string;
 }
