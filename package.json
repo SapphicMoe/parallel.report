@@ -1,6 +1,6 @@
 {
-  "name": "parallel-report",
-  "version": "2.0.5",
+  "name": "parallel.report",
+  "version": "2.0.0",
   "type": "module",
   "author": "Chloe Arciniega <solely@riseup.net>",
   "license": "zlib",
@@ -16,14 +16,18 @@
     "start:dev": "astro dev",
     "test": "eslint src/**/*.{ts,astro} && prettier --c ."
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solelychloe/parallel.report.git"
+  },
   "packageManager": "yarn@3.3.1",
   "dependencies": {
-    "@astrojs/mdx": "^0.14.0",
-    "@astrojs/prefetch": "^0.1.1",
-    "@astrojs/sitemap": "^1.0.0",
+    "@astrojs/mdx": "^0.15.2",
+    "@astrojs/prefetch": "^0.1.2",
+    "@astrojs/sitemap": "^1.0.1",
     "@fontsource/atkinson-hyperlegible": "^4.5.11",
     "@fontsource/inter": "^4.5.15",
-    "astro": "^1.9.2",
+    "astro": "^2.0.4",
     "astro-compress": "^1.1.28",
     "astro-icon": "^0.8.0",
     "astro-seo": "^0.7.0",
@@ -35,9 +39,9 @@
   },
   "devDependencies": {
     "@types/prettier": "^2.7.2",
-    "prettier-plugin-astro": "^0.7.2",
+    "prettier-plugin-astro": "^0.8.0",
     "sass": "^1.57.1",
     "svgo": "2.8.0",
-    "typescript": "^4.9.4"
+    "typescript": "^4.9.5"
   }
 }
