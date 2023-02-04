@@ -1,28 +1,38 @@
 ---
 import Link from '@components/link.astro';
+import Separator from '@components/separator.astro';
 ---
 
-<footer>
+<footer class="flex flex-grow flex-col pt-1">
   <slot />
+
   <hr />
 
   <span>
     &copy; {new Date().getFullYear()}
-    <Link href="https://www.arciniega.one" title="Chloe Arciniega's website (arciniega.one)" target="_blank">
+    <Link href="https://arciniega.one" title="Chloe Arciniega's website (arciniega.one)" target="_blank">
       Chloe Arciniega
     </Link>
   </span>
 
-  <nav>
-    <Link href="/credits.txt" title="Credits" rel="prefetch">Credits</Link> |
-    <Link href="/domains.txt" title="Domains" rel="prefetch">Domains</Link> |
+  <nav class="flex-cel links flex">
+    <Link href="/credits.txt" title="Credits" rel="prefetch">Credits</Link>
+    <Separator />
     <Link href="https://github.com/solelychloe/parallel.report" title="Source code" target="_blank">Source</Link>
   </nav>
 </footer>
 
 <style>
-  footer {
-    margin-top: 1em;
-    text-align: center;
+  hr {
+    @apply text-ctp-pink;
+  }
+
+  .links {
+    @apply flex flex-wrap gap-[15px] md:gap-[10px];
+    @apply pt-4 pb-1;
+  }
+
+  span {
+    @apply pt-5;
   }
 </style>

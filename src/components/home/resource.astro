@@ -1,10 +1,8 @@
 ---
-import '@styles/parallel.scss';
-
 const { class: className } = Astro.props;
 ---
 
-<div class={className}>
+<div class={`${className} flex flex-grow flex-col`}>
   <slot name="resource-name" />
   <slot name="resource-icon" />
   <slot name="resource-description" />
@@ -13,3 +11,52 @@ const { class: className } = Astro.props;
 
   <slot />
 </div>
+
+<style lang="scss" is:global>
+  @mixin parallel($name, $color) {
+    #{$name} :is(span a, li a, hr) {
+      color: $color;
+      border-color: $color;
+    }
+  }
+
+  $parallels: (
+    '.charlemagne': #e2dbdbb2,
+    '.destinyitemmanager': #f37422,
+    '.destinyinsights': #c0316e,
+    '.destinyrecipes': #c8435d,
+    '.destinysets': #57b2ad,
+    '.destinytracker': #e2263c,
+    '.felicity': #ff4351,
+    '.ghostoverlay': #ffffffd2,
+    '.guardiantheater': #b798c9,
+    '.ishtarcollective': #4485c4,
+    '.ishtarcommander': #d6d6d6c5,
+    '.levante': #87d3c6,
+    '.littlelight': #a492fff9,
+    '.lostsector': #c1b7fe,
+    '.scrublandeux': #9fdd18,
+    '.todayindestiny': #51a8a8,
+    '.trialsreport': #ead884,
+  );
+
+  @each $class, $color in $parallels {
+    @include parallel($class, $color);
+  }
+
+  li {
+    @apply pl-5;
+  }
+
+  .ishtarcommander > span > img {
+    @apply grayscale;
+  }
+
+  img[alt='Parallel Program emblem'] {
+    @apply mx-auto w-[100px] pb-5;
+  }
+
+  .parallel-img {
+    float: right;
+  }
+</style>

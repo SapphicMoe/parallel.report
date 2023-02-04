@@ -2,13 +2,14 @@
   // Astro TSConfig base configuration
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
+    // Will be removed when TS5 releases officially.
+    "ignoreDeprecations": "5.0",
     // Aliases
     "baseUrl": ".",
     "paths": {
       "~/*": ["src/*"],
       "@components/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"],
-      "@styles/*": ["src/styles/*"],
       "@config": ["src/site.config.ts"]
     }
   }

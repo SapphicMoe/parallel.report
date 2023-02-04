@@ -5,6 +5,7 @@ import { Icon } from 'astro-icon';
 
 import Footer from '@components/footer.astro';
 import Resource from '@components/home/resource.astro';
+import Link from '@components/link.astro';
 import Line from '@components/underline.astro';
 
 import Header from '@components/home/header.md';
@@ -21,76 +22,86 @@ const resources = await Astro.glob<Resources>('../parallel/resources/*.json');
   description="This site covers Guardians who contributed to Destiny 2 and/or its API in a meaningful way, and have received the Parallel Program emblem."
   title="Parallel Program Report"
 >
-  <Header />
+  <main class="content text-3xl">
+    <Header />
 
-  {
-    resources.map((resource) => {
-      return (
-        <Resource class={resource.title.replace(/\s+/g, '').toLowerCase()}>
-          <h2 class="resource-name" slot="resource-name">
-            <a href={resource.site} title={resource.title} target="_blank">
-              {resource.title}
-              <Icon size={15} name="mdi:external-link" />
-            </a>
-
-            <img
-              slot="resource-icon"
-              class="parallel-img"
-              src={resource.image.file}
-              height={resource.image.height}
-              width={resource.image.width}
-              alt={`Logo of ${resource.title}`}
-              title={`Logo of ${resource.title}`}
-            />
-          </h2>
-
-          <p class="resource-description" slot="resource-description">
-            {resource.description}
-          </p>
-
-          <ul class="resource-contributors" slot="resource-contributors">
-            {resource.contributors.map((contributor: Contributor) => {
-              return (
-                <>
-                  <li class:list={['contributor', { maintainer: contributor.bold }]}>
-                    {/* prettier-ignore */}
-                    <span>
-                      <a href={contributor.link} title={contributor.name} target="_blank">{contributor.name}</a>: {resource.prefix} {contributor.role}
-                    </span>
-                    {/* prettier-ignore */}
-                  </li>
-                </>
-              );
-            })}
-          </ul>
-        </Resource>
-      );
-    })
-  }
-
-  <Line>Other resources</Line>
-  <ul class="other-resources">
     {
-      other.authors.map((author) => {
+      resources.map((resource) => {
         return (
-          /* prettier-ignore */ <li class={author.resources[0].name.replace(/\s+/g, '').toLowerCase()}>
-            <a href={author.link} title={author.name} target="_blank">{author.name}</a>:
-            <a href={author.resources[0].link} title={author.resources[0].name} target="_blank">{author.resources[0].name}</a>,
-            {author.resources[0].description}
-          </li>
-          /* prettier-ignore */
+          <Resource class={resource.title.replace(/\s+/g, '').toLowerCase()}>
+            <span class="resource-name text-5xl font-bold" slot="resource-name">
+              <Link href={resource.site} title={resource.title} target="_blank">
+                {resource.title} <Icon size={15} name="mdi:external-link" class="ml-3" />
+              </Link>
+
+              <img
+                slot="resource-icon"
+                class="parallel-img"
+                src={resource.image.file}
+                height={resource.image.height}
+                width={resource.image.width}
+                alt={`Logo of ${resource.title}`}
+                title={`Logo of ${resource.title}`}
+              />
+            </span>
+
+            <p class="resource-description pb-5" slot="resource-description">
+              {resource.description}
+            </p>
+
+            <ul
+              class="resource-contributors flex flex-grow list-inside list-disc flex-col gap-1 pb-5 pt-2"
+              slot="resource-contributors"
+            >
+              {resource.contributors.map((contributor: Contributor) => {
+                return (
+                  <>
+                    <li class:list={['contributor', { maintainer: contributor.bold }]}>
+                      {/* prettier-ignore */}
+                      <span>
+                      <Link href={contributor.link} title={contributor.name} target="_blank">{contributor.name}</Link>: {resource.prefix} {contributor.role}
+                    </span>
+                      {/* prettier-ignore */}
+                    </li>
+                  </>
+                );
+              })}
+            </ul>
+          </Resource>
         );
       })
     }
-  </ul>
 
-  <Footer>
-    <Notice />
-  </Footer>
+    <Line>Other resources</Line>
+    <ul class="other-resources flex flex-grow list-inside list-disc flex-col gap-1 pb-5 pt-2">
+      {
+        other.authors.map((author) => {
+          return (
+            /* prettier-ignore */ <li class={author.resources[0].name.replace(/\s+/g, '').toLowerCase()}>
+                <Link href={author.link} title={author.name} target="_blank">{author.name}</Link>:
+                <Link href={author.resources[0].link} title={author.resources[0].name} target="_blank">{author.resources[0].name}</Link>,
+                {author.resources[0].description}
+            </li>
+            /* prettier-ignore */
+          );
+        })
+      }
+    </ul>
+
+    <Footer>
+      <hr class="mb-5 text-ctp-pink" />
+      <Notice />
+    </Footer>
+  </main>
 
   <style>
     .maintainer {
       font-weight: bold;
+    }
+
+    .resource-name,
+    .resource-contributors {
+      @apply font-display;
     }
   </style>
 </Layout>

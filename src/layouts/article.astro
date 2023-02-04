@@ -1,0 +1,18 @@
+<div class="article-content prose prose-invert">
+  <slot />
+</div>
+
+<style is:global>
+  .article-content {
+    @apply flex flex-grow flex-col;
+    @apply self-center text-center;
+    @apply text-3xl;
+    @apply pb-5;
+
+    @apply prose-img:mt-5 prose-img:mb-5;
+
+    & a {
+      @apply text-ctp-pink;
+    }
+  }
+</style>

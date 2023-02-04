@@ -4,8 +4,6 @@ import Head from '@components/head.astro';
 import '@fontsource/atkinson-hyperlegible';
 import '@fontsource/inter';
 
-import '@styles/sakura.scss';
-
 interface Props {
   description: string;
   title: string;
@@ -18,7 +16,36 @@ const { description, title } = Astro.props;
 <html lang="en">
   <Head description={description} title={title} />
 
-  <body>
+  <body class="flex flex-grow flex-col self-center bg-ctp-base text-3xl text-ctp-text">
     <slot />
+
+    <style is:global>
+      :root {
+        font-size: 63%;
+      }
+
+      body {
+        @apply max-w-[44em] px-[2.5em] py-[1.8em];
+      }
+
+      html {
+        display: flex;
+        flex-direction: column;
+      }
+
+      nav,
+      .line,
+      .links {
+        @apply font-display;
+      }
+
+      .content {
+        @apply flex flex-col gap-2;
+      }
+
+      [astro-icon] {
+        @apply inline;
+      }
+    </style>
   </body>
 </html>

@@ -1,16 +1,9 @@
 ---
-import { Icon } from 'astro-icon';
-
 /* eslint-disable */
-export interface Props extends astroHTML.JSX.AnchorHTMLAttributes {
-  icon?: string;
-}
+export interface Props extends astroHTML.JSX.AnchorHTMLAttributes {}
 /* eslint-enable */
 
 const { href, class: className, ...props } = Astro.props;
 ---
 
-<a href={href} class:list={[className]} {...props}>
-  <slot />
-  {props.target ? <Icon size={10} name="mdi:external-link" /> : null}
-</a>
+<a href={href} class:list={`${[className]} hover:underline text-ctp-pink`} {...props}><slot /></a>
