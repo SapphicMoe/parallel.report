@@ -44,7 +44,7 @@ This website is licensed under the [zlib][license] License.
 &copy; 2023 [Chloe Arciniega][chloe].
 
 [astro]: https://astro.build 'Astro'
-[chloe]: https://www.arciniega.one 'Chloe Arciniega'
+[chloe]: https://arciniega.one 'Chloe Arciniega'
 [issue]:
   https://github.com/solelychloe/parallel.report/issues/new?assignees=&labels=&template=parallel-program-request.md&title=Parallel+Program+Request
   'GitHub issue link'

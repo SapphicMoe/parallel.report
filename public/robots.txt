@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.parallel.report/sitemap-index.xml
+Sitemap: https://parallel.report/sitemap-index.xml

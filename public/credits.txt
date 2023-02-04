@@ -3,5 +3,3 @@
 Tom Chapman / Braytech: https://tommychapman.com.au / https://bray.tech
 Michael Hannon / Destiny Emblem Collector: https://twitter.com/Jansten / https://destinyemblemcollector.com
 Leaf: https://leafhub.dev
-
-sakura.css: https://github.com/oxalorg/sakura
