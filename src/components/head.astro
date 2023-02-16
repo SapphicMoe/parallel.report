@@ -2,7 +2,7 @@
 import { SEO } from 'astro-seo';
 import { base, socials } from '@config';
 
-const { description, title } = Astro.props;
+const { description, pageTitle, title } = Astro.props;
 
 const siteName = Astro.site?.hostname;
 const image = new URL(base.favicon?.fileName || '/favicon.png', Astro.site).href;
@@ -13,7 +13,6 @@ const IS_PRODUCTION = import.meta.env.MODE === 'production';
 <head>
   <!-- Compatibility -->
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   {
     IS_PRODUCTION && !!base.plausible.analytics && !!base.site && (
@@ -27,7 +26,7 @@ const IS_PRODUCTION = import.meta.env.MODE === 'production';
     description={description}
     openGraph={{
       basic: {
-        title,
+        title: pageTitle,
         type: 'website',
         image,
       },
@@ -48,6 +47,9 @@ const IS_PRODUCTION = import.meta.env.MODE === 'production';
     }}
     extend={{
       meta: [
+        // Compatibility
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+
         // Astro generator
         { name: 'generator', content: Astro.generator },
 

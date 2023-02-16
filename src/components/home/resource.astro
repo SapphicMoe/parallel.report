@@ -13,13 +13,6 @@ const { class: className } = Astro.props;
 </div>
 
 <style lang="scss" is:global>
-  @mixin parallel($name, $color) {
-    #{$name} :is(span a, li a, hr) {
-      color: $color;
-      border-color: $color;
-    }
-  }
-
   $parallels: (
     '.charlemagne': #e2dbdbb2,
     '.destinyitemmanager': #f37422,
@@ -39,6 +32,13 @@ const { class: className } = Astro.props;
     '.todayindestiny': #51a8a8,
     '.trialsreport': #ead884,
   );
+
+  @mixin parallel($name, $color) {
+    #{$name} :is(span a, li a, hr) {
+      color: $color;
+      border-color: $color;
+    }
+  }
 
   @each $class, $color in $parallels {
     @include parallel($class, $color);
