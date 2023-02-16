@@ -8,6 +8,10 @@
     {
       "source": "/api/event",
       "destination": "https://stats.ovy.sh/api/event"
+    },
+    {
+      "source": "/credits",
+      "destination": "/credits.txt"
     }
   ]
 }
