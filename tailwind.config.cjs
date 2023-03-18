@@ -6,7 +6,11 @@ module.exports = {
       body: ['Inter', 'sans-serif'],
       display: ['Atkinson Hyperlegible', 'sans-serif'],
     },
-    colors: {},
+    colors: {
+      'light-bg': '#e6e9ef',
+      'light-accent': '#ea76cb',
+      'light-text': '#4c4f69',
+    },
     extend: {
       typography: () => ({
         invert: {
@@ -24,9 +28,6 @@ module.exports = {
           },
         },
       }),
-      fontSize: {
-        '3xl': ['1.8rem', { lineHeight: '1.5' }],
-      },
     },
   },
   plugins: [

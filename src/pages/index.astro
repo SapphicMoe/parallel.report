@@ -1,15 +1,15 @@
 ---
-import Layout from '@layouts/page.astro';
+import Layout from '@layouts/Page.astro';
 
-import { Icon } from 'astro-icon';
+import { Icon } from 'astro-iconify';
 
-import Footer from '@components/footer.astro';
-import Resource from '@components/home/resource.astro';
-import Link from '@components/link.astro';
-import Line from '@components/underline.astro';
+import Footer from '@components/Footer.astro';
+import Resource from '@components/home/Resource.astro';
+import Link from '@components/Link.astro';
+import Line from '@components/Underline.astro';
 
-import Header from '@components/home/header.md';
-import Notice from '@components/home/notice.md';
+import Header from '@components/home/Header.md';
+import Notice from '@components/home/Notice.md';
 
 import type { Contributor, Resources } from '~/types';
 
@@ -23,16 +23,17 @@ const resources = await Astro.glob<Resources>('../parallel/resources/*.json');
   pageTitle="Parallel Program Report"
   title="Home | Parallel Program Report"
 >
-  <main class="content text-3xl">
+  <main class="content">
+    <img src="/favicon.png" alt="Parallel Program emblem" />
     <Header />
 
     {
       resources.map((resource) => {
         return (
           <Resource class={resource.title.replace(/\s+/g, '').toLowerCase()}>
-            <span class="resource-name text-5xl font-bold" slot="resource-name">
+            <span class="resource-name text-4xl font-bold" slot="resource-name">
               <Link href={resource.site} title={resource.title} target="_blank">
-                {resource.title} <Icon size={15} name="mdi:external-link" class="ml-3" />
+                {resource.title} <Icon size={30} name="mdi:external-link" class="pl-3" />
               </Link>
 
               <img
