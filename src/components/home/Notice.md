@@ -1,5 +1,5 @@
 ---
-layout: '@layouts/article.astro'
+layout: '@layouts/Article.astro'
 ---
 
 Destiny, Destiny 2, and the Destiny logo are registered trademarks of Bungie.  

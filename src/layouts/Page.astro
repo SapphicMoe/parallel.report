@@ -1,5 +1,5 @@
 ---
-import Head from '@components/head.astro';
+import Head from '@components/Head.astro';
 
 import '@fontsource/atkinson-hyperlegible';
 import '@fontsource/inter';
@@ -17,18 +17,14 @@ const { description, pageTitle, title } = Astro.props;
 <html lang="en">
   <Head description={description} pageTitle={pageTitle} title={title} />
 
-  <body class="flex flex-grow flex-col self-center bg-ctp-base text-3xl text-ctp-text">
+  <body class="flex flex-grow flex-col self-center text-xl">
     <slot />
 
     <style is:global>
-      :root {
-        font-size: 63%;
-      }
-
       body {
-        @apply max-w-[44em] px-[2.5em] py-[1.8em];
+        @apply bg-light-bg text-light-text dark:bg-ctp-base dark:text-ctp-text;
+        @apply max-w-[45em] px-[2.5em] py-[2em];
       }
-
       html {
         display: flex;
         flex-direction: column;
@@ -46,6 +42,7 @@ const { description, pageTitle, title } = Astro.props;
 
       [astro-icon] {
         @apply inline;
+        @apply pb-1;
       }
     </style>
   </body>

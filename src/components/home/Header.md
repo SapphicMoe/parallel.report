@@ -1,8 +1,8 @@
 ---
-layout: '@layouts/article.astro'
+layout: '@layouts/Article.astro'
 ---
 
-## ![Parallel Program emblem](/favicon.png 'Parallel Program emblem') Parallel Program Report
+## Parallel Program Report
 
 This site covers Guardians who contributed to Destiny 2 and/or its API in a meaningful way, and have received the
 [Parallel Program emblem][emblem].
