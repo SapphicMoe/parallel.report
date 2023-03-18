@@ -8,14 +8,25 @@ interface Props {
   description?: string;
   pageTitle: string;
   title: string;
+  turnstile?: boolean;
 }
 
-const { description, pageTitle, title } = Astro.props;
+const { description, pageTitle, title, turnstile } = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-  <Head description={description} pageTitle={pageTitle} title={title} />
+  <Head description={description} pageTitle={pageTitle} title={title}>
+    {
+      turnstile && (
+        <script
+          is:inline
+          src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"
+          class="turnstile"
+        />
+      )
+    }
+  </Head>
 
   <body class="flex flex-grow flex-col self-center text-xl">
     <slot />
