@@ -81,7 +81,7 @@ async function sendDiscordMessage(details, webhookUrl, token) {
       Authorization: token ? token : '',
     },
     body: JSON.stringify({
-      content: '<@228574821590499329>',
+      content: '<@312145496179474434>',
       embeds: [
         {
           title: 'New Message',
