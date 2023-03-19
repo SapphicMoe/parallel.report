@@ -1,5 +1,5 @@
 {
-  "name": "parallel.report",
+  "name": "@solely/parallel",
   "version": "3.0.0",
   "type": "module",
   "author": "Chloe Arciniega <solely@riseup.net>",
