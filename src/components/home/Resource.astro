@@ -6,7 +6,7 @@ const { class: className } = Astro.props;
   <slot name="resource-name" />
   <slot name="resource-icon" />
   <slot name="resource-description" />
-  <hr />
+  <hr class="pb-1" />
   <slot name="resource-contributors" />
 
   <slot />
@@ -27,7 +27,7 @@ const { class: className } = Astro.props;
     '.ishtarcommander': #d6d6d6c5,
     '.levante': #87d3c6,
     '.littlelight': #a492fff9,
-    '.lostsector': #c1b7fe,
+    '.lostsectorreport': #c1b7fe,
     '.scrublandeux': #9fdd18,
     '.todayindestiny': #51a8a8,
     '.trialsreport': #ead884,
@@ -52,11 +52,7 @@ const { class: className } = Astro.props;
     @apply grayscale;
   }
 
-  img[alt='Parallel Program emblem'] {
-    @apply mx-auto w-[100px] pb-5;
-  }
-
   .parallel-img {
-    float: right;
+    @apply float-right;
   }
 </style>

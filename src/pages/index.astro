@@ -24,7 +24,12 @@ const resources = await Astro.glob<Resources>('../parallel/resources/*.json');
   title="Home | Parallel Program Report"
 >
   <main class="content">
-    <img src="/favicon.png" alt="Parallel Program emblem" />
+    <img
+      class="mx-auto w-[100px] pb-5"
+      src="/favicon.png"
+      title="The Parallel Program emblem."
+      alt="The Parallel Program emblem."
+    />
     <Header />
 
     {
@@ -47,9 +52,9 @@ const resources = await Astro.glob<Resources>('../parallel/resources/*.json');
               />
             </span>
 
-            <p class="resource-description pb-5" slot="resource-description">
+            <span class="resource-description pb-5" slot="resource-description">
               {resource.description}
-            </p>
+            </span>
 
             <ul
               class="resource-contributors flex flex-grow list-inside list-disc flex-col gap-1 pb-5 pt-2"
@@ -98,7 +103,7 @@ const resources = await Astro.glob<Resources>('../parallel/resources/*.json');
 
   <style>
     .maintainer {
-      font-weight: bold;
+      @apply font-bold;
     }
 
     .resource-name,

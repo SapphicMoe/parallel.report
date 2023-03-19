@@ -10,14 +10,14 @@
   "site": "https://tryfelicity.one",
   "contributors": [
     {
-      "name": "Moonie",
-      "link": "https://leafhub.dev",
+      "name": "MeGl",
+      "link": "https://github.com/EndGameGl",
       "role": "Developer",
       "bold": true
     },
     {
-      "name": "MeGl",
-      "link": "https://github.com/EndGameGl",
+      "name": "Moonie",
+      "link": "https://leafhub.dev",
       "role": "Developer",
       "bold": true
     }
