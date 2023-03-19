@@ -8,14 +8,19 @@ const IS_PRODUCTION = import.meta.env.MODE === 'production';
 const credits = IS_PRODUCTION ? '/credits' : '/credits.txt';
 ---
 
-<footer class="flex flex-grow flex-col pt-1">
+<footer class="flex flex-grow flex-col">
   <slot />
 
   <hr />
 
   <span>
     &copy; {new Date().getFullYear()}
-    <Link href="https://arciniega.one" title="Chloe Arciniega's website (arciniega.one)" target="_blank">
+    <Link
+      class="font-semibold"
+      href="https://arciniega.one"
+      title="Chloe Arciniega's website (arciniega.one)"
+      target="_blank"
+    >
       Chloe Arciniega
     </Link>
   </span>
@@ -23,20 +28,21 @@ const credits = IS_PRODUCTION ? '/credits' : '/credits.txt';
   <!-- prettier-ignore -->
   <span class="pb-2">
     Built with
-    <Link href="https://astro.build" title="Astro"><Icon size={30} class="mb-0" name="simple-icons:astro" /> Astro</Link>,
+    <Icon size={30} class="text-ctp-pink" name="simple-icons:astro" />
+    <Link class="font-semibold" href="https://astro.build" title="Astro"> Astro</Link>,
 
-    <Link href="https://www.typescriptlang.org/" title="TypeScript">
-      <Icon size={30} class="mb-1" name="mdi:language-typescript" />
-      TypeScript
-    </Link>
+    <Icon size={30} class="text-ctp-pink" name="mdi:language-typescript" />
+    <Link class="font-semibold" href="https://www.typescriptlang.org/" title="TypeScript"> TypeScript</Link>,
 
-    and <Link href="https://arciniega.one" title="love">
-      <Icon size={30} class="mb-1" name="mdi:cards-heart" />
-      love
-    </Link>
+    and <Icon size={30} class="text-ctp-pink" name="mdi:cards-heart" />
+    <Link class="font-semibold" href="https://arciniega.one" title="love">love</Link>.
   </span>
 
   <nav class="flex-cel links flex">
+    <Link href="/" title="Home">Home</Link>
+    <Separator />
+    <Link href="/contact" title="Submit a resource">Submit a resource</Link>
+    <Separator />
     <Link href={credits} title="Credits">Credits</Link>
     <Separator />
     <Link href="https://github.com/solelychloe/parallel.report" title="Source code" target="_blank">Source</Link>
@@ -50,7 +56,7 @@ const credits = IS_PRODUCTION ? '/credits' : '/credits.txt';
 
   .links {
     @apply flex flex-wrap gap-[15px] md:gap-[10px];
-    @apply pt-4 pb-1;
+    @apply pt-2 pb-1;
   }
 
   span {
