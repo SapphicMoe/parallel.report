@@ -7,8 +7,7 @@ Powered by [Astro][astro].
 
 ## Getting yourself added
 
-Have the emblem, but not on this list? Or would you simply like to send feedback? Make a GitHub issue [here][issue], or
-visit [https://www.arciniega.one][chloe] for various ways to contact me.
+Have the emblem, but not on this list? Visit [https://parallel.report/contact](https://parallel.report/contact 'Suggest a resource (parallel.report)') and let me know!
 
 ## How to Deploy
 
