@@ -20,7 +20,7 @@ export async function onRequestPost(ctx) {
   }
 
   // Validate the JSON
-  if (!obj.name || !obj.message || !obj.captcha) {
+  if (!obj.name || !obj.resourceName || !obj.resourceURL || !obj.role || !obj.captcha) {
     return new Response('Invalid body', { status: 400, headers: corsHeaders });
   }
 
@@ -84,17 +84,30 @@ async function sendDiscordMessage(details, webhookUrl, token) {
       content: '<@312145496179474434>',
       embeds: [
         {
-          title: 'New Message',
+          title: 'New Suggestion',
           type: 'rich',
           fields: [
             {
-              name: 'Name/Email',
+              name: 'Name',
               value: details.name,
             },
+            {
+              name: 'Resource Name',
+              value: details.resourceName,
+            },
+            {
+              name: 'Resource URL',
+              value: details.resourceURL,
+            },
+            {
+              name: 'Role / Contribution',
+              value: details.role,
+            },
+            {
+              name: 'Email',
+              value: details.email ? details.email : 'None specified',
+            },
           ],
-        },
-        {
-          description: details.message,
         },
       ],
     }),

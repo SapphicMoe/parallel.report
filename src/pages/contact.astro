@@ -1,5 +1,8 @@
 ---
 import Layout from '@layouts/Page.astro';
+
+import Footer from '@components/Footer.astro';
+import Line from '@components/Underline.astro';
 ---
 
 <Layout
@@ -9,71 +12,124 @@ import Layout from '@layouts/Page.astro';
   turnstile={true}
 >
   <main class="content">
-    <div class="contact-me">
-      <div>
-        <label for="name">Name or email:</label>
-        <input id="name" maxlength="1024" />
-        <br /><label for="name">If you don't include an email, I can't reply.</label>
-      </div>
+    <Line>Submit a resource</Line>
 
-      <div>
-        <br />
-        <label for="message">Message:<br /></label>
-        <textarea id="message" cols="50" rows="4" maxlength="4096" wrap="soft"></textarea>
-      </div>
+    <span class="pt-1 italic">
+      Do you have the Parallel Program emblem, and are looking to see your name here? Let me know!
+    </span>
 
-      <div id="turnstile" class="cf-turnstile" data-sitekey="0x4AAAAAAADTMZcYKETjz8js" data-size="normal"></div>
-      <button class="button" onclick="validate(event)" type="submit" id="submit">Send message</button>
-      <div>
-        <span id="error"></span>
+    <div class="flex flex-col flex-wrap gap-2">
+      <label for="name" class="font-semibold">
+        Name:
+        <input placeholder="Guardian" id="name" class="w-full pl-1 font-normal" maxlength="128" />
+      </label>
+
+      <label for="resourceName" class="font-semibold">
+        Resource Name:
+        <input placeholder="Destiny Item Manager" id="resourceName" class="w-full pl-1" maxlength="128" />
+      </label>
+
+      <label for="resourceURL" class="font-semibold">
+        Resource URL:
+        <input placeholder="https://example.com" id="resourceURL" class="w-full pl-1" maxlength="128" />
+      </label>
+
+      <label for="role" class="font-semibold">
+        Your role / contribution:
+        <input placeholder="Developer" id="role" class="w-full pl-1" maxlength="256" />
+      </label>
+
+      <label for="email" class="font-semibold">
+        Your email, so I can reach back to you: (optional)
+        <input placeholder="example@gmail.com" id="email" class="w-full pl-1" maxlength="128" />
+      </label>
+
+      <div class="flex flex-col pb-3">
+        <div id="turnstile" class="cf-turnstile pt-3 pb-5" data-sitekey="0x4AAAAAAADTMZcYKETjz8js" data-size="normal">
+        </div>
+        <button
+          class="h-10 w-32 rounded-full bg-ctp-pink text-center font-medium text-ctp-base hover:opacity-80"
+          onclick="validate(event)"
+          type="submit"
+          id="submit">Submit</button
+        >
+        <span id="status" class="pt-3"></span>
       </div>
     </div>
-
-    <script is:inline>
-      let turnstileId = turnstile.render('#turnstile', {
-        sitekey: '0x4AAAAAAADTMZcYKETjz8js',
-      });
-      async function onSubmit() {
-        const name = document.getElementById('name').value;
-        const message = document.getElementById('message').value;
-        const captcha = turnstile.getResponse(turnstileId);
-        const res = await fetch('/api/submit-contact', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            name,
-            message,
-            captcha,
-          }),
-        });
-        // It was sent successfully :)
-        if (res.status === 200) {
-          // Reset fields
-          document.getElementById('name').value = '';
-          document.getElementById('message').value = '';
-          turnstile.reset('#turnstile');
-          document.getElementById('error').innerText = 'Sent!';
-        } else if (res.status === 500) {
-          document.getElementById('error').innerText = ' An error ocurred while sending the message.';
-          turnstile.reset('#turnstile');
-        } else {
-          const response = await res.text();
-          turnstile.reset('#turnstile');
-          document.getElementById('error').innerText = response;
-        }
-      }
-      function validate() {
-        const name = document.getElementById('name').value;
-        const message = document.getElementById('message').value;
-        if (name.trim() === '' || message.trim() === '') {
-          document.getElementById('error').innerText = 'Please enter your name and message!';
-          return;
-        } else {
-          onSubmit();
-        }
-      }
-    </script>
+    <Footer />
   </main>
+
+  <script is:inline>
+    /* eslint-disable no-undef  */
+    /* eslint-disable no-unused-vars */
+    let turnstileId = turnstile.render('#turnstile', {
+      sitekey: '0x4AAAAAAADTMZcYKETjz8js',
+    });
+
+    async function onSubmit() {
+      const name = document.getElementById('name').value;
+      const resourceName = document.getElementById('resourceName').value;
+      const resourceURL = document.getElementById('resourceURL').value;
+      const role = document.getElementById('role').value;
+      const email = document.getElementById('email').value;
+
+      const captcha = turnstile.getResponse(turnstileId);
+
+      const res = await fetch('/api/submit-contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name,
+          resourceName,
+          resourceURL,
+          role,
+          email,
+          captcha,
+        }),
+      });
+
+      // It was sent successfully :)
+      if (res.status === 200) {
+        // Reset fields
+        document.getElementById('name').value = '';
+        document.getElementById('resourceName').value = '';
+        document.getElementById('resourceURL').value = '';
+        document.getElementById('role').value = '';
+        document.getElementById('email').value = '';
+
+        turnstile.reset('#turnstile');
+
+        document.getElementById('status').innerText = 'Your suggestion has been sent!';
+      } else if (res.status === 500) {
+        document.getElementById('status').innerText = ' An error occurred while trying to submit your data.';
+        turnstile.reset('#turnstile');
+      } else {
+        const response = await res.text();
+        turnstile.reset('#turnstile');
+        document.getElementById('status').innerText = response;
+      }
+    }
+
+    function validate() {
+      const name = document.getElementById('name').value;
+      const resourceName = document.getElementById('resourceName').value;
+      const resourceURL = document.getElementById('resourceURL').value;
+      const role = document.getElementById('role').value;
+
+      if (name.trim() === '' || resourceName.trim() === '' || resourceURL.trim() === '' || role.trim() === '') {
+        document.getElementById('status').innerText = 'Please enter all the input values!';
+        return;
+      } else {
+        onSubmit();
+      }
+    }
+  </script>
+
+  <style>
+    input {
+      @apply border dark:border-ctp-pink dark:border-opacity-60 dark:bg-ctp-base;
+    }
+  </style>
 </Layout>
