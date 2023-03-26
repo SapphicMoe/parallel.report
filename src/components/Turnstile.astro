@@ -1,0 +1,64 @@
+<script is:inline>
+  /* eslint-disable no-undef  */
+  /* eslint-disable no-unused-vars */
+  let turnstileId = turnstile.render('#turnstile', {
+    sitekey: '0x4AAAAAAADTMZcYKETjz8js',
+  });
+
+  async function onSubmit() {
+    const name = document.getElementById('name').value;
+    const resourceName = document.getElementById('resourceName').value;
+    const resourceURL = document.getElementById('resourceURL').value;
+    const role = document.getElementById('role').value;
+    const email = document.getElementById('email').value;
+
+    const captcha = turnstile.getResponse(turnstileId);
+
+    const res = await fetch('/api/submit-contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name,
+        resourceName,
+        resourceURL,
+        role,
+        email,
+        captcha,
+      }),
+    });
+
+    if (res.status === 200) {
+      for (const i of ['name', 'resourceName', 'resourceURL', 'role', 'email']) {
+        document.getElementById(i).value = '';
+      }
+
+      turnstile.reset('#turnstile');
+
+      document.getElementById('status').innerText = 'Your suggestion has been sent!';
+    } else if (res.status === 500) {
+      document.getElementById('status').innerText = 'An error occurred while trying to submit your data.';
+      turnstile.reset('#turnstile');
+    } else {
+      const response = await res.text();
+
+      turnstile.reset('#turnstile');
+      document.getElementById('status').innerText = response;
+    }
+  }
+
+  function validate() {
+    const name = document.getElementById('name').value;
+    const resourceName = document.getElementById('resourceName').value;
+    const resourceURL = document.getElementById('resourceURL').value;
+    const role = document.getElementById('role').value;
+
+    if (name.trim() === '' || resourceName.trim() === '' || resourceURL.trim() === '' || role.trim() === '') {
+      document.getElementById('status').innerText = 'Please enter all the input values!';
+      return;
+    } else {
+      onSubmit();
+    }
+  }
+</script>

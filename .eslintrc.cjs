@@ -10,6 +10,9 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {},
+  globals: {
+    turnstile: 'readonly',
+  },
   overrides: [
     {
       files: ['*.astro'],

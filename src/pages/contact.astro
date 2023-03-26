@@ -3,6 +3,7 @@ import Layout from '@layouts/Page.astro';
 
 import Footer from '@components/Footer.astro';
 import Line from '@components/Underline.astro';
+import Turnstile from '@components/Turnstile.astro';
 ---
 
 <Layout
@@ -21,34 +22,54 @@ import Line from '@components/Underline.astro';
     <div class="flex flex-col flex-wrap gap-2">
       <label for="name" class="font-semibold">
         Name:
-        <input placeholder="Guardian" id="name" class="w-full pl-1 font-normal" maxlength="128" />
+        <input placeholder="Guardian" type="text" id="name" class="w-full pl-1 font-normal" maxlength="128" required />
       </label>
 
       <label for="resourceName" class="font-semibold">
         Resource Name:
-        <input placeholder="Destiny Item Manager" id="resourceName" class="w-full pl-1" maxlength="128" />
+        <input
+          placeholder="Destiny Item Manager"
+          type="text"
+          id="resourceName"
+          class="w-full pl-1 font-normal"
+          maxlength="128"
+          required
+        />
       </label>
 
       <label for="resourceURL" class="font-semibold">
         Resource URL:
-        <input placeholder="https://example.com" id="resourceURL" class="w-full pl-1" maxlength="128" />
+        <input
+          placeholder="https://example.com"
+          type="url"
+          id="resourceURL"
+          class="w-full pl-1 font-normal"
+          maxlength="128"
+          required
+        />
       </label>
 
       <label for="role" class="font-semibold">
         Your role / contribution:
-        <input placeholder="Developer" id="role" class="w-full pl-1" maxlength="256" />
+        <input placeholder="Developer" id="role" class="w-full pl-1 font-normal" maxlength="256" required />
       </label>
 
       <label for="email" class="font-semibold">
         Your email, so I can reach back to you: (optional)
-        <input placeholder="example@gmail.com" id="email" class="w-full pl-1" maxlength="128" />
+        <input
+          placeholder="example@gmail.com"
+          type="email"
+          id="email"
+          class="w-full pl-1 font-normal"
+          maxlength="128"
+        />
       </label>
 
       <div class="flex flex-col pb-3">
         <div id="turnstile" class="cf-turnstile pt-3 pb-5" data-sitekey="0x4AAAAAAADTMZcYKETjz8js" data-size="normal">
         </div>
         <button
-          class="h-10 w-32 rounded-full bg-ctp-pink text-center font-medium text-ctp-base hover:opacity-80"
+          class="h-10 w-32 rounded-full bg-ctp-red text-center font-medium text-ctp-base hover:opacity-80 dark:bg-ctp-pink"
           onclick="validate(event)"
           type="submit"
           id="submit">Submit</button
@@ -59,73 +80,7 @@ import Line from '@components/Underline.astro';
     <Footer />
   </main>
 
-  <script is:inline>
-    /* eslint-disable no-undef  */
-    /* eslint-disable no-unused-vars */
-    let turnstileId = turnstile.render('#turnstile', {
-      sitekey: '0x4AAAAAAADTMZcYKETjz8js',
-    });
-
-    async function onSubmit() {
-      const name = document.getElementById('name').value;
-      const resourceName = document.getElementById('resourceName').value;
-      const resourceURL = document.getElementById('resourceURL').value;
-      const role = document.getElementById('role').value;
-      const email = document.getElementById('email').value;
-
-      const captcha = turnstile.getResponse(turnstileId);
-
-      const res = await fetch('/api/submit-contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name,
-          resourceName,
-          resourceURL,
-          role,
-          email,
-          captcha,
-        }),
-      });
-
-      // It was sent successfully :)
-      if (res.status === 200) {
-        // Reset fields
-        document.getElementById('name').value = '';
-        document.getElementById('resourceName').value = '';
-        document.getElementById('resourceURL').value = '';
-        document.getElementById('role').value = '';
-        document.getElementById('email').value = '';
-
-        turnstile.reset('#turnstile');
-
-        document.getElementById('status').innerText = 'Your suggestion has been sent!';
-      } else if (res.status === 500) {
-        document.getElementById('status').innerText = ' An error occurred while trying to submit your data.';
-        turnstile.reset('#turnstile');
-      } else {
-        const response = await res.text();
-        turnstile.reset('#turnstile');
-        document.getElementById('status').innerText = response;
-      }
-    }
-
-    function validate() {
-      const name = document.getElementById('name').value;
-      const resourceName = document.getElementById('resourceName').value;
-      const resourceURL = document.getElementById('resourceURL').value;
-      const role = document.getElementById('role').value;
-
-      if (name.trim() === '' || resourceName.trim() === '' || resourceURL.trim() === '' || role.trim() === '') {
-        document.getElementById('status').innerText = 'Please enter all the input values!';
-        return;
-      } else {
-        onSubmit();
-      }
-    }
-  </script>
+  <Turnstile />
 
   <style>
     input {
