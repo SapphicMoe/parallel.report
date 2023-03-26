@@ -1,12 +1,14 @@
 {
   "title": "Trials Report",
   "prefix": "Trials Report",
+  "color": "text-light-trialsreport dark:text-trialsreport",
+  "border": "border-light-trialsreport dark:border-trialsreport",
   "image": {
     "file": "/images/parallel/TrialsReport.png",
-    "height": "50",
-    "width": "50"
+    "height": "60",
+    "width": "60"
   },
-  "description": "The ultimate companion for Destiny's Trials of Osiris. Look up everything on your opponents or yourself and see your game improve!",
+  "description": "The ultimate companion for Trials of Osiris. Look up everything on your opponents or yourself and see your game improve!",
   "site": "https://trials.report",
   "contributors": [
     {
@@ -16,15 +18,15 @@
       "bold": true
     },
     {
-      "name": "Steffwiz",
-      "link": "https://twitter.com/Steffwiz",
-      "role": "Contributor"
-    },
-    {
       "name": "VlakafatakafA",
       "link": "https://www.bungie.net/7/en/User/Profile/254/5996932/VlakafatakafA",
       "role": "Developer",
       "bold": true
+    },
+    {
+      "name": "Steffwiz",
+      "link": "https://twitter.com/Steffwiz",
+      "role": "Contributor"
     }
   ]
 }

@@ -1,49 +1,21 @@
 {
   "title": "Destiny Item Manager",
   "prefix": "DIM",
+  "color": "text-destinyitemmanager",
+  "border": "border-destinyitemmanager",
   "image": {
     "file": "/images/parallel/DIM.png",
-    "height": "45",
-    "width": "45"
+    "height": "50",
+    "width": "50"
   },
-  "description": "Build the loadout you've always wanted, transfer items with ease, and check stats at any time to Become Legend.",
+  "description": "Build the loadout you've always wanted, transfer items with ease, and check records at any time to Become Legend.",
   "site": "https://destinyitemmanager.com",
   "contributors": [
-    {
-      "name": "48klocs",
-      "link": "https://twitter.com/48klocs",
-      "role": "Contributor"
-    },
-    {
-      "name": "Agenwolf",
-      "link": "https://twitter.com/Agenwolf",
-      "role": "Polish (pl-PL) translator"
-    },
-    {
-      "name": "Apokalipsys_ZR7",
-      "link": "https://twitter.com/Apokalipsys_ZR7",
-      "role": "Spanish (es-ES) translator"
-    },
     {
       "name": "Ben Hollis",
       "link": "https://twitter.com/BHollis",
       "role": "Maintainer",
       "bold": true
-    },
-    {
-      "name": "DelphiActual",
-      "link": "https://twitter.com/DelphiActual",
-      "role": "Contributor"
-    },
-    {
-      "name": "duckmanBR",
-      "link": "https://twitter.com/awittitz",
-      "role": "Brazillian-Portuguese (pt-BR) translator"
-    },
-    {
-      "name": "EAGLEMCHNG",
-      "link": "https://twitter.com/EAGLEMCHNG",
-      "role": "Mexican-Spanish (es-MX) translator"
     },
     {
       "name": "eutral",
@@ -52,14 +24,52 @@
       "bold": true
     },
     {
+      "name": "Rick Casey",
+      "link": "https://twitter.com/RickCasey",
+      "role": "Maintainer",
+      "bold": true
+    },
+    {
+      "name": "48klocs",
+      "link": "https://twitter.com/48klocs",
+      "role": "Contributor"
+    },
+    {
+      "name": "Agenwolf",
+      "link": "https://twitter.com/Agenwolf",
+      "role": "Polish (pl-PL) Translator"
+    },
+    {
+      "name": "Apokalipsys_ZR7",
+      "link": "https://twitter.com/Apokalipsys_ZR7",
+      "role": "Spanish (es-ES) Translator"
+    },
+
+    {
+      "name": "DelphiActual",
+      "link": "https://twitter.com/DelphiActual",
+      "role": "Contributor"
+    },
+    {
+      "name": "duckmanBR",
+      "link": "https://twitter.com/awittitz",
+      "role": "Brazillian-Portuguese (pt-BR) Translator"
+    },
+    {
+      "name": "EAGLEMCHNG",
+      "link": "https://twitter.com/EAGLEMCHNG",
+      "role": "Mexican-Spanish (es-MX) Translator"
+    },
+
+    {
       "name": "JulianCDC",
       "link": "https://www.bungie.net/7/en/User/Profile/254/9310830/JulianCDC",
-      "role": "French (fr-FR) translator"
+      "role": "French (fr-FR) Translator"
     },
     {
       "name": "Korben85",
       "link": "https://www.bungie.net/7/en/User/Profile/254/6321371/Korben-85",
-      "role": "German (de-DE) translator"
+      "role": "German (de-DE) Translator"
     },
     {
       "name": "Liminal Ace",
@@ -69,24 +79,19 @@
     {
       "name": "lion0738",
       "link": "https://www.bungie.net/7/en/User/Profile/254/18033083/lion0738",
-      "role": "Korean (ko-KR) translator"
+      "role": "Korean (ko-KR) Translator"
     },
     {
       "name": "nwL",
       "link": "https://nwl.ms",
-      "role": "German (de-DE) translator"
+      "role": "German (de-DE) Translator"
     },
     {
       "name": "Pixel",
       "link": "https://www.bungie.net/7/en/User/Profile/254/4611686018467182993",
       "role": "Contributor"
     },
-    {
-      "name": "Rick Casey",
-      "link": "https://twitter.com/RickCasey",
-      "role": "Maintainer",
-      "bold": true
-    },
+
     {
       "name": "robojumper",
       "link": "https://twitter.com/robojumper",
@@ -95,7 +100,7 @@
     {
       "name": "solelychloe",
       "link": "https://www.arciniega.one",
-      "role": "Russian (ru-RU) translator"
+      "role": "Russian (ru-RU) Translator"
     },
     {
       "name": "TekiRush",
@@ -105,17 +110,17 @@
     {
       "name": "Theovorn",
       "link": "https://twitter.com/Theovorn",
-      "role": "Italian (it-IT) translator"
+      "role": "Italian (it-IT) Translator"
     },
     {
       "name": "xyx0826",
       "link": "https://github.com/xyx0826",
-      "role": "Simplified Chinese (zh-CN) translator"
+      "role": "Simplified Chinese (zh-CN) Translator"
     },
     {
       "name": "YeezyGT",
       "link": "https://www.bungie.net/7/en/User/Profile/1/4611686018432954171/GT",
-      "role": "Wishlist curator"
+      "role": "Wishlist Curator"
     }
   ]
 }

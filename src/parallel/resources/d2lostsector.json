@@ -1,14 +1,22 @@
 {
-  "title": "Lost Sector Report",
+  "title": "D2 Lost Sector Report",
   "prefix": "Lost Sector",
+  "color": "text-light-d2lostsector dark:text-d2lostsector",
+  "border": "border-light-d2lostsector dark:border-d2lostsector",
   "image": {
-    "file": "/images/parallel/LostSector.png",
-    "height": "40",
-    "width": "40"
+    "file": "/images/parallel/LostSector.svg",
+    "height": "45",
+    "width": "45"
   },
   "description": "Your daily Destiny 2 Legend & Master Lost Sector report.",
   "site": "https://twitter.com/D2LostSector",
   "contributors": [
+    {
+      "name": "Quiff Boy",
+      "link": "https://twitter.com/QuiffBoy",
+      "role": "Founder",
+      "bold": true
+    },
     {
       "name": "AbnormalBenjy7",
       "link": "https://www.bungie.net/7/en/User/Profile/254/11415300?bgn=AbnormalBenjy7",
@@ -22,8 +30,7 @@
     {
       "name": "Fauxres",
       "link": "https://www.bungie.net/7/en/User/Profile/2/4611686018473009644?bgn=Fauxres",
-      "role": "Discord Admin",
-      "bold": true
+      "role": "Server Admin"
     },
     {
       "name": "knight2qb3",
@@ -33,19 +40,12 @@
     {
       "name": "Nerfs",
       "link": "https://www.bungie.net/7/en/User/Profile/2/4611686018446760774",
-      "role": "Discord Admin",
-      "bold": true
+      "role": "Server Admin"
     },
     {
       "name": "Papilli0n",
       "link": "https://www.bungie.net/7/en/User/Profile/254/4994187?bgn=Papilli0n",
       "role": "Contributor"
-    },
-    {
-      "name": "Quiff Boy",
-      "link": "https://twitter.com/QuiffBoy",
-      "role": "Founder",
-      "bold": true
     },
     {
       "name": "Raver boyz",

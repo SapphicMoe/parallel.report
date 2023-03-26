@@ -1,10 +1,12 @@
 {
   "title": "Ghost Overlay",
   "prefix": "Ghost Overlay",
+  "color": "text-light-text dark:text-ghostoverlay",
+  "border": "border-light-text dark:border-ghostoverlay",
   "image": {
     "file": "/images/parallel/GhostOverlay.png",
-    "height": "40",
-    "width": "40"
+    "height": "50",
+    "width": "50"
   },
   "description": "A mini app that lets you pin bounties, triumphs, and quests on top of Destiny 2.",
   "site": "https://ghostoverlay.com",
@@ -18,7 +20,7 @@
     {
       "name": "kapowaz",
       "link": "https://www.bungie.net/7/en/User/Profile/254/66567?bgn=kapowaz",
-      "role": "Contributor"
+      "role": "Icon Designer"
     }
   ]
 }

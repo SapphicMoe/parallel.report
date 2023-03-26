@@ -8,7 +8,7 @@
       "resources": [
         {
           "name": "Vault Item Manager",
-          "description": "a lightning-fast item manager app for Destiny.",
+          "description": "Lightning-fast item manager app for Destiny.",
           "link": "https://twitter.com/Vault_Destiny"
         }
       ]
@@ -19,7 +19,7 @@
       "resources": [
         {
           "name": "light.gg",
-          "description": "the large Destiny 2 database. Find weapons, quests, and more.",
+          "description": "The ultimate database for Destiny. Find weapons, quests, and more.",
           "link": "https://light.gg"
         }
       ]
@@ -30,7 +30,7 @@
       "resources": [
         {
           "name": "Raid Report",
-          "description": "a summary of Raid statistics for Destiny. Look up raid clears, speedruns, and sherpas.",
+          "description": "A summary of Raid statistics for Destiny. Look up raid clears, speedruns, and sherpas.",
           "link": "https://raid.report/"
         }
       ]
@@ -41,7 +41,7 @@
       "resources": [
         {
           "name": "Party Randomizer",
-          "description": "a fun tool to randomize your Destiny 2 loadout! ",
+          "description": "Randomize your Destiny 2 loadout!",
           "link": "https://chrisfried.github.io/party-randomizer/"
         }
       ]
@@ -52,7 +52,7 @@
       "resources": [
         {
           "name": "D2Gunsmith",
-          "description": "a Destiny 2 weapon crafting simulation tool.",
+          "description": "A Destiny 2 weapon crafting simulation tool.",
           "link": "https://d2gunsmith.com/"
         }
       ]
@@ -63,7 +63,7 @@
       "resources": [
         {
           "name": "Rollfinder",
-          "description": "a tool for finding your god rolls in Destiny. Has unique filters, the option search per stats and an up-to-date database!",
+          "description": "Find your god rolls in Destiny. Includes unique filters, the option search per stats and an up-to-date database!",
           "link": "https://rollfinder.net/"
         }
       ]
@@ -74,7 +74,7 @@
       "resources": [
         {
           "name": "D2Checklist",
-          "description": "a report on Destiny 2 progress & stats. Includes PvP, Raids, weekly PvE activities, and more.",
+          "description": "A report on Destiny 2 progress & stats. Includes PvP, Raids, weekly PvE activities, and more.",
           "link": "https://www.d2checklist.com/"
         }
       ]
@@ -85,7 +85,7 @@
       "resources": [
         {
           "name": "aiobungie",
-          "description": "an API wrapper for Destiny 2, utilizing Python and asyncio.",
+          "description": "API wrapper for Destiny 2, utilizing Python and asyncio.",
           "link": "https://github.com/nxtlo/aiobungie"
         }
       ]
@@ -96,7 +96,7 @@
       "resources": [
         {
           "name": "Quria",
-          "description": "a user-friendly Destiny 2 API wrapper, written in TypeScript.",
+          "description": "User-friendly Destiny 2 API wrapper, written in TypeScript.",
           "link": "https://github.com/FraWolf/quria"
         }
       ]
@@ -107,7 +107,7 @@
       "resources": [
         {
           "name": "Destiny Emblem Collector",
-          "description": "the ultimate repository for Destiny emblems: how they look like, how to get them, and whether they're still available.",
+          "description": "The ultimate repository for Destiny emblems: how they look like, how to get them, and whether they're still available.",
           "link": "https://destinyemblemcollector.com/"
         }
       ]
@@ -118,7 +118,7 @@
       "resources": [
         {
           "name": "The Cosmodrome",
-          "description": "a directory of third-party Destiny resources. ",
+          "description": "Directory of third-party Destiny resources.",
           "link": "https://cosmodrome.page"
         }
       ]
@@ -129,7 +129,7 @@
       "resources": [
         {
           "name": "Legionless",
-          "description": "helping Destiny players conquer various Lost Sectors across the Sol System.",
+          "description": "Helping Destiny players conquer various Lost Sectors across the Sol System.",
           "link": "https://legionless.substack.com/"
         }
       ]
@@ -140,7 +140,7 @@
       "resources": [
         {
           "name": "rich-destiny",
-          "description": "a Discord rich presence tool for Destiny 2 (PC).",
+          "description": "Discord rich presence utility app for Destiny 2.",
           "link": "https://richdestiny.app/"
         }
       ]
@@ -151,7 +151,7 @@
       "resources": [
         {
           "name": "lowlidev",
-          "description": "a multi-purpose tool for Destiny 2, which includes collectibles, Gear Viewer, maps, and more.",
+          "description": "Multi-purpose tool for Destiny 2. Includes Gear Viewer, collectibles, maps, and more.",
           "link": "https://lowlidev.com.au/destiny"
         }
       ]
@@ -162,7 +162,7 @@
       "resources": [
         {
           "name": "Shattered Vault",
-          "description": "a Destiny resource that aims to provide weekly reset information, essential guides, and links to popular third-party apps.",
+          "description": "A Destiny resource that aims to provide weekly reset information, essential guides, and links to popular third-party apps.",
           "link": "https://shatteredvault.com/"
         }
       ]
@@ -173,7 +173,7 @@
       "resources": [
         {
           "name": "DotNetBungieAPI",
-          "description": "a .NET Destiny API wrapper.",
+          "description": ".NET Destiny API wrapper.",
           "link": "https://github.com/EndGameGl/DotNetBungieAPI"
         }
       ]
@@ -184,7 +184,7 @@
       "resources": [
         {
           "name": "Redrix",
-          "description": "a Destiny app which provides tools to improve your PvP skills. Also includes leaderboards!",
+          "description": "A Destiny app which provides tools to improve your PvP skills. Also includes leaderboards!",
           "link": "https://redrix.io/"
         }
       ]
@@ -195,7 +195,7 @@
       "resources": [
         {
           "name": "D2ArmorPicker",
-          "description": "a powerful tool to optimize your Destiny 2 loadout stats with just a few clicks.",
+          "description": "Optimize your Destiny 2 loadout stats with just a few clicks.",
           "link": "https://d2armorpicker.com/"
         }
       ]
@@ -206,7 +206,7 @@
       "resources": [
         {
           "name": "glory.report",
-          "description": "a resource of PvP tools for Destiny. Includes player encounters, daily reports, and more.",
+          "description": "A resource of PvP tools for Destiny. Includes player encounters, daily reports, and more.",
           "link": "https://glory.report/"
         }
       ]
@@ -217,7 +217,7 @@
       "resources": [
         {
           "name": "Destiny History",
-          "description": "a tool to highlight the history of Destiny, with a timeline tailored for you.",
+          "description": "A tool to highlight the history of Destiny, with a timeline tailored for you.",
           "link": "https://destinyhistory.com/"
         }
       ]
@@ -228,7 +228,7 @@
       "resources": [
         {
           "name": "Marvin",
-          "description": "a Destiny Discord bot created to help promote activity and healthy competition between clanmates.",
+          "description": "A Destiny Discord bot created to help promote activity and healthy competition between clanmates.",
           "link": "https://marvin.gg/"
         }
       ]
@@ -239,7 +239,7 @@
       "resources": [
         {
           "name": "Braytech",
-          "description": "a powerful Destiny application that allows users to view and map checklists, track and view triumphs, inspect collectibles, and so much more.",
+          "description": "Powerful Destiny application that allows users to view and map checklists, track and view triumphs, inspect collectibles, and so much more.",
           "link": "https://bray.tech/"
         }
       ]
@@ -250,7 +250,7 @@
       "resources": [
         {
           "name": "Destiny Command",
-          "description": "a chat bot that you can install anywhere. It allows you and your viewers to check stats across Destiny, be it Trials stats, K/D, loadout or even just medals.",
+          "description": "A chat bot that you can install anywhere. It allows you and your viewers to check stats across Destiny, be it Trials stats, K/D, loadout or even just medals.",
           "link": "https://destinycommand.com/"
         }
       ]
@@ -261,7 +261,7 @@
       "resources": [
         {
           "name": "strike.farm",
-          "description": "a Destiny tool that allows you to make the daily Strike modifiers work in your favor!",
+          "description": "A Destiny tool that allows you to make the daily Strike modifiers work in your favor!",
           "link": "https://strike.farm/"
         }
       ]

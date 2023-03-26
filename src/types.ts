@@ -10,6 +10,8 @@
 export interface Resources {
   title: string;
   prefix: string;
+  color: string;
+  border: string;
   image: {
     file: string;
     height: number;

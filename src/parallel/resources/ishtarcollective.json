@@ -1,10 +1,12 @@
 {
   "title": "Ishtar Collective",
   "prefix": "Ishtar Collective",
+  "color": "text-ishtarcollective",
+  "border": "border-ishtarcollective",
   "image": {
     "file": "/images/parallel/Ishtar.svg",
-    "height": "45",
-    "width": "45"
+    "height": "50",
+    "width": "50"
   },
   "description": "Categorizing Destiny Lore.",
   "site": "https://ishtar-collective.net",
@@ -14,26 +16,6 @@
       "link": "https://twitter.com/baxt3r",
       "role": "Founder",
       "bold": true
-    },
-    {
-      "name": "erinhc",
-      "link": "https://www.bungie.net/7/en/User/Profile/254/10724644/erinhc",
-      "role": "Archivist"
-    },
-    {
-      "name": "firecracker ace",
-      "link": "https://twitter.com/depyootee",
-      "role": "Discord Mod"
-    },
-    {
-      "name": "MyNinjaH8sU",
-      "link": "https://twitter.com/MyNinjaH8sU",
-      "role": "Contributor"
-    },
-    {
-      "name": "n0rmaln0rman",
-      "link": "https://www.bungie.net/7/en/User/Profile/254/9657131/n0rmaln0rman",
-      "role": "Contributor"
     },
     {
       "name": "nev",
@@ -54,15 +36,38 @@
       "bold": true
     },
     {
+      "name": "waferbaby",
+      "link": "https://waferbaby.com/@d",
+      "role": "Engineer",
+      "bold": true
+    },
+    {
+      "name": "erinhc",
+      "link": "https://www.bungie.net/7/en/User/Profile/254/10724644/erinhc",
+      "role": "Archivist"
+    },
+    {
+      "name": "firecracker ace",
+      "link": "https://twitter.com/depyootee",
+      "role": "Server Mod"
+    },
+    {
+      "name": "MyNinjaH8sU",
+      "link": "https://twitter.com/MyNinjaH8sU",
+      "role": "Contributor"
+    },
+    {
+      "name": "n0rmaln0rman",
+      "link": "https://www.bungie.net/7/en/User/Profile/254/9657131/n0rmaln0rman",
+      "role": "Contributor"
+    },
+
+    {
       "name": "Vertigo",
       "link": "https://twitter.com/Sean_Vertigo",
       "role": "Archivist"
     },
-    {
-      "name": "waferbaby",
-      "link": "https://waferbaby.com/@d",
-      "role": "Engineer"
-    },
+
     {
       "name": "Wafflesquad",
       "link": "https://www.bungie.net/7/en/User/Profile/254/21511557?bgn=Wafflesquad",

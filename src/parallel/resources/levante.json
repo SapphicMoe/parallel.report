@@ -1,18 +1,26 @@
 {
   "title": "Levante",
   "prefix": "Levante",
+  "color": "text-light-levante dark:text-levante",
+  "border": "border-light-levante dark:border-levante",
   "image": {
     "file": "/images/parallel/Levante.png",
-    "height": "45",
-    "width": "45"
+    "height": "50",
+    "width": "50"
   },
-  "description": "A multi-purpose Destiny Discord bot. Track daily rotations, emblems, and more.",
+  "description": "A multi-purpose Destiny 2 Discord bot. Track daily rotations, emblems, and more.",
   "site": "https://www.levante.dev",
   "contributors": [
     {
       "name": "GoGo",
       "link": "https://twitter.com/gogotheworld",
-      "role": "Networking and Communications",
+      "role": "Networking & Communications",
+      "bold": true
+    },
+    {
+      "name": "OatsFX",
+      "link": "https://twitter.com/OatsFX",
+      "role": "Owner",
       "bold": true
     },
     {
@@ -24,12 +32,6 @@
       "name": "Leaf",
       "link": "https://twitter.com/axsLeaf",
       "role": "Contributor"
-    },
-    {
-      "name": "OatsFX",
-      "link": "https://twitter.com/OatsFX",
-      "role": "Owner",
-      "bold": true
     }
   ]
 }

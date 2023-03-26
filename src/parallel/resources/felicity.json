@@ -1,10 +1,12 @@
 {
   "title": "Felicity",
   "prefix": "Felicity",
+  "color": "text-felicity",
+  "border": "border-felicity",
   "image": {
     "file": "/images/parallel/Felicity.png",
-    "height": "40",
-    "width": "40"
+    "height": "50",
+    "width": "50"
   },
   "description": "A multi-purpose Destiny Discord bot, which includes features like Twitch/YouTube feeds, a roll finder, Collections guide, and more.",
   "site": "https://tryfelicity.one",

@@ -1,14 +1,34 @@
 {
   "title": "DestinyTracker",
   "prefix": "DestinyTracker",
+  "color": "text-destinytracker",
+  "border": "border-destinytracker",
   "image": {
     "file": "/images/parallel/DestinyTracker.png",
-    "height": "45",
-    "width": "45"
+    "height": "50",
+    "width": "50"
   },
   "description": "The website for detailed profile and weapon statistics. Compete against the top players in featured leaderboards.",
   "site": "https://destinytracker.com",
   "contributors": [
+    {
+      "name": "MoreofJay",
+      "link": "https://twitter.com/JayDTR01",
+      "role": "Media Lead & Content Manager",
+      "bold": true
+    },
+    {
+      "name": "Protheon",
+      "link": "https://twitter.com/Protheon_",
+      "role": "Community Manager",
+      "bold": true
+    },
+    {
+      "name": "Suttledge",
+      "link": "https://twitter.com/Suttledge",
+      "role": "Writer & Team Lead",
+      "bold": true
+    },
     {
       "name": "Dragosnuv",
       "link": "https://twitter.com/dragosnuv",
@@ -29,29 +49,13 @@
       "link": "https://twitter.com/illPhysics",
       "role": "Member"
     },
-    {
-      "name": "MoreofJay",
-      "link": "https://twitter.com/JayDTR01",
-      "role": "Media Lead & Content Manager",
-      "bold": true
-    },
-    {
-      "name": "Protheon",
-      "link": "https://twitter.com/Protheon_",
-      "role": "Community Manager",
-      "bold": true
-    },
+
     {
       "name": "Separer",
       "link": "https://twitter.com/Separer",
       "role": "Member"
     },
-    {
-      "name": "Suttledge",
-      "link": "https://twitter.com/Suttledge",
-      "role": "Writer & Team Lead",
-      "bold": true
-    },
+
     {
       "name": "SweatyOrNot",
       "link": "https://twitter.com/Sweaty0rNot",

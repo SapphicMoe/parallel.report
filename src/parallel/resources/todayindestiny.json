@@ -1,24 +1,26 @@
 {
   "title": "TodayInDestiny",
   "prefix": "TodayInDestiny",
+  "color": "text-todayindestiny",
+  "border": "border-todayindestiny",
   "image": {
     "file": "/images/parallel/TodayInDestiny.png",
-    "height": "50",
-    "width": "50"
+    "height": "60",
+    "width": "60"
   },
   "description": "A summary of what's available in Destiny today.",
   "site": "https://www.todayindestiny.com",
   "contributors": [
     {
-      "name": "CthulhuReigns",
-      "link": "https://www.bungie.net/7/en/User/Profile/254/20614816?bgn=CthulhuReigns",
-      "role": "Contributor"
-    },
-    {
       "name": "JpDeathBlade",
       "link": "https://twitter.com/JpDeathBlade",
       "role": "Developer",
       "bold": true
+    },
+    {
+      "name": "CthulhuReigns",
+      "link": "https://www.bungie.net/7/en/User/Profile/254/20614816?bgn=CthulhuReigns",
+      "role": "Contributor"
     }
   ]
 }

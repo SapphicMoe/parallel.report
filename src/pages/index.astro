@@ -1,10 +1,7 @@
 ---
 import Layout from '@layouts/Page.astro';
 
-import { Icon } from 'astro-iconify';
-
 import Footer from '@components/Footer.astro';
-import Resource from '@components/home/Resource.astro';
 import Link from '@components/Link.astro';
 import Line from '@components/Underline.astro';
 
@@ -35,68 +32,75 @@ const resources = await Astro.glob<Resources>('../parallel/resources/*.json');
     {
       resources.map((resource) => {
         return (
-          <Resource class={resource.title.replace(/\s+/g, '').toLowerCase()}>
-            <span class="resource-name text-4xl font-bold" slot="resource-name">
-              <Link href={resource.site} title={resource.title} target="_blank">
-                {resource.title} <Icon size={30} name="mdi:external-link" class="pl-3" />
+          <span class={`flex flex-col rounded-2xl border-[2px] ${resource.border} p-5`}>
+            <img
+              class="parallel-img"
+              src={resource.image.file}
+              height={resource.image.height}
+              width={resource.image.width}
+              alt={`Logo of ${resource.title}`}
+              title={`Logo of ${resource.title}`}
+            />
+
+            <span class="resource-name text-3xl font-bold md:text-4xl">
+              <Link
+                color={resource.color}
+                class="pt-2 text-3xl font-semibold"
+                href={resource.site}
+                title={resource.title}
+                target="_blank"
+              >
+                {resource.title}
               </Link>
-
-              <img
-                slot="resource-icon"
-                class="parallel-img"
-                src={resource.image.file}
-                height={resource.image.height}
-                width={resource.image.width}
-                alt={`Logo of ${resource.title}`}
-                title={`Logo of ${resource.title}`}
-              />
             </span>
 
-            <span class="resource-description pb-5" slot="resource-description">
-              {resource.description}
-            </span>
+            <span class="resource-description pb-5">{resource.description}</span>
 
-            <ul
-              class="resource-contributors flex flex-grow list-inside list-disc flex-col gap-1 pb-5 pt-2"
-              slot="resource-contributors"
-            >
+            <hr class={resource.color} />
+
+            <ul class="resource-contributors flex list-disc flex-col gap-1 pl-6 pb-2 pt-2">
               {resource.contributors.map((contributor: Contributor) => {
                 return (
                   <>
                     <li class:list={['contributor', { maintainer: contributor.bold }]}>
-                      {/* prettier-ignore */}
                       <span>
-                      <Link href={contributor.link} title={contributor.name} target="_blank">{contributor.name}</Link>: {resource.prefix} {contributor.role}
-                    </span>
-                      {/* prettier-ignore */}
+                        <Link color={resource.color} href={contributor.link} title={contributor.name} target="_blank">
+                          {contributor.name}
+                        </Link>
+                        — {contributor.role}
+                      </span>
                     </li>
                   </>
                 );
               })}
             </ul>
-          </Resource>
+          </span>
         );
       })
     }
 
     <Line>Other resources</Line>
-    <ul class="other-resources flex flex-grow list-inside list-disc flex-col gap-1 pb-5 pt-2">
+    <ul class="other-resources flex list-disc flex-col gap-2 pl-6 pb-5 pt-2">
       {
         other.authors.map((author) => {
           return (
-            /* prettier-ignore */ <li class={author.resources[0].name.replace(/\s+/g, '').toLowerCase()}>
-                <Link href={author.link} title={author.name} target="_blank">{author.name}</Link>:
-                <Link href={author.resources[0].link} title={author.resources[0].name} target="_blank">{author.resources[0].name}</Link>,
-                {author.resources[0].description}
+            <li class={author.resources[0].name.replace(/\s+/g, '').toLowerCase()}>
+              <Link href={author.link} title={author.name} target="_blank">
+                {author.name}
+              </Link>
+              —
+              <Link href={author.resources[0].link} title={author.resources[0].name} target="_blank">
+                {author.resources[0].name}
+              </Link>
+              - {author.resources[0].description}
             </li>
-            /* prettier-ignore */
           );
         })
       }
     </ul>
 
     <Footer>
-      <hr class="mb-5 text-ctp-pink" />
+      <hr class="pt-5 text-ctp-red dark:text-ctp-pink" />
       <Notice />
     </Footer>
   </main>
@@ -109,6 +113,20 @@ const resources = await Astro.glob<Resources>('../parallel/resources/*.json');
     .resource-name,
     .resource-contributors {
       @apply font-display;
+    }
+
+    a[title='Destiny Recipes'],
+    a[title='Guardian Theater'],
+    a[title='Ishtar Commander'] {
+      @apply text-[0.9em];
+    }
+
+    img[alt*='Logo of Ishtar Commander'] {
+      @apply grayscale;
+    }
+
+    img[alt*='Logo of Ghost Overlay'] {
+      @apply invert dark:invert-0;
     }
   </style>
 </Layout>
