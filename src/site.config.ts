@@ -17,7 +17,7 @@ export const base = {
   // SEO information
   seo: {
     // The site's accent color that will appear in embeds
-    color: '#ca2197',
+    color: '#CA2917',
     // Keywords for search engines
     keywords: [
       'parallel program emblem',
