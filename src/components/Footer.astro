@@ -8,12 +8,12 @@ const IS_PRODUCTION = import.meta.env.MODE === 'production';
 const credits = IS_PRODUCTION ? '/credits' : '/credits.txt';
 ---
 
-<footer class="flex flex-grow flex-col">
+<footer class="flex flex-col pt-1">
   <slot />
 
-  <hr />
+  <hr class="text-ctp-red dark:text-ctp-pink" />
 
-  <span>
+  <span class="pt-5">
     &copy; {new Date().getFullYear()}
     <Link
       class="font-semibold"
@@ -26,19 +26,19 @@ const credits = IS_PRODUCTION ? '/credits' : '/credits.txt';
   </span>
 
   <!-- prettier-ignore -->
-  <span class="pb-2">
+  <span class="pt-5 pb-2">
     Built with
-    <Icon size={30} class="text-ctp-pink" name="simple-icons:astro" />
+    <Icon size={30} class="text-ctp-red dark:text-ctp-pink" name="simple-icons:astro" />
     <Link class="font-semibold" href="https://astro.build" title="Astro" target="_blank"> Astro</Link>,
 
-    <Icon size={30} class="text-ctp-pink" name="mdi:language-typescript" />
+    <Icon size={30} class="text-ctp-red dark:text-ctp-pink" name="mdi:language-typescript" />
     <Link class="font-semibold" href="https://www.typescriptlang.org/" title="TypeScript" target="_blank"> TypeScript</Link>,
 
-    and <Icon size={30} class="text-ctp-pink" name="mdi:cards-heart" />
+    and <Icon size={30} class="text-ctp-red dark:text-ctp-pink" name="mdi:cards-heart" />
     <Link class="font-semibold" href="https://arciniega.one" title="love" target="_blank">love</Link>.
   </span>
 
-  <nav class="flex-cel links flex">
+  <nav class="flex-cel flex flex-wrap gap-[15px] pb-1 pt-4 md:gap-[10px]">
     <Link href="/" title="Home">Home</Link>
     <Separator />
     <Link href="/contact" title="Submit a resource">Submit a resource</Link>
@@ -48,18 +48,3 @@ const credits = IS_PRODUCTION ? '/credits' : '/credits.txt';
     <Link href="https://github.com/solelychloe/parallel.report" title="Source code" target="_blank">Source</Link>
   </nav>
 </footer>
-
-<style>
-  hr {
-    @apply text-ctp-pink;
-  }
-
-  .links {
-    @apply flex flex-wrap gap-[15px] md:gap-[10px];
-    @apply pt-2 pb-1;
-  }
-
-  span {
-    @apply pt-5;
-  }
-</style>

@@ -28,17 +28,16 @@ const { description, pageTitle, title, turnstile } = Astro.props;
     }
   </Head>
 
-  <body class="flex flex-grow flex-col self-center text-xl">
+  <body class="flex flex-col self-center text-xl">
     <slot />
 
     <style is:global>
-      body {
-        @apply bg-light-bg text-light-text dark:bg-ctp-base dark:text-ctp-text;
-        @apply max-w-[45em] px-[2.5em] py-[2em];
-      }
       html {
-        display: flex;
-        flex-direction: column;
+        @apply flex flex-col;
+      }
+      body {
+        @apply ctp-latte bg-light-bg text-light-text dark:ctp-mocha dark:bg-ctp-base dark:text-ctp-text;
+        @apply max-w-[45em] px-[2.5em] py-[2em];
       }
 
       nav,
