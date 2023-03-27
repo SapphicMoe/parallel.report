@@ -22,7 +22,7 @@ const resources = await Astro.glob<Resources>('../parallel/resources/*.json');
 >
   <main class="content">
     <img
-      class="mx-auto w-[100px] pb-5"
+      class="mx-auto w-[96px] pb-5"
       src="/favicon.png"
       title="The Parallel Program emblem."
       alt="The Parallel Program emblem."
@@ -78,30 +78,32 @@ const resources = await Astro.glob<Resources>('../parallel/resources/*.json');
       })
     }
 
-    <Line>Other resources</Line>
-    <ul class="flex list-disc flex-col gap-2 pl-6 pb-5 pt-2">
-      {
-        other.authors.map((author) => {
-          return (
-            <li class={author.resources[0].name.replace(/\s+/g, '').toLowerCase()}>
-              <Link href={author.link} title={author.name} target="_blank">
-                {author.name}
-              </Link>
-              —
-              <Link
-                class="font-semibold"
-                href={author.resources[0].link}
-                title={author.resources[0].name}
-                target="_blank"
-              >
-                {author.resources[0].name}
-              </Link>
-              - {author.resources[0].description}
-            </li>
-          );
-        })
-      }
-    </ul>
+    <span class="flex flex-col pt-2">
+      <Line class="pt-6">Other resources</Line>
+      <ul class="flex list-disc flex-col gap-2 pl-6 pb-5 pt-4">
+        {
+          other.authors.map((author) => {
+            return (
+              <li class={author.resources[0].name.replace(/\s+/g, '').toLowerCase()}>
+                <Link href={author.link} title={author.name} target="_blank">
+                  {author.name}
+                </Link>
+                —
+                <Link
+                  class="font-semibold"
+                  href={author.resources[0].link}
+                  title={author.resources[0].name}
+                  target="_blank"
+                >
+                  {author.resources[0].name}
+                </Link>
+                - {author.resources[0].description}
+              </li>
+            );
+          })
+        }
+      </ul>
+    </span>
 
     <Footer>
       <hr class="pt-5 text-ctp-red" />
