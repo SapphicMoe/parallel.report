@@ -115,10 +115,8 @@ const resources = await Astro.glob<Resources>('../parallel/resources/*.json');
       @apply font-display;
     }
 
-    a[title='Destiny Recipes'],
-    a[title='Guardian Theater'],
-    a[title='Ishtar Commander'] {
-      @apply text-[0.9em];
+    img[alt*='Logo of DestinyTracker'] {
+      @apply pt-3 pb-3;
     }
 
     img[alt*='Logo of Ishtar Commander'] {
