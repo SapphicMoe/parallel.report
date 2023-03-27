@@ -11,7 +11,7 @@ const credits = IS_PRODUCTION ? '/credits' : '/credits.txt';
 <footer class="flex flex-col pt-1">
   <slot />
 
-  <hr class="text-ctp-red dark:text-ctp-pink" />
+  <hr class="text-ctp-red" />
 
   <span class="pt-5">
     &copy; {new Date().getFullYear()}
@@ -28,13 +28,13 @@ const credits = IS_PRODUCTION ? '/credits' : '/credits.txt';
   <!-- prettier-ignore -->
   <span class="pt-5 pb-2">
     Built with
-    <Icon size={30} class="text-ctp-red dark:text-ctp-pink" name="simple-icons:astro" />
+    <Icon size={30} class="text-ctp-red " name="simple-icons:astro" />
     <Link class="font-semibold" href="https://astro.build" title="Astro" target="_blank"> Astro</Link>,
 
-    <Icon size={30} class="text-ctp-red dark:text-ctp-pink" name="mdi:language-typescript" />
+    <Icon size={30} class="text-ctp-red " name="mdi:language-typescript" />
     <Link class="font-semibold" href="https://www.typescriptlang.org/" title="TypeScript" target="_blank"> TypeScript</Link>,
 
-    and <Icon size={30} class="text-ctp-red dark:text-ctp-pink" name="mdi:cards-heart" />
+    and <Icon size={30} class="text-ctp-red " name="mdi:cards-heart" />
     <Link class="font-semibold" href="https://arciniega.one" title="love" target="_blank">love</Link>.
   </span>
 

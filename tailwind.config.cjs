@@ -42,12 +42,12 @@ module.exports = {
         invert: {
           css: {
             a: {
-              background: '#f5c2e7',
+              background: '#f38ba8',
               backgroundClip: 'text',
               color: 'transparent',
             },
             'a:hover': {
-              background: '#c99fbe',
+              background: '#d97e97',
               backgroundClip: 'text',
               color: 'transparent',
             },
