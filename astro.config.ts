@@ -1,5 +1,4 @@
 import { defineConfig } from 'astro/config';
-import type { AstroIntegration } from 'astro';
 
 import mdx from '@astrojs/mdx';
 import prefetch from '@astrojs/prefetch';
@@ -27,9 +26,9 @@ export default defineConfig({
     tailwind(),
     prefetch(),
     sitemap(),
-    compress(),
+    mdx(),
 
-    // TEMP: The recent Astro update broke integration logic, so "AstroIntegration" has been supplied here for now.
-    mdx() as AstroIntegration,
+    // TEMP: The Lost Sector logo looks weird when compressed.
+    compress({ exclude: 'LostSector.svg' }),
   ],
 });
