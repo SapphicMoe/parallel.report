@@ -2,10 +2,12 @@
 layout: '@layouts/Article.astro'
 ---
 
-_Destiny, Destiny 2, and the Destiny logo are registered trademarks of Bungie.  
-Some content and images are the property of Bungie._
+_Destiny and the Destiny logo are among the trademarks of Bungie, Inc.  
+See Bungie's [Terms of Use][terms] for more info._
 
 Compiled with the help of [Braytech][braytech] and [Destiny Emblem Collector][dec].
 
 [braytech]: https://bray.tech 'Braytech'
 [dec]: https://destinyemblemcollector.com 'Destiny Emblem Collector'
+
+[terms]: https://www.bungie.net/7/en/legal/terms 'Bungie\'s Terms of Use'
