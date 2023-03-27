@@ -1,11 +1,8 @@
 ---
 import Link from '@components/Link.astro';
 import Separator from '@components/Separator.astro';
+
 import { Icon } from 'astro-iconify';
-
-const IS_PRODUCTION = import.meta.env.MODE === 'production';
-
-const credits = IS_PRODUCTION ? '/credits' : '/credits.txt';
 ---
 
 <footer class="flex flex-col pt-1">
@@ -15,6 +12,7 @@ const credits = IS_PRODUCTION ? '/credits' : '/credits.txt';
 
   <span class="pt-5">
     &copy; {new Date().getFullYear()}
+
     <Link
       class="font-semibold"
       href="https://arciniega.one"
@@ -38,12 +36,12 @@ const credits = IS_PRODUCTION ? '/credits' : '/credits.txt';
     <Link class="font-semibold" href="https://arciniega.one" title="love" target="_blank">love</Link>.
   </span>
 
-  <nav class="flex-cel flex flex-wrap gap-[15px] pb-1 pt-4 md:gap-[10px]">
+  <nav class="flex-cel flex flex-wrap gap-4 pb-1 pt-4 md:gap-3">
     <Link href="/" title="Home">Home</Link>
     <Separator />
     <Link href="/contact" title="Submit a resource">Submit a resource</Link>
     <Separator />
-    <Link href={credits} title="Credits">Credits</Link>
+    <Link href="/credits" title="Credits">Credits</Link>
     <Separator />
     <Link href="https://github.com/solelychloe/parallel.report" title="Source code" target="_blank">Source</Link>
   </nav>
