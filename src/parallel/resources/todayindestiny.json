@@ -1,8 +1,12 @@
 {
   "title": "TodayInDestiny",
   "prefix": "TodayInDestiny",
-  "color": "text-todayindestiny",
-  "border": "border-todayindestiny",
+  "category": ["rotations"],
+  "color": {
+    "background": "bg-todayindestiny",
+    "border": "border-todayindestiny",
+    "text": "text-todayindestiny"
+  },
   "image": {
     "file": "/images/parallel/TodayInDestiny.png",
     "height": "60",

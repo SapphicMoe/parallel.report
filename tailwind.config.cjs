@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{astro,html,js,md,mdx,ts}'],
-  safelist: [{ pattern: /(text|border)-light-./ }, { pattern: /(text|border)-./, variants: ['dark'] }],
+  safelist: [{ pattern: /(bg|border|text)-light-./ }, { pattern: /(bg|border|text)-./, variants: ['dark'] }],
   theme: {
     fontFamily: {
       body: ['Inter', 'sans-serif'],

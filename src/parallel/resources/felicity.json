@@ -1,8 +1,12 @@
 {
   "title": "Felicity",
   "prefix": "Felicity",
-  "color": "text-felicity",
-  "border": "border-felicity",
+  "category": ["collections"],
+  "color": {
+    "background": "bg-felicity",
+    "border": "border-felicity",
+    "text": "text-felicity"
+  },
   "image": {
     "file": "/images/parallel/Felicity.png",
     "height": "50",

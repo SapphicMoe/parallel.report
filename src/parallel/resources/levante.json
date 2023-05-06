@@ -1,8 +1,12 @@
 {
   "title": "Levante",
   "prefix": "Levante",
-  "color": "text-light-levante dark:text-levante",
-  "border": "border-light-levante dark:border-levante",
+  "category": ["discord", "rotations", "stats"],
+  "color": {
+    "background": "bg-light-levante dark:bg-levante",
+    "border": "border-light-levante dark:border-levante",
+    "text": "text-light-levante dark:text-levante"
+  },
   "image": {
     "file": "/images/parallel/Levante.png",
     "height": "50",
@@ -29,8 +33,8 @@
       "role": "Staff"
     },
     {
-      "name": "Leaf",
-      "link": "https://twitter.com/axsLeaf",
+      "name": "Moonie",
+      "link": "https://leafhub.dev",
       "role": "Contributor"
     }
   ]

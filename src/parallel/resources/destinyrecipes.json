@@ -1,8 +1,12 @@
 {
   "title": "Destiny Recipes",
   "prefix": "Destiny Recipes",
-  "color": "text-destinyrecipes",
-  "border": "border-destinyrecipes",
+  "category": ["planning"],
+  "color": {
+    "background": "bg-destinyrecipes",
+    "border": "border-destinyrecipes",
+    "text": "text-destinyrecipes"
+  },
   "image": {
     "file": "/images/parallel/DestinyRecipes.png",
     "height": "60",

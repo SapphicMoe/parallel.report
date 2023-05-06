@@ -1,8 +1,12 @@
 {
   "title": "Destiny Item Manager",
   "prefix": "DIM",
-  "color": "text-destinyitemmanager",
-  "border": "border-destinyitemmanager",
+  "category": ["inventory", "progress", "collections"],
+  "color": {
+    "background": "bg-destinyitemmanager",
+    "border": "border-destinyitemmanager",
+    "text": "text-destinyitemmanager"
+  },
   "image": {
     "file": "/images/parallel/DIM.png",
     "height": "50",

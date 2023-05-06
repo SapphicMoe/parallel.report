@@ -1,8 +1,12 @@
 {
   "title": "Ishtar Commander",
   "prefix": "Ishtar Commander",
-  "color": "text-ishtarcommander",
-  "border": "border-ishtarcommander",
+  "category": ["inventory"],
+  "color": {
+    "background": "bg-ishtarcommander",
+    "border": "border-ishtarcommander",
+    "text": "text-ishtarcommander"
+  },
   "image": {
     "file": "/images/parallel/Ishtar.svg",
     "height": "50",

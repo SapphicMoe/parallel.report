@@ -1,8 +1,12 @@
 {
   "title": "Ishtar Collective",
   "prefix": "Ishtar Collective",
-  "color": "text-ishtarcollective",
-  "border": "border-ishtarcollective",
+  "category": ["lore"],
+  "color": {
+    "background": "bg-ishtarcollective",
+    "border": "border-ishtarcollective",
+    "text": "text-ishtarcollective"
+  },
   "image": {
     "file": "/images/parallel/Ishtar.svg",
     "height": "50",

@@ -1,8 +1,12 @@
 {
   "title": "Trials Report",
   "prefix": "Trials Report",
-  "color": "text-light-trialsreport dark:text-trialsreport",
-  "border": "border-light-trialsreport dark:border-trialsreport",
+  "category": ["stats"],
+  "color": {
+    "background": "bg-light-trialsreport dark:bg-trialsreport",
+    "border": "border-light-trialsreport dark:border-trialsreport",
+    "text": "text-light-trialsreport dark:text-trialsreport"
+  },
   "image": {
     "file": "/images/parallel/TrialsReport.png",
     "height": "60",

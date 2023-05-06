@@ -1,8 +1,12 @@
 {
   "title": "Guardian Theater",
   "prefix": "Guardian Theater",
-  "color": "text-light-guardiantheater dark:text-guardiantheater",
-  "border": "border-light-guardiantheater dark:border-guardiantheater",
+  "category": ["api"],
+  "color": {
+    "background": "bg-light-guardiantheater dark:bg-guardiantheater",
+    "border": "border-light-guardiantheater dark:border-guardiantheater",
+    "text": "text-light-guardiantheater dark:text-guardiantheater"
+  },
   "image": {
     "file": "/images/parallel/GuardianTheater.png",
     "height": "60",

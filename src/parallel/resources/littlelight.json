@@ -1,8 +1,12 @@
 {
   "title": "Little Light",
   "prefix": "Little Light",
-  "color": "text-light-littlelight dark:text-littlelight",
-  "border": "border-light-littlelight dark:border-littlelight",
+  "category": ["inventory", "progress", "collections"],
+  "color": {
+    "background": "bg-light-littlelight dark:bg-littlelight",
+    "border": "border-light-littlelight dark:border-littlelight",
+    "text": "text-light-littlelight dark:text-littlelight"
+  },
   "image": {
     "file": "/images/parallel/LittleLight.png",
     "height": "60",

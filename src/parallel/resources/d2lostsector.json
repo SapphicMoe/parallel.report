@@ -1,8 +1,12 @@
 {
   "title": "D2 Lost Sector Report",
   "prefix": "Lost Sector",
-  "color": "text-light-d2lostsector dark:text-d2lostsector",
-  "border": "border-light-d2lostsector dark:border-d2lostsector",
+  "category": ["rotations"],
+  "color": {
+    "background": "bg-light-d2lostsector dark:bg-d2lostsector",
+    "border": "border-light-d2lostsector dark:border-d2lostsector",
+    "text": "text-light-d2lostsector dark:text-d2lostsector"
+  },
   "image": {
     "file": "/images/parallel/LostSector.svg",
     "height": "45",

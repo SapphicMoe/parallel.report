@@ -1,8 +1,12 @@
 {
   "title": "Destiny Insights",
   "prefix": "Destiny Insights",
-  "color": "text-destinyinsights",
-  "border": "border-destinyinsights",
+  "category": ["rotations"],
+  "color": {
+    "background": "bg-destinyinsights",
+    "border": "border-destinyinsights",
+    "text": "text-destinyinsights"
+  },
   "image": {
     "file": "/images/parallel/DestinyInsights.png",
     "height": "35",

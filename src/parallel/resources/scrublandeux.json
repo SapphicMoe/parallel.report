@@ -1,8 +1,12 @@
 {
   "title": "Scrublandeux",
   "prefix": "Scrublandeux",
-  "color": "text-light-scrublandeux dark:text-scrublandeux",
-  "border": "border-light-scrublandeux dark:border-scrublandeux",
+  "category": ["stats"],
+  "color": {
+    "background": "bg-light-scrublandeux dark:bg-scrublandeux",
+    "border": "border-light-scrublandeux dark:border-scrublandeux",
+    "text": "text-light-scrublandeux dark:text-scrublandeux"
+  },
   "image": {
     "file": "/images/parallel/Scrublandeux.png",
     "height": "45",

@@ -1,14 +1,18 @@
 {
   "title": "DestinyTracker",
   "prefix": "DestinyTracker",
-  "color": "text-destinytracker",
-  "border": "border-destinytracker",
+  "category": ["stats", "progress", "rotations", "api"],
+  "color": {
+    "background": "bg-destinytracker",
+    "border": "border-destinytracker",
+    "text": "text-destinytracker"
+  },
   "image": {
     "file": "/images/parallel/DestinyTracker.png",
     "height": "50",
     "width": "50"
   },
-  "description": "The website for detailed profile and weapon statistics. Compete against the top players in featured leaderboards.",
+  "description": "The website for detailed profile and weapon statistics. Compete against top players in featured leaderboards.",
   "site": "https://destinytracker.com",
   "contributors": [
     {

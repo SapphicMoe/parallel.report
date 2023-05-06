@@ -1,8 +1,12 @@
 {
   "title": "Charlemagne",
   "prefix": "Charlemagne",
-  "color": "text-charlemagne",
-  "border": "border-charlemagne",
+  "category": ["discord", "stats"],
+  "color": {
+    "background": "bg-charlemagne",
+    "border": "border-charlemagne",
+    "text": "text-charlemagne"
+  },
   "image": {
     "file": "/images/parallel/Charlemagne.png",
     "height": "50",

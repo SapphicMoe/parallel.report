@@ -10,8 +10,12 @@
 export interface Resources {
   title: string;
   prefix: string;
-  color: string;
-  border: string;
+  category: string[];
+  color: {
+    background: string;
+    border: string;
+    text: string;
+  };
   image: {
     file: string;
     height: number;

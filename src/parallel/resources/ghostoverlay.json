@@ -1,14 +1,18 @@
 {
   "title": "Ghost Overlay",
   "prefix": "Ghost Overlay",
-  "color": "text-light-text dark:text-ghostoverlay",
-  "border": "border-light-text dark:border-ghostoverlay",
+  "category": ["progress"],
+  "color": {
+    "background": "bg-light-text dark:bg-ghostoverlay",
+    "border": "border-light-text dark:border-ghostoverlay",
+    "text": "text-light-text dark:text-ghostoverlay"
+  },
   "image": {
     "file": "/images/parallel/GhostOverlay.png",
     "height": "50",
     "width": "50"
   },
-  "description": "A mini app that lets you pin bounties, triumphs, and quests on top of Destiny 2.",
+  "description": "A mini app that lets you pin bounties, triumphs, and quests on top of Destiny 2 so you can track them while you play.",
   "site": "https://ghostoverlay.com",
   "contributors": [
     {

@@ -1,8 +1,12 @@
 {
   "title": "Destiny Sets",
   "prefix": "Destiny Sets",
-  "color": "text-destinysets",
-  "border": "border-destinysets",
+  "category": ["collections", "api"],
+  "color": {
+    "background": "bg-destinysets",
+    "border": "border-destinysets",
+    "text": "text-destinysets"
+  },
   "image": {
     "file": "/images/parallel/DestinySets.svg",
     "height": "50",
