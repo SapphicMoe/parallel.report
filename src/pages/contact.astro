@@ -66,10 +66,10 @@ import Turnstile from '@components/Turnstile.astro';
       </label>
 
       <div class="flex flex-col">
-        <div id="turnstile" class="cf-turnstile pt-3 pb-5" data-sitekey="0x4AAAAAAADTMZcYKETjz8js" data-size="normal">
+        <div id="turnstile" class="cf-turnstile pb-5 pt-3" data-sitekey="0x4AAAAAAADTMZcYKETjz8js" data-size="normal">
         </div>
         <button
-          class="h-10 w-32 rounded-full bg-ctp-red text-center font-medium text-ctp-base hover:opacity-80 dark:bg-ctp-red"
+          class="h-10 w-32 rounded-full bg-ctp-red text-center font-medium text-ctp-base transition ease-out hover:opacity-80 dark:bg-ctp-red"
           onclick="validate(event)"
           type="submit"
           id="submit">Submit</button

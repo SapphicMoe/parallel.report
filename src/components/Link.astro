@@ -7,4 +7,4 @@ const { href, class: className, color = 'text-ctp-red', ...props } = Astro.props
 ---
 
 <!-- prettier-ignore -->
-<a href={href} class:list={`${[className]} hover:underline ${color}`} {...props}><slot /></a>
+<a href={href} class:list={`${[className]} hover:underline hover:opacity-60 transition ease-out ${color}`} {...props}><slot /></a>
