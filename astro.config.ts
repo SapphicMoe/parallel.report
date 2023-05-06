@@ -2,11 +2,10 @@ import { defineConfig } from 'astro/config';
 
 import mdx from '@astrojs/mdx';
 import prefetch from '@astrojs/prefetch';
-import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import compress from 'astro-compress';
 
-import externalLinks from 'rehype-external-links';
+import rehypeExternalLinks from 'rehype-external-links';
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,7 +13,7 @@ export default defineConfig({
   markdown: {
     rehypePlugins: [
       [
-        externalLinks,
+        rehypeExternalLinks,
         {
           target: '_blank',
           rel: ['nofollow', 'noopener'],
@@ -25,7 +24,6 @@ export default defineConfig({
   integrations: [
     tailwind(),
     prefetch(),
-    sitemap(),
     mdx(),
 
     // TEMP: The Lost Sector logo looks weird when compressed.
