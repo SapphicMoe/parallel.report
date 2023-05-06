@@ -55,11 +55,11 @@ const resources = await Astro.glob<Resources>('../parallel/resources/*.json');
 
             <span>{resource.description}</span>
 
-            <span class="flex gap-2 pb-2 pt-1">
+            <span class="flex flex-wrap gap-2 pb-2 pt-1">
               {resource.category.map((category) => {
                 return (
                   <span
-                    class={`text-ctp-base max-w-max rounded-xl border-2 px-2 font-medium ${resource.color.background} ${resource.color.border}`}
+                    class={`text-ctp-base rounded-xl border-2 px-2 font-medium ${resource.color.background} ${resource.color.border}`}
                   >
                     {category}
                   </span>
