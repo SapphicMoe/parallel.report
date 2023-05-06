@@ -28,7 +28,7 @@ const { description, pageTitle, title, turnstile } = Astro.props;
     }
   </Head>
 
-  <body class="flex flex-col self-center text-xl">
+  <body class="flex flex-col text-xl md:self-center">
     <slot />
 
     <style is:global>
@@ -37,7 +37,7 @@ const { description, pageTitle, title, turnstile } = Astro.props;
       }
       body {
         @apply ctp-latte bg-light-bg text-light-text dark:ctp-mocha dark:bg-ctp-crust dark:text-ctp-text;
-        @apply max-w-[45em] px-[1.5em] py-[2em] md:px-[2.5em];
+        @apply max-w-[45em] px-[1em] py-[2em] md:px-[2.5em];
       }
 
       nav,
