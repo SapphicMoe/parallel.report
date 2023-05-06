@@ -5,8 +5,8 @@ import Footer from '@components/Footer.astro';
 import Link from '@components/Link.astro';
 import Line from '@components/Underline.astro';
 
-import Header from '@components/home/Header.md';
-import Notice from '@components/home/Notice.md';
+import Header from '@components/Header.md';
+import Notice from '@components/Notice.md';
 
 import type { Contributor, Resources } from '~/types';
 
@@ -32,7 +32,7 @@ const resources = await Astro.glob<Resources>('../parallel/resources/*.json');
     {
       resources.map((resource) => {
         return (
-          <span class={`flex flex-col rounded-2xl border-[2px] ${resource.border} p-6`}>
+          <span class={`flex flex-col gap-1 rounded-2xl border-[2px] ${resource.color.border} p-6`}>
             <img
               src={resource.image.file}
               height={resource.image.height}
@@ -43,27 +43,44 @@ const resources = await Astro.glob<Resources>('../parallel/resources/*.json');
 
             <span class="font-display text-3xl font-bold md:text-4xl">
               <Link
-                color={resource.color}
+                color={resource.color.text}
                 class="pt-2 text-3xl font-semibold"
                 href={resource.site}
-                title={resource.title}
+                title={`${resource.title}'s website`}
                 target="_blank"
               >
                 {resource.title}
               </Link>
             </span>
 
-            <span class="pb-3">{resource.description}</span>
+            <span>{resource.description}</span>
 
-            <hr class={resource.color} />
+            <span class="flex gap-2 pb-2 pt-1">
+              {resource.category.map((category) => {
+                return (
+                  <span
+                    class={`text-ctp-base max-w-max rounded-xl border-2 px-2 font-medium ${resource.color.background} ${resource.color.border}`}
+                  >
+                    {category}
+                  </span>
+                );
+              })}
+            </span>
 
-            <ul class="font-display flex list-disc flex-col gap-1 pl-6 pb-2 pt-2">
+            <hr class={resource.color.border} />
+
+            <ul class="font-display flex list-disc flex-col gap-1 pb-2 pl-6 pt-2">
               {resource.contributors.map((contributor: Contributor) => {
                 return (
                   <>
                     <li class:list={['contributor', { maintainer: contributor.bold }]}>
                       <span>
-                        <Link color={resource.color} href={contributor.link} title={contributor.name} target="_blank">
+                        <Link
+                          color={resource.color.text}
+                          href={contributor.link}
+                          title={contributor.name}
+                          target="_blank"
+                        >
                           {contributor.name}
                         </Link>
                         — {contributor.role}
@@ -80,7 +97,7 @@ const resources = await Astro.glob<Resources>('../parallel/resources/*.json');
 
     <span class="flex flex-col pt-2">
       <Line class="pt-6">Other resources</Line>
-      <ul class="flex list-disc flex-col gap-2 pl-6 pb-5 pt-4">
+      <ul class="flex list-disc flex-col gap-2 pb-5 pl-6 pt-4 font-display">
         {
           other.authors.map((author) => {
             return (
@@ -117,7 +134,7 @@ const resources = await Astro.glob<Resources>('../parallel/resources/*.json');
     }
 
     img[alt*='Logo of DestinyTracker'] {
-      @apply pt-3 pb-3;
+      @apply pb-3 pt-3;
     }
 
     img[alt*='Logo of Ishtar Commander'] {
