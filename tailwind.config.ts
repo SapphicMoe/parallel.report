@@ -1,6 +1,10 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ['./src/**/*.{astro,html,js,md,mdx,ts}'],
+import type { Config } from 'tailwindcss';
+
+import catppuccin from '@catppuccin/tailwindcss';
+import typography from '@tailwindcss/typography';
+
+export default {
+  content: ['./src/**/*.{astro,html,js,md,mdx,ts,tsx}'],
   safelist: [{ pattern: /(bg|border|text)-light-./ }, { pattern: /(bg|border|text)-./, variants: ['dark'] }],
   theme: {
     fontFamily: {
@@ -33,37 +37,32 @@ module.exports = {
       'scrublandeux': '#9fdd18',
       'todayindestiny': '#51a8a8',
       'trialsreport': '#ead884',
-
-      'light-bg': '#e6e9ef',
-      'light-text': '#4c4f69',
     },
     extend: {
       typography: () => ({
         invert: {
           css: {
             a: {
-              background: '#f38ba8',
-              backgroundClip: 'text',
-              color: 'transparent',
-            },
-            'a:hover': {
-              background: '#d97e97',
-              backgroundClip: 'text',
-              color: 'transparent',
+              color: '#f38ba8',
+              textDecorationLine: 'none',
+
+              '&:hover': {
+                color: '#d97e97',
+                textDecorationLine: 'underline',
+              },
             },
           },
         },
         DEFAULT: {
           css: {
             a: {
-              background: '#d20f39',
-              backgroundClip: 'text',
-              color: 'transparent',
-            },
-            'a:hover': {
-              background: '#a60c2d',
-              backgroundClip: 'text',
-              color: 'transparent',
+              color: '#d20f39',
+              textDecorationLine: 'none',
+
+              '&:hover': {
+                color: '#a60c2d',
+                textDecorationLine: 'underline',
+              },
             },
           },
         },
@@ -71,9 +70,9 @@ module.exports = {
     },
   },
   plugins: [
-    require('@catppuccin/tailwindcss')({
+    catppuccin({
       prefix: 'ctp',
     }),
-    require('@tailwindcss/typography'),
+    typography,
   ],
-};
+} satisfies Config;
