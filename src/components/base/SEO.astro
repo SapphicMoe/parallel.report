@@ -1,0 +1,47 @@
+---
+import { SEO } from 'astro-seo';
+import { site } from '@config';
+
+const { description, pageTitle, title } = Astro.props;
+
+const siteName = Astro.site?.hostname;
+const image = new URL(site.icon?.name || '/favicon.png', Astro.site).href;
+---
+
+<SEO
+  title={title}
+  description={description}
+  charset={'UTF-8'}
+  openGraph={{
+    basic: {
+      title: pageTitle,
+      type: 'website',
+      image,
+    },
+    optional: {
+      siteName,
+      description,
+    },
+    image: {
+      alt: site.icon && site.icon.altText,
+    },
+  }}
+  twitter={{
+    card: 'summary',
+    creator: '@solelychloe',
+
+    image,
+    imageAlt: site.icon && site.icon.altText,
+  }}
+  extend={{
+    meta: [
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'generator', content: Astro.generator },
+      { name: 'theme-color', content: site.themeColor },
+    ],
+    link: [
+      { rel: 'icon', href: image },
+      { rel: 'me', href: 'https://tech.lgbt/@solely' },
+    ],
+  }}
+/>

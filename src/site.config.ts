@@ -1,3 +1,5 @@
+// Base configuration for this website.
+
 const config = {
   site: {
     name: 'parallel.report', // The site name (example.com)
@@ -11,16 +13,6 @@ const config = {
 
     analytics: true, // Whether to enable Plausible Analytics or not
   },
-
-  socials: {
-    mastodon: {
-      link: 'https://tech.lgbt/@solely',
-      alt: 'solely@tech.lgbt',
-    },
-
-    twitter: '@solelychloe',
-  },
 };
 
 export const site = config.site;
-export const socials = config.socials;
