@@ -6,6 +6,7 @@
     "baseUrl": ".",
     "paths": {
       "~/*": ["src/*"],
+      "@data/*": ["src/data/*"],
       "@components/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"],
       "@config": ["src/site.config.ts"]
