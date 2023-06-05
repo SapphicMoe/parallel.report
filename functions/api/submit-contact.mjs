@@ -2,7 +2,6 @@
 // Credit: @WalshyDev, @Erisa
 
 export async function onRequestPost(ctx) {
-  // dirty CORS response
   const corsHeaders = {
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Methods': '*',
@@ -10,6 +9,7 @@ export async function onRequestPost(ctx) {
   };
 
   let obj;
+
   try {
     obj = await ctx.request.json();
   } catch (e) {
@@ -19,18 +19,17 @@ export async function onRequestPost(ctx) {
     });
   }
 
-  // Validate the JSON
   if (!obj.name || !obj.resourceName || !obj.resourceURL || !obj.role || !obj.captcha) {
     return new Response('Invalid body', { status: 400, headers: corsHeaders });
   }
 
-  // Validate the captcha
   const captchaVerified = await verifyTurnstile(
     obj.captcha,
     ctx.request.headers.get('cf-connecting-ip'),
     ctx.env.TURNSTILE_SECRET_KEY,
     ctx.env.TURNSTILE_SITE_KEY
   );
+
   if (!captchaVerified) {
     return new Response('Invalid captcha.', {
       status: 400,
@@ -38,14 +37,12 @@ export async function onRequestPost(ctx) {
     });
   }
 
-  // Send message :)
   const discordResp = await sendDiscordMessage(obj, ctx.env.DISCORD_WEBHOOK_URL, ctx.env.DISCORD_TOKEN);
 
   if (discordResp.status === 200 || discordResp.status === 204) {
-    // Success
     return new Response('Success.', { status: 200, headers: corsHeaders });
   } else {
-    return new Response('An error ocurred while sending the message.', {
+    return new Response('An error occurred while sending the message.', {
       status: 500,
       headers: corsHeaders,
     });
@@ -60,7 +57,6 @@ async function verifyTurnstile(response, ip, secret, siteKey) {
   formData.append('secret', secret);
   formData.append('sitekey', siteKey);
 
-  // Make sure to set the "HCAPTCHA_SECRET" & "HCAPTCHA_SITE_KEY" variable
   const res = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
     method: 'POST',
     body: formData,
@@ -72,8 +68,6 @@ async function verifyTurnstile(response, ip, secret, siteKey) {
 }
 
 async function sendDiscordMessage(details, webhookUrl) {
-  // Make sure to set the "DISCORD_WEBHOOK_URL" variable
-  console.log('sending to ' + webhookUrl);
   return fetch(webhookUrl, {
     method: 'POST',
     headers: {
@@ -104,7 +98,7 @@ async function sendDiscordMessage(details, webhookUrl) {
             },
             {
               name: 'Email',
-              value: details.email ? details.email : 'None specified',
+              value: details.email || 'None specified',
             },
           ],
         },
