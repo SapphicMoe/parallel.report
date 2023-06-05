@@ -1,18 +1,16 @@
 ---
 import Layout from '@layouts/Page.astro';
 
-import Footer from '@components/Footer.astro';
-import Link from '@components/Link.astro';
-import Line from '@components/Underline.astro';
+import type { Contributor, Resource } from '~/types';
+import { Image } from 'astro:assets';
 
-import Header from '@components/Header.md';
-import Notice from '@components/Notice.md';
+import Footer from '@components/base/Footer.astro';
+import Header from '@components/home/Header.md';
+import Line from '@components/base/Underline.astro';
+import Notice from '@components/home/Notice.md';
+import otherResources from '@data/otherResources.json';
 
-import type { Contributor, Resources } from '~/types';
-
-import other from '../parallel/other.json';
-
-const resources = await Astro.glob<Resources>('../parallel/resources/*.json');
+const resources = await Astro.glob<Resource>('../data/resources/*.json');
 ---
 
 <Layout
@@ -20,117 +18,105 @@ const resources = await Astro.glob<Resources>('../parallel/resources/*.json');
   pageTitle="Parallel Program Report"
   title="Home | Parallel Program Report"
 >
-  <main class="content">
-    <img
-      class="mx-auto w-[96px] pb-5"
+  <span class="flex flex-wrap justify-center pb-5">
+    <Image
+      class="w-24"
       src="/favicon.png"
       title="The Parallel Program emblem."
       alt="The Parallel Program emblem."
+      width={96}
+      height={96}
     />
-    <Header />
+  </span>
 
-    {
-      resources.map((resource) => {
-        return (
-          <span class={`flex flex-col gap-1 rounded-2xl border-[2px] ${resource.color.border} p-6`}>
-            <img
-              src={resource.image.file}
-              height={resource.image.height}
-              width={resource.image.width}
-              alt={`Logo of ${resource.title}`}
-              title={`Logo of ${resource.title}`}
-            />
+  <Header />
 
-            <span class="font-display text-3xl font-bold md:text-4xl">
-              <Link
-                color={resource.color.text}
-                class="pt-2 text-3xl font-semibold"
-                href={resource.site}
-                title={`${resource.title}'s website`}
-                target="_blank"
-              >
-                {resource.title}
-              </Link>
-            </span>
+  {
+    resources.map((resource: Resource) => {
+      return (
+        <span class={`flex flex-col gap-1 rounded-2xl border-[2px] ${resource.color.border} p-6`}>
+          <Image
+            src={resource.image.file}
+            height={resource.image.height}
+            width={resource.image.width}
+            alt={`Logo of ${resource.title}`}
+            title={`Logo of ${resource.title}`}
+          />
 
-            <span>{resource.description}</span>
-
-            <span class="flex flex-wrap gap-2 pb-2 pt-1">
-              {resource.category.map((category) => {
-                return (
-                  <span
-                    class={`text-ctp-base rounded-xl border-2 px-2 font-medium ${resource.color.background} ${resource.color.border}`}
-                  >
-                    {category}
-                  </span>
-                );
-              })}
-            </span>
-
-            <hr class={resource.color.border} />
-
-            <ul class="font-display flex list-disc flex-col gap-1 pb-2 pl-6 pt-2">
-              {resource.contributors.map((contributor: Contributor) => {
-                return (
-                  <>
-                    <li class:list={['contributor', { maintainer: contributor.bold }]}>
-                      <span>
-                        <Link
-                          color={resource.color.text}
-                          href={contributor.link}
-                          title={contributor.name}
-                          target="_blank"
-                        >
-                          {contributor.name}
-                        </Link>
-                        — {contributor.role}
-                      </span>
-                    </li>
-                  </>
-                );
-              })}
-            </ul>
+          <span class="font-display text-3xl font-bold md:text-4xl">
+            <a
+              class={`pt-2 text-3xl font-semibold ${resource.color.text}`}
+              href={resource.site}
+              title={`${resource.title}'s website`}
+              target="_blank"
+            >
+              {resource.title}
+            </a>
           </span>
-        );
-      })
-    }
 
-    <span class="flex flex-col pt-2">
-      <Line class="pt-6">Other resources</Line>
-      <ul class="flex list-disc flex-col gap-2 pb-5 pl-6 pt-4 font-display">
-        {
-          other.authors.map((author) => {
-            return (
-              <li class={author.resources[0].name.replace(/\s+/g, '').toLowerCase()}>
-                <Link href={author.link} title={author.name} target="_blank">
-                  {author.name}
-                </Link>
-                —
-                <Link
-                  class="font-semibold"
-                  href={author.resources[0].link}
-                  title={author.resources[0].name}
-                  target="_blank"
+          {resource.description}
+
+          <span class="flex flex-wrap gap-2 pb-2 pt-1">
+            {resource.category.map((category) => {
+              return (
+                <span
+                  class={`rounded-xl border-2 px-2 font-medium text-ctp-base ${resource.color.background} ${resource.color.border}`}
                 >
-                  {author.resources[0].name}
-                </Link>
-                - {author.resources[0].description}
-              </li>
-            );
-          })
-        }
-      </ul>
-    </span>
+                  {category}
+                </span>
+              );
+            })}
+          </span>
 
-    <Footer>
-      <hr class="pt-5 text-ctp-red" />
-      <Notice />
-    </Footer>
-  </main>
+          <hr class={resource.color.border} />
+
+          <ul class="flex list-disc flex-col gap-1 pb-2 pl-6 pt-2 font-display">
+            {resource.contributors.map((contributor: Contributor) => {
+              return (
+                <li class:list={{ 'font-bold': contributor.bold }}>
+                  <a class={resource.color.text} href={contributor.link} title={contributor.name} target="_blank">
+                    {contributor.name}
+                  </a>
+                  — {contributor.role}
+                </li>
+              );
+            })}
+          </ul>
+        </span>
+      );
+    })
+  }
+
+  <span class="flex flex-col pt-2">
+    <Line class="pt-6">Other resources</Line>
+    <ul class="flex list-disc flex-col gap-2 pb-5 pl-6 pt-4 font-display">
+      {
+        otherResources.authors.map((author) => {
+          return (
+            <li>
+              <a href={author.link} title={author.name} target="_blank">
+                {author.name}
+              </a>
+              —
+              <a class="font-semibold" href={author.resources[0].link} title={author.resources[0].name} target="_blank">
+                {author.resources[0].name}
+              </a>
+              - {author.resources[0].description}
+            </li>
+          );
+        })
+      }
+    </ul>
+  </span>
+
+  <Footer>
+    <hr class="pt-5 text-ctp-red" />
+    <Notice />
+  </Footer>
 
   <style>
-    .maintainer {
-      @apply font-bold;
+    a {
+      @apply inline-block;
     }
 
     img[alt*='Logo of DestinyTracker'] {

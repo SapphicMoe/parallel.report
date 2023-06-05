@@ -1,5 +1,5 @@
 ---
-import Head from '@components/Head.astro';
+import Head from '@components/base/Head.astro';
 
 import '@fontsource/atkinson-hyperlegible';
 import '@fontsource/inter';
@@ -15,7 +15,7 @@ const { description, pageTitle, title, turnstile } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html class="flex flex-col" lang="en">
   <Head description={description} pageTitle={pageTitle} title={title}>
     {
       turnstile && (
@@ -29,25 +29,22 @@ const { description, pageTitle, title, turnstile } = Astro.props;
   </Head>
 
   <body class="flex flex-col text-xl md:self-center">
-    <slot />
+    <main class="flex flex-col gap-2">
+      <slot />
+    </main>
 
     <style is:global>
-      html {
-        @apply flex flex-col;
+      a {
+        @apply text-ctp-red transition ease-out hover:underline hover:opacity-60;
       }
+
       body {
-        @apply ctp-latte bg-light-bg text-light-text dark:ctp-mocha dark:bg-ctp-crust dark:text-ctp-text;
+        @apply ctp-latte bg-ctp-base text-ctp-text dark:ctp-mocha selection:bg-ctp-red selection:text-ctp-crust dark:bg-ctp-crust;
         @apply max-w-[45em] px-[1em] py-[2em] md:px-[2.5em];
       }
 
-      nav,
-      .line,
-      .links {
+      .line {
         @apply font-display;
-      }
-
-      .content {
-        @apply flex flex-col gap-2;
       }
 
       [astro-icon] {
