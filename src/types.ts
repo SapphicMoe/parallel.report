@@ -7,7 +7,7 @@
 /**
  * 3rd party resource
  */
-export interface Resources {
+export interface Resource {
   title: string;
   prefix: string;
   category: string[];
