@@ -1,0 +1,45 @@
+---
+import Separator from '@components/base/Separator.astro';
+
+import { Icon } from 'astro-iconify';
+---
+
+<footer class="flex flex-col pt-1 text-center">
+  <slot />
+
+  <hr class="text-ctp-red" />
+
+  <span class="pt-5">
+    &copy; {new Date().getFullYear()}
+
+    <a
+      class="font-semibold"
+      href="https://arciniega.one"
+      title="Chloe Arciniega's website (arciniega.one)"
+      target="_blank"
+    >
+      Chloe Arciniega
+    </a>
+  </span>
+
+  <!-- prettier-ignore -->
+  <span class="pt-5 pb-2">
+    Built with
+    <Icon size={30} class="text-ctp-peach" name="simple-icons:astro" />
+    <a class="font-semibold text-ctp-peach" href="https://astro.build" title="Astro" target="_blank"> Astro</a>,
+
+    <Icon size={30} class="text-ctp-sapphire" name="mdi:language-typescript" />
+    <a class="font-semibold text-ctp-sapphire" href="https://www.typescriptlang.org/" title="TypeScript" target="_blank"> TypeScript</a>,
+
+    and <Icon size={30} class="text-ctp-red" name="mdi:cards-heart" />
+    <a class="font-semibold" href="https://arciniega.one" title="love" target="_blank">love</a>.
+  </span>
+
+  <nav class="flex flex-wrap justify-center gap-4 pb-1 pt-4 font-display md:gap-3">
+    <a href="/" title="Home">Home</a>
+    <Separator />
+    <a href="/contact" title="Submit a resource">Submit a resource</a>
+    <Separator />
+    <a href="/credits" title="Credits">Credits</a>
+  </nav>
+</footer>
