@@ -1,7 +1,7 @@
 {
   "title": "Felicity",
   "prefix": "Felicity",
-  "category": ["collections"],
+  "category": ["collections", "discord", "progress"],
   "color": {
     "background": "bg-felicity",
     "border": "border-felicity",
@@ -12,20 +12,19 @@
     "height": "50",
     "width": "50"
   },
-  "description": "A multi-purpose Destiny Discord bot, which includes features like Twitch/YouTube feeds, a roll finder, Collections guide, and more.",
+  "description": "A multi-purpose Destiny Discord bot, which includes features like a roll finder, crafting recipes progress, collections guide, and more.",
   "site": "https://tryfelicity.one",
   "contributors": [
     {
-      "name": "MeGl",
-      "link": "https://github.com/EndGameGl",
+      "name": "Moonie",
+      "link": "https://moons.bio",
       "role": "Developer",
       "bold": true
     },
     {
-      "name": "Moonie",
-      "link": "https://leafhub.dev",
-      "role": "Developer",
-      "bold": true
+      "name": "MeGl",
+      "link": "https://github.com/EndGameGl",
+      "role": "Contributor"
     }
   ]
 }
