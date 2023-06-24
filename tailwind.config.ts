@@ -27,7 +27,7 @@ export default {
       'destinyrecipes': '#c8435d',
       'destinysets': '#57b2ad',
       'destinytracker': '#e2263c',
-      'felicity': '#ff4351',
+      'felicity': '#ef233c',
       'ghostoverlay': '#e6e9ef',
       'guardiantheater': '#b798c9',
       'ishtarcollective': '#4485c4',
