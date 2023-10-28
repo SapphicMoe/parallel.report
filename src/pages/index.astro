@@ -2,7 +2,7 @@
 import Layout from '@layouts/Page.astro';
 
 import { Image } from 'astro:assets';
-import type { ResourceModule, Resource } from '../utils';
+import type { ResourceModule, Resource } from '@utils/index';
 
 import Footer from '@components/base/Footer.astro';
 import Header from '@components/home/Header.md';
@@ -10,8 +10,8 @@ import Line from '@components/base/Underline.astro';
 import Link from '@components/home/Link.astro';
 import Notice from '@components/home/Notice.md';
 
-const resources = (await Astro.glob<ResourceModule>('../utils/resources/*.ts')).map((entry) => entry.default);
-const otherResources = (await import('../utils/other')).default;
+const resources = (await Astro.glob<ResourceModule>('@utils/resources/*.ts')).map((entry) => entry.default);
+const otherResources = (await import('@utils/other')).default;
 ---
 
 <Layout
