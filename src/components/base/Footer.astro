@@ -1,38 +1,18 @@
 ---
-import { Icon } from 'astro-iconify';
 import Separator from '@components/base/Separator.astro';
+import Link from '@components/home/Link.astro';
 ---
 
-<footer class="flex flex-col pt-1 text-center">
+<footer class="flex flex-col pt-1">
   <slot />
 
   <hr class="text-ctp-red" />
 
-  <span class="pt-5">
-    &copy; {new Date().getFullYear()}
+  <p class="flex flex-row justify-center gap-1 pt-5">
+    <span>&copy; {new Date().getFullYear()}</span>
 
-    <a
-      class="font-semibold"
-      href="https://arciniega.one"
-      title="Chloe Arciniega's website (arciniega.one)"
-      target="_blank"
-    >
-      Chloe Arciniega
-    </a>
-  </span>
-
-  <!-- prettier-ignore -->
-  <span class="pt-5 pb-2">
-    Built with
-    <Icon size={30} class="text-ctp-peach" name="simple-icons:astro" />
-    <a class="font-semibold text-ctp-peach" href="https://astro.build" title="Astro" target="_blank"> Astro</a>,
-
-    <Icon size={30} class="text-ctp-sapphire" name="mdi:language-typescript" />
-    <a class="font-semibold text-ctp-sapphire" href="https://www.typescriptlang.org/" title="TypeScript" target="_blank"> TypeScript</a>,
-
-    and <Icon size={30} class="text-ctp-red" name="mdi:cards-heart" />
-    <a class="font-semibold" href="https://arciniega.one" title="love" target="_blank">love</a>.
-  </span>
+    <Link name="Chloe Arciniega" className="font-semibold" link="https://arciniega.one" alt="A redirect to my site." />
+  </p>
 
   <nav class="flex flex-wrap justify-center gap-4 pb-1 pt-4 font-display md:gap-3">
     <a href="/" title="Home">Home</a>
