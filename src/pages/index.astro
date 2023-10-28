@@ -10,7 +10,7 @@ import Line from '@components/base/Underline.astro';
 import Link from '@components/home/Link.astro';
 import Notice from '@components/home/Notice.md';
 
-const resources = (await Astro.glob<ResourceModule>('@utils/resources/*.ts')).map((entry) => entry.default);
+const resources = (await Astro.glob<ResourceModule>('../utils/resources/*.ts')).map((entry) => entry.default);
 const otherResources = (await import('@utils/other')).default;
 ---
 
