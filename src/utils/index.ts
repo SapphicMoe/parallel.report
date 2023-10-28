@@ -1,12 +1,3 @@
-/**
- * @file Types
- * @description Typings for 3rd party resources & contributors
- * @typedef types
- */
-
-/**
- * 3rd party resource
- */
 export interface Resource {
   title: string;
   prefix: string;
@@ -27,15 +18,20 @@ export interface Resource {
     name: string;
     link: string;
     role: string;
+    bold?: boolean;
   }[];
 }
 
-/**
- * Contributor(s) for a 3rd-party resource
- */
+export interface ResourceModule {
+  default: Resource;
+}
+
 export interface Contributor {
-  bold?: boolean;
+  author: string;
   link: string;
-  name: string;
-  role: string;
+  resources: {
+    name: string;
+    description: string;
+    link: string;
+  }[];
 }

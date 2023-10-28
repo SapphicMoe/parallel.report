@@ -2,15 +2,16 @@
 import Layout from '@layouts/Page.astro';
 
 import { Image } from 'astro:assets';
-import type { Contributor, Resource } from '~/types';
+import type { ResourceModule, Resource } from '../utils';
 
 import Footer from '@components/base/Footer.astro';
 import Header from '@components/home/Header.md';
 import Line from '@components/base/Underline.astro';
+import Link from '@components/home/Link.astro';
 import Notice from '@components/home/Notice.md';
-import otherResources from '@data/otherResources.json';
 
-const resources = await Astro.glob<Resource>('../data/resources/*.json');
+const resources = (await Astro.glob<ResourceModule>('../utils/resources/*.ts')).map((entry) => entry.default);
+const otherResources = (await import('../utils/other')).default;
 ---
 
 <Layout
@@ -36,7 +37,7 @@ const resources = await Astro.glob<Resource>('../data/resources/*.json');
       return (
         <span class={`flex flex-col gap-1 rounded-2xl border-[2px] ${resource.color.border} p-6`}>
           <Image
-            src={resource.image.file}
+            src={`/images/parallel/${resource.image.file}`}
             height={resource.image.height}
             width={resource.image.width}
             alt={`Logo of ${resource.title}`}
@@ -71,13 +72,11 @@ const resources = await Astro.glob<Resource>('../data/resources/*.json');
           <hr class={resource.color.border} />
 
           <ul class="flex list-disc flex-col gap-1 pb-2 pl-6 pt-2 font-display">
-            {resource.contributors.map((contributor: Contributor) => {
+            {resource.contributors.map((contributor): Resource['contributors'] => {
               return (
                 <li class:list={{ 'font-bold': contributor.bold }}>
-                  <a class={resource.color.text} href={contributor.link} title={contributor.name} target="_blank">
-                    {contributor.name}
-                  </a>
-                  — {contributor.role}
+                  <Link className={resource.color.text} link={contributor.link} name={contributor.name} /> —
+                  {contributor.role}
                 </li>
               );
             })}
@@ -91,17 +90,12 @@ const resources = await Astro.glob<Resource>('../data/resources/*.json');
     <Line class="pt-6">Other resources</Line>
     <ul class="flex list-disc flex-col gap-2 pb-5 pl-6 pt-4 font-display">
       {
-        otherResources.authors.map((author) => {
+        otherResources.map((author) => {
           return (
             <li>
-              <a href={author.link} title={author.name} target="_blank">
-                {author.name}
-              </a>
-              —
-              <a class="font-semibold" href={author.resources[0].link} title={author.resources[0].name} target="_blank">
-                {author.resources[0].name}
-              </a>
-              - {author.resources[0].description}
+              <Link link={author.link} name={author.author} /> —
+              <Link className="font-semibold" link={author.resources[0].link} name={author.resources[0].name} /> -
+              {author.resources[0].description}
             </li>
           );
         })
@@ -115,10 +109,6 @@ const resources = await Astro.glob<Resource>('../data/resources/*.json');
   </Footer>
 
   <style>
-    a {
-      @apply inline-block;
-    }
-
     img[alt*='Logo of DestinyTracker'] {
       @apply pb-3 pt-3;
     }
