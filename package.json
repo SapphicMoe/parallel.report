@@ -24,6 +24,7 @@
     "astro": "^3.4.0"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.2.1",
     "@astrojs/mdx": "^1.1.3",
     "@astrojs/prefetch": "^0.4.1",
     "@astrojs/tailwind": "^5.0.2",
