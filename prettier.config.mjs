@@ -10,7 +10,7 @@ export default {
     },
   ],
   proseWrap: 'always',
-  printWidth: 120,
+  printWidth: 140,
   quoteProps: 'preserve',
   semi: true,
   singleQuote: true,
