@@ -10,9 +10,6 @@ import rehypeExternalLinks from 'rehype-external-links';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://parallel.report',
-  experimental: {
-    assets: true,
-  },
   markdown: {
     rehypePlugins: [
       [
@@ -30,6 +27,6 @@ export default defineConfig({
     mdx(),
 
     // TEMP: The Lost Sector logo looks weird when compressed.
-    compress({ exclude: 'LostSector.svg' }),
+    compress({ Exclude: 'LostSector.svg' }),
   ],
 });
