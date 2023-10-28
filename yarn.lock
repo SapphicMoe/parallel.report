@@ -1345,7 +1345,6 @@ __metadata:
     "@fontsource/inter": ^5.0.15
     "@tailwindcss/typography": ^0.5.10
     "@types/eslint": ^8.44.6
-    "@types/prettier": ^3.0.0
     "@typescript-eslint/eslint-plugin": ^6.9.0
     "@typescript-eslint/parser": ^6.9.0
     astro: ^3.4.0
@@ -1601,15 +1600,6 @@ __metadata:
   version: 6.0.3
   resolution: "@types/parse5@npm:6.0.3"
   checksum: ddb59ee4144af5dfcc508a8dcf32f37879d11e12559561e65788756b95b33e6f03ea027d88e1f5408f9b7bfb656bf630ace31a2169edf44151daaf8dd58df1b7
-  languageName: node
-  linkType: hard
-
-"@types/prettier@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@types/prettier@npm:3.0.0"
-  dependencies:
-    prettier: "*"
-  checksum: a2a512d304e5bcf78f38089dc88ad19215e6ab871d435a17aef3ce538a63b07c0e359c18db23989dc1ed9fff96d99eee1f680416080184df5c7e0e3bf767e165
   languageName: node
   linkType: hard
 
@@ -7665,7 +7655,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:*, prettier@npm:^3.0.0, prettier@npm:^3.0.3":
+"prettier@npm:^3.0.0, prettier@npm:^3.0.3":
   version: 3.0.3
   resolution: "prettier@npm:3.0.3"
   bin:
