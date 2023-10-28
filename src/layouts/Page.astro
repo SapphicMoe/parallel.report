@@ -13,7 +13,7 @@ interface Props {
 const { description, pageTitle, title, turnstile } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html class="flex flex-col" lang="en">
   <Head description={description} pageTitle={pageTitle} title={title}>
     {
@@ -44,11 +44,6 @@ const { description, pageTitle, title, turnstile } = Astro.props;
 
       .line {
         @apply font-display;
-      }
-
-      [astro-icon] {
-        @apply inline;
-        @apply pb-1;
       }
     </style>
   </body>

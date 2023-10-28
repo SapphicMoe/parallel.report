@@ -37,7 +37,6 @@
     "@typescript-eslint/parser": "^6.9.0",
     "astro-compress": "^2.0.14",
     "astro-eslint-parser": "^0.16.0",
-    "astro-iconify": "^1.2.0",
     "astro-seo": "^0.8.0",
     "autoprefixer": "^10.4.16",
     "eslint": "^8.52.0",
