@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss';
+import type { PluginAPI } from 'tailwindcss/types/config';
 
 import catppuccin from '@catppuccin/tailwindcss';
 import typography from '@tailwindcss/typography';
@@ -20,6 +21,11 @@ export default {
       'light-scrublandeux': '#55a336',
       'light-trialsreport': '#ba9c0d',
 
+      'accent-light': '#d20f39',
+      'accent-light-hover': '#a60c2d',
+      'accent-dark': '#f38ba8',
+      'accent-dark-hover': '#d97e97',
+
       'charlemagne': '#919191',
       'd2lostsector': '#c1b7fe',
       'destinyitemmanager': '#f37422',
@@ -39,15 +45,15 @@ export default {
       'trialsreport': '#ead884',
     },
     extend: {
-      typography: () => ({
+      typography: (theme: PluginAPI['theme']) => ({
         invert: {
           css: {
             a: {
-              color: '#f38ba8',
+              color: theme('colors.accent-dark'),
               textDecorationLine: 'none',
 
               '&:hover': {
-                color: '#d97e97',
+                color: theme('colors.accent-dark-hover'),
                 textDecorationLine: 'underline',
               },
             },
@@ -56,11 +62,11 @@ export default {
         DEFAULT: {
           css: {
             a: {
-              color: '#d20f39',
+              color: theme('colors.accent-light'),
               textDecorationLine: 'none',
 
               '&:hover': {
-                color: '#a60c2d',
+                color: theme('colors.accent-light-hover'),
                 textDecorationLine: 'underline',
               },
             },
