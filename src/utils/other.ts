@@ -35,6 +35,17 @@ export default [
     ],
   },
   {
+    author: 'Buuz135',
+    link: 'https://www.bungie.net/7/en/User/Profile/3/4611686018467369971',
+    resources: [
+      {
+        name: 'Asher Mir',
+        description: 'I notify when a Vex Incursion is happening! The Destiny 2 rare event awards a guaranteed exotic.',
+        link: 'https://twitter.com/VexNetAssistant',
+      },
+    ],
+  },
+  {
     author: 'Chris Fried',
     link: 'https://chrisfried.com/@chrisfried',
     resources: [
