@@ -1,0 +1,62 @@
+---
+import type { Resource } from '@utils/index';
+import { Image } from 'astro:assets';
+
+import Link from '@components/home/Link.astro';
+
+interface Props {
+  resource: Resource;
+}
+
+const { resource } = Astro.props;
+---
+
+<span class={`flex flex-col gap-1 rounded-2xl border-[2px] ${resource.color.border} p-6`}>
+  <Image
+    src={`/images/parallel/${resource.image.file}`}
+    height={resource.image.height}
+    width={resource.image.width}
+    alt={`Logo of ${resource.title}`}
+    title={`Logo of ${resource.title}`}
+  />
+
+  <span class="font-display text-3xl font-bold md:text-4xl">
+    <a
+      class={`pt-2 text-3xl font-semibold ${resource.color.text}`}
+      href={resource.site}
+      title={`${resource.title}'s website`}
+      target="_blank"
+    >
+      {resource.title}
+    </a>
+  </span>
+
+  {resource.description}
+
+  <span class="flex flex-wrap gap-2 pb-2 pt-1">
+    {
+      resource.category.map((category) => {
+        return (
+          <span class={`rounded-xl border px-2 py-0.5 font-medium text-ctp-base ${resource.color.background} ${resource.color.border}`}>
+            {category}
+          </span>
+        );
+      })
+    }
+  </span>
+
+  <hr class={resource.color.border} />
+
+  <ul class="flex list-disc flex-col gap-1 pb-2 pl-6 pt-2 font-display">
+    {
+      resource.contributors.map((contributor) => {
+        return (
+          <li class:list={{ 'font-bold': contributor.bold }}>
+            <Link className={resource.color.text} link={contributor.link} name={contributor.name} />
+            <span> — {contributor.role}</span>
+          </li>
+        );
+      })
+    }
+  </ul>
+</span>

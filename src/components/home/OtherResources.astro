@@ -1,0 +1,16 @@
+---
+import type { Contributor } from '@utils/index';
+import Link from '@components/home/Link.astro';
+
+interface Props {
+  author: Contributor;
+}
+
+const { author } = Astro.props;
+---
+
+<li>
+  <Link link={author.link} name={author.author} /> —
+  <Link className="font-semibold" link={author.resources[0].link} name={author.resources[0].name} /> -
+  {author.resources[0].description}
+</li>
