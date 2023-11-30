@@ -14,9 +14,7 @@ import Turnstile from '@components/contact/Turnstile.astro';
 >
   <Line>Submit a resource</Line>
 
-  <span class="pt-1 italic">
-    Do you have the Parallel Program emblem, and are looking to see your name here? Let me know!
-  </span>
+  <span class="pt-1 italic"> Do you have the Parallel Program emblem, and are looking to see your name here? Let me know!</span>
 
   <div class="flex flex-col gap-2">
     <label for="name" class="font-semibold">
@@ -26,26 +24,12 @@ import Turnstile from '@components/contact/Turnstile.astro';
 
     <label for="resourceName" class="font-semibold">
       Resource Name:
-      <input
-        placeholder="Destiny Item Manager"
-        type="text"
-        id="resourceName"
-        class="w-full pl-1 font-normal"
-        maxlength="128"
-        required
-      />
+      <input placeholder="Destiny Item Manager" type="text" id="resourceName" class="w-full pl-1 font-normal" maxlength="128" required />
     </label>
 
     <label for="resourceURL" class="font-semibold">
       Resource URL:
-      <input
-        placeholder="https://example.com"
-        type="url"
-        id="resourceURL"
-        class="w-full pl-1 font-normal"
-        maxlength="128"
-        required
-      />
+      <input placeholder="https://example.com" type="url" id="resourceURL" class="w-full pl-1 font-normal" maxlength="128" required />
     </label>
 
     <label for="role" class="font-semibold">
@@ -59,8 +43,7 @@ import Turnstile from '@components/contact/Turnstile.astro';
     </label>
 
     <div class="flex flex-col">
-      <div id="turnstile" class="cf-turnstile pb-5 pt-3" data-sitekey="0x4AAAAAAADTMZcYKETjz8js" data-size="normal">
-      </div>
+      <div id="turnstile" class="cf-turnstile pb-5 pt-3" data-sitekey="0x4AAAAAAADTMZcYKETjz8js" data-size="normal"></div>
       <button
         class="h-10 w-32 rounded-full bg-ctp-red text-center font-medium text-ctp-base transition ease-out hover:opacity-80 dark:bg-ctp-red"
         onclick="validate(event)"

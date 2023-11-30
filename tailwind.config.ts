@@ -34,6 +34,7 @@ export default {
       'destinysets': '#57b2ad',
       'destinytracker': '#e2263c',
       'felicity': '#ef233c',
+      'foundry': '#EDEDED',
       'ghostoverlay': '#e6e9ef',
       'guardiantheater': '#b798c9',
       'ishtarcollective': '#4485c4',
