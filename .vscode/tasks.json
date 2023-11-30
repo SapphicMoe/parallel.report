@@ -5,45 +5,45 @@
       "label": "site: build",
       "type": "shell",
       "group": "build",
-      "command": "yarn build",
+      "command": "pnpm build",
       "detail": "Builds the site."
     },
     {
       "label": "site: check",
       "type": "shell",
       "group": "test",
-      "command": "yarn astro:check",
+      "command": "pnpm astro:check",
       "detail": "Checks the site's source code for any build compilation errors."
     },
     {
       "label": "site: dev",
       "type": "shell",
-      "command": "yarn start:dev",
+      "command": "pnpm start:dev",
       "detail": "Runs a dev instance of the site."
     },
     {
       "label": "site: format:prettier",
       "type": "shell",
-      "command": "yarn format:prettier",
+      "command": "pnpm format:prettier",
       "detail": "Formats the site's source code through Prettier."
     },
     {
       "label": "site: lint:eslint",
       "type": "shell",
-      "command": "yarn format:prettier",
+      "command": "pnpm format:prettier",
       "detail": "Adheres to the site's styling guidelines through ESLint."
     },
     {
       "label": "site: start",
       "type": "shell",
-      "command": "yarn start",
+      "command": "pnpm start",
       "detail": "Serves the website from the dist/ folder."
     },
     {
       "label": "site: test",
       "type": "shell",
       "group": "test",
-      "command": "yarn test",
+      "command": "pnpm test",
       "detail": "Analyzes the site's source code to quickly find styling problems through ESLint and Prettier."
     }
   ]
