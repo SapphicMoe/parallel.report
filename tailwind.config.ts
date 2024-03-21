@@ -47,7 +47,8 @@ export default {
     },
     extend: {
       typography: (theme: PluginAPI['theme']) => ({
-        invert: {
+        // TODO: re-enable light mode. Not working as expected atm.
+        DEFAULT: {
           css: {
             a: {
               color: theme('colors.accent-dark'),
@@ -55,19 +56,6 @@ export default {
 
               '&:hover': {
                 color: theme('colors.accent-dark-hover'),
-                textDecorationLine: 'underline',
-              },
-            },
-          },
-        },
-        DEFAULT: {
-          css: {
-            a: {
-              color: theme('colors.accent-light'),
-              textDecorationLine: 'none',
-
-              '&:hover': {
-                color: theme('colors.accent-light-hover'),
                 textDecorationLine: 'underline',
               },
             },

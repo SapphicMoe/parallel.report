@@ -16,15 +16,7 @@ const { description, pageTitle, title, turnstile } = Astro.props;
 <!doctype html>
 <html class="flex flex-col" lang="en">
   <Head description={description} pageTitle={pageTitle} title={title}>
-    {
-      turnstile && (
-        <script
-          is:inline
-          src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"
-          class="turnstile"
-        />
-      )
-    }
+    {turnstile && <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" class="turnstile" />}
   </Head>
 
   <body class="flex flex-col text-xl md:self-center">
@@ -38,7 +30,7 @@ const { description, pageTitle, title, turnstile } = Astro.props;
       }
 
       body {
-        @apply ctp-latte bg-ctp-base text-ctp-text dark:ctp-mocha selection:bg-ctp-red selection:text-ctp-crust dark:bg-ctp-crust;
+        @apply ctp-mocha bg-ctp-crust text-ctp-text selection:bg-ctp-red selection:text-ctp-crust;
         @apply max-w-[45em] px-[1em] py-[2em] md:px-[2.5em];
       }
 
