@@ -9,26 +9,18 @@
   </a>
 
   <p>
-    This site covers Guardians who contributed to Destiny 2 and its API in a meaningful way, and have received the <a href="https://destinyemblemcollector.com/emblem?id=3936625542" title="Parallel Program emblem info">Parallel Program emblem</a>.
+    Covers Guardians who contributed to Destiny 2 and have received the <a href="https://destinyemblemcollector.com/emblem?id=3936625542" title="Parallel Program emblem info">Parallel Program emblem</a>.
   </p>
 
   <p>
     Powered by <a href="https://astro.build" title="Astro">Astro</a> 
     and <a href="https://tailwindcss.com" title="Tailwind CSS">Tailwind CSS</a>.
   </p>
-
-  <a href="https://astro.build">
-    <img src="https://astro.badg.es/v1/built-with-astro.svg" alt="Built with Astro" width="150" height="27.5">
-  </a>
-  
-  <br />
 </div>
 
 ## Getting yourself added
 
-Have the emblem, but not on this list? Visit [https://parallel.report/contact](https://parallel.report/contact 'Suggest a resource (parallel.report)') and let me know!
-
-
+Have the emblem? Visit [https://parallel.report/contact](https://parallel.report/contact 'Contact (parallel.report)') and let me know!
 
 ## License
 
