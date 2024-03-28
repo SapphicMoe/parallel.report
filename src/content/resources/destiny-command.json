@@ -1,0 +1,17 @@
+{
+  "title": "DestinyCommand",
+  "description": "A chat bot that you can install anywhere. It allows you and your viewers to check stats across Destiny.",
+  "icon": "/images/resources/destiny-command/icon.png",
+  "link": "https://destinycommand.com/",
+  "color": "#FFF",
+  "contributors": [
+    {
+      "contributor": "xgerhard",
+      "role": "Maintainer",
+      "maintainer": true
+    }
+  ],
+  "tags": [
+    "stats"
+  ]
+}

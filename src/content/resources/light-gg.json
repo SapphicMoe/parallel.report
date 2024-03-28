@@ -1,0 +1,19 @@
+{
+  "title": "light.gg",
+  "description": "The ultimate database for Destiny. Find weapons, quests, and more. ",
+  "icon": "/images/resources/light-gg/icon.webp",
+  "link": "https://light.gg",
+  "color": "#FFCC00",
+  "contributors": [
+    {
+      "contributor": "afpac",
+      "role": "Maintainer",
+      "maintainer": true
+    }
+  ],
+  "tags": [
+    "api",
+    "collections",
+    "progress"
+  ]
+}

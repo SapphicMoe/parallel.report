@@ -1,0 +1,26 @@
+{
+  "title": "Felicity",
+  "description": "A multi-purpose Destiny Discord bot, which includes features like a roll finder, crafting recipes progress, collections guide, and more. ",
+  "icon": "/images/resources/felicity/icon.png",
+  "link": "https://tryfelicity.one",
+  "color": "#ef233c",
+  "contributors": [
+    {
+      "contributor": "Moonie",
+      "role": "Maintainer",
+      "maintainer": true
+    },
+    {
+      "contributor": "MeGl",
+      "role": "Contributor",
+      "maintainer": false
+    }
+  ],
+  "tags": [
+    "collections",
+    "discord",
+    "planning",
+    "progress",
+    "stats"
+  ]
+}

@@ -1,0 +1,91 @@
+---
+import { collections } from '@lib/keystatic';
+import Link from '@components/home/Link.astro';
+
+interface Props {
+  resource: {
+    title: string;
+    description: string;
+    icon: string;
+    link: string;
+    color: string;
+    contributors: readonly {
+      contributor: string;
+      role: string;
+      maintainer: boolean;
+    }[];
+    tags: readonly string[];
+  };
+}
+
+const { resource } = Astro.props;
+---
+
+<span class={`flex flex-col gap-1 rounded-2xl border-[2px] p-6`} style={{ 'border-color': resource.color }}>
+  <img src={resource.icon} width="50" height="50" alt={`Logo of ${resource.title}`} title={`Logo of ${resource.title}`} />
+
+  <span class="font-display text-3xl font-bold md:text-4xl">
+    <a
+      class="pt-2 text-3xl font-semibold"
+      style={{ 'color': resource.color }}
+      href={resource.link}
+      title={`${resource.title}'s website`}
+      target="_blank"
+    >
+      {resource.title}
+    </a>
+  </span>
+
+  <p>{resource.description}</p>
+
+  <span class="flex flex-wrap gap-2 pb-2 pt-1">
+    {
+      resource.tags.map((tag) => {
+        return (
+          <span
+            class={`rounded-xl border px-2 py-0.5 font-medium text-ctp-base`}
+            style={{ 'background-color': resource.color, 'border-color': resource.color }}
+          >
+            {tag}
+          </span>
+        );
+      })
+    }
+  </span>
+
+  <hr style={{ 'border-color': resource.color }} />
+
+  <ul class="flex list-disc flex-col gap-1 pb-2 pl-6 pt-2 font-display">
+    {
+      resource.contributors.length > 0 ? (
+        resource.contributors.map(async (_) => {
+          const contributorData = await collections.contributors.read(_.contributor);
+          const contributor = { ..._, ...contributorData };
+
+          return (
+            <li class:list={{ 'font-bold': contributor.maintainer }}>
+              <Link style={{ 'color': resource.color }} link={contributor.link} name={contributor.contributor} />
+              <span> — {contributor.role}</span>
+            </li>
+          );
+        })
+      ) : (
+        <li>No contributors found.</li>
+      )
+    }
+  </ul>
+</span>
+
+<style>
+  img[alt='Logo of DestinyTracker'] {
+    @apply py-3;
+  }
+
+  img[alt*='Logo of Ishtar Commander'] {
+    @apply grayscale;
+  }
+
+  img[alt*='Logo of Ghost Overlay'] {
+    @apply invert dark:invert-0;
+  }
+</style>

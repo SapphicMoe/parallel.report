@@ -1,15 +1,15 @@
 {
-  // Astro TSConfig base configuration
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    // Aliases
     "baseUrl": ".",
     "paths": {
       "~/*": ["src/*"],
       "@components/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"],
-      "@utils/*": ["src/utils/*"],
+      "@lib/*": ["src/lib/*"],
       "@config": ["src/site.config.ts"]
-    }
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
   }
 }

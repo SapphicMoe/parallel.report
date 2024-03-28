@@ -1,0 +1,17 @@
+{
+  "title": "Raid Report",
+  "description": "A summary of Raid statistics for Destiny. Look up raid clears, speedruns, and sherpas. ",
+  "icon": "/images/resources/raid-report/icon.png",
+  "link": "https://raid.report",
+  "color": "#FFFFFF",
+  "contributors": [
+    {
+      "contributor": "BlazeBoss17",
+      "role": "Maintainer",
+      "maintainer": true
+    }
+  ],
+  "tags": [
+    "stats"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "title": "D2Checklist",
+  "description": "A report on Destiny 2 progress & stats. Includes PvP, Raids, weekly PvE activities, and more. ",
+  "icon": "/images/resources/d2-checklist/icon.png",
+  "link": "https://www.d2checklist.com/",
+  "color": "#ED2024",
+  "contributors": [
+    {
+      "contributor": "Dweezil",
+      "role": "Maintainer",
+      "maintainer": true
+    }
+  ],
+  "tags": [
+    "planning",
+    "progress",
+    "rotations",
+    "stats"
+  ]
+}

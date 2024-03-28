@@ -1,0 +1,19 @@
+{
+  "title": "Marvin.gg",
+  "description": "A Destiny Discord bot created to help promote activity and healthy competition between clanmates. ",
+  "icon": "/images/resources/marvin-gg/icon.png",
+  "link": "https://twitter.com/Marvindotgg",
+  "color": "#6B3B85",
+  "contributors": [
+    {
+      "contributor": "Terrii",
+      "role": "Maintainer",
+      "maintainer": true
+    }
+  ],
+  "tags": [
+    "clan",
+    "discord",
+    "stats"
+  ]
+}

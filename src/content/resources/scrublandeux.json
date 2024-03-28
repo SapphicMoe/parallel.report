@@ -1,0 +1,27 @@
+{
+  "title": "Scrublandeux",
+  "description": "A calendar heatmap of time spent playing Destiny. ",
+  "icon": "/images/resources/scrublandeux/icon.png",
+  "link": "https://d2scrub.land/",
+  "color": "#9fdd18",
+  "contributors": [
+    {
+      "contributor": "Chris Fried",
+      "role": "Maintainer",
+      "maintainer": true
+    },
+    {
+      "contributor": "Jules Raffoux",
+      "role": "Contributor",
+      "maintainer": false
+    },
+    {
+      "contributor": "Sylent",
+      "role": "Contributor",
+      "maintainer": false
+    }
+  ],
+  "tags": [
+    "stats"
+  ]
+}

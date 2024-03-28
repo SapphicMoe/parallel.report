@@ -1,0 +1,17 @@
+{
+  "title": "Destiny History",
+  "description": "A tool to highlight the history of Destiny, with a timeline tailored for you. ",
+  "icon": "/images/resources/destiny-history/icon.png",
+  "link": "https://destinyhistory.com",
+  "color": "#FAD652",
+  "contributors": [
+    {
+      "contributor": "niv",
+      "role": "Maintainer",
+      "maintainer": true
+    }
+  ],
+  "tags": [
+    "lore"
+  ]
+}

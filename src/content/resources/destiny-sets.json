@@ -1,0 +1,23 @@
+{
+  "title": "Destiny Sets",
+  "description": "Track your missing Collections gear, armor sets, and pursuit badges. ",
+  "icon": "/images/resources/destiny-sets/icon.png",
+  "link": "https://destinysets.com/",
+  "color": "#57b2ad",
+  "contributors": [
+    {
+      "contributor": "Jakosaur",
+      "role": "Developer",
+      "maintainer": true
+    },
+    {
+      "contributor": "joshhunt",
+      "role": "Developer",
+      "maintainer": true
+    }
+  ],
+  "tags": [
+    "api",
+    "collections"
+  ]
+}

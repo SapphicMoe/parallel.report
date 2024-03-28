@@ -1,0 +1,18 @@
+{
+  "title": "strike.farm",
+  "description": "A Destiny tool that allows you to make the daily Strike modifiers work in your favor! ",
+  "icon": "/images/resources/strike-farm/icon.png",
+  "link": "https://twitter.com/ZetaTauEpsilon",
+  "color": "#EC8F2F",
+  "contributors": [
+    {
+      "contributor": "Zeta",
+      "role": "Maintainer",
+      "maintainer": true
+    }
+  ],
+  "tags": [
+    "planning",
+    "rotations"
+  ]
+}

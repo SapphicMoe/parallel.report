@@ -1,0 +1,17 @@
+{
+  "title": "Asher Mir",
+  "description": "I notify when a Vex Incursion is happening!",
+  "icon": "/images/resources/asher-mir/icon.png",
+  "link": "https://twitter.com/VexNetAssistant",
+  "color": "#FFFFFF",
+  "contributors": [
+    {
+      "contributor": "Buuz135",
+      "role": "Maintainer",
+      "maintainer": true
+    }
+  ],
+  "tags": [
+    "rotations"
+  ]
+}

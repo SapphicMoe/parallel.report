@@ -1,0 +1,38 @@
+{
+  "title": "D2Foundry",
+  "description": "A weapon roll explorer and theorycrafting tool for Destiny 2. ",
+  "icon": "/images/resources/d2-foundry/icon.png",
+  "link": "https://d2foundry.gg",
+  "color": "#FFFFFF",
+  "contributors": [
+    {
+      "contributor": "gothfemme",
+      "role": "Founder, Web Designer, Developer",
+      "maintainer": true
+    },
+    {
+      "contributor": "Harm",
+      "role": "Calculator and Testing Lead",
+      "maintainer": true
+    },
+    {
+      "contributor": "Crystal",
+      "role": "Rust Engineer",
+      "maintainer": true
+    },
+    {
+      "contributor": "andromeda",
+      "role": "Rust Engineer",
+      "maintainer": true
+    },
+    {
+      "contributor": "MossyMax",
+      "role": "Damage Values / PVE Power Level Formulas",
+      "maintainer": false
+    }
+  ],
+  "tags": [
+    "planning",
+    "stats"
+  ]
+}

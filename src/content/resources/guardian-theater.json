@@ -1,0 +1,27 @@
+{
+  "title": "Guardian Theater",
+  "description": "Find yourself in the Twitch VODs that your Destiny 2 teammates and opponents recorded. ",
+  "icon": "/images/resources/guardian-theater/icon.png",
+  "link": "https://guardian.theater/",
+  "color": "#b798c9",
+  "contributors": [
+    {
+      "contributor": "Chris Fried",
+      "role": "Maintainer",
+      "maintainer": true
+    },
+    {
+      "contributor": "My Derpy Turtle",
+      "role": "Contributor",
+      "maintainer": false
+    },
+    {
+      "contributor": "RealAngryMonkey",
+      "role": "Contributor",
+      "maintainer": false
+    }
+  ],
+  "tags": [
+    "api"
+  ]
+}

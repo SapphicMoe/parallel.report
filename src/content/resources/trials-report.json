@@ -1,0 +1,27 @@
+{
+  "title": "Trials Report",
+  "description": "The ultimate companion for Trials of Osiris. Look up everything on your opponents or yourself and see your game improve!",
+  "icon": "/images/resources/trials-report/icon.png",
+  "link": "https://trials.report/",
+  "color": "#ead884",
+  "contributors": [
+    {
+      "contributor": "Marruk",
+      "role": "Developer",
+      "maintainer": true
+    },
+    {
+      "contributor": "VlakafatakafA",
+      "role": "Developer",
+      "maintainer": true
+    },
+    {
+      "contributor": "Steffwiz",
+      "role": "Contributor",
+      "maintainer": false
+    }
+  ],
+  "tags": [
+    "stats"
+  ]
+}

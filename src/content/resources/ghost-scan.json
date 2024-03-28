@@ -1,0 +1,18 @@
+{
+  "title": "Ghost Scan",
+  "description": "Tool for keeping track of your progress while playing Destiny 2.",
+  "icon": "/images/resources/ghost-scan/icon.png",
+  "link": "https://lowlidev.com.au/destiny/ghost-scan",
+  "color": "#00CCFF",
+  "contributors": [
+    {
+      "contributor": "lowlines",
+      "role": "Maintainer",
+      "maintainer": true
+    }
+  ],
+  "tags": [
+    "progress",
+    "stats"
+  ]
+}

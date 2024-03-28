@@ -1,0 +1,17 @@
+{
+  "title": "Destiny Emblem Collector",
+  "description": "The ultimate repository for Destiny emblems.",
+  "icon": "/images/resources/destiny-emblem-collector/icon.png",
+  "link": "https://destinyemblemcollector.com/",
+  "color": "#FFFFFF",
+  "contributors": [
+    {
+      "contributor": "Jansten",
+      "role": "Maintainer",
+      "maintainer": true
+    }
+  ],
+  "tags": [
+    "collections"
+  ]
+}

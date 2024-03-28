@@ -1,0 +1,22 @@
+{
+  "title": "Braytech",
+  "description": "Powerful Destiny application that allows users to view and map checklists, track and view triumphs, inspect collectibles, and so much more. ",
+  "icon": "/images/resources/braytech/icon.png",
+  "link": "https://bray.tech",
+  "color": "#E2305A",
+  "contributors": [
+    {
+      "contributor": "Tom Chapman",
+      "role": "Maintainer",
+      "maintainer": true
+    }
+  ],
+  "tags": [
+    "collections",
+    "maps",
+    "planning",
+    "progress",
+    "rotations",
+    "stats"
+  ]
+}

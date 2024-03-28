@@ -1,0 +1,17 @@
+{
+  "title": "Shattered Vault",
+  "description": "A Destiny resource that aims to provide weekly reset information, essential guides, and links to popular third-party apps. ",
+  "icon": "/images/resources/shattered-vault/icon.webp",
+  "link": "https://shatteredvault.com/",
+  "color": "#a3a3a3",
+  "contributors": [
+    {
+      "contributor": "Mal",
+      "role": "Maintainer",
+      "maintainer": true
+    }
+  ],
+  "tags": [
+    "rotations"
+  ]
+}

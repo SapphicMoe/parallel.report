@@ -1,12 +1,12 @@
 ---
-interface Props {
-  className?: string;
-  link: string;
+// eslint-disable-next-line no-undef
+interface Props extends astroHTML.JSX.AnchorHTMLAttributes {
+  link?: string;
   name: string;
   alt?: string;
 }
 
-const { className, link, name, alt } = Astro.props;
+const { link, name, alt, ...props } = Astro.props;
 ---
 
-<a class={className} href={link} title={alt ?? name} target="_blank">{name}</a>
+<a href={link} title={alt ?? name} target="_blank" {...props}>{name}</a>

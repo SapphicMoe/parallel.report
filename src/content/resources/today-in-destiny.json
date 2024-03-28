@@ -1,0 +1,22 @@
+{
+  "title": "TodayInDestiny",
+  "description": "A summary of what's available in Destiny today.",
+  "icon": "/images/resources/today-in-destiny/icon.png",
+  "link": "https://www.todayindestiny.com/",
+  "color": "#51a8a8",
+  "contributors": [
+    {
+      "contributor": "JpDeathBlade",
+      "role": "Maintainer",
+      "maintainer": true
+    },
+    {
+      "contributor": "CthulhuReigns",
+      "role": "Contributor",
+      "maintainer": false
+    }
+  ],
+  "tags": [
+    "rotations"
+  ]
+}

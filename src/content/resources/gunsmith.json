@@ -1,0 +1,17 @@
+{
+  "title": "Gunsmith",
+  "description": "A Destiny 2 weapon crafting simulation tool. ",
+  "icon": "/images/resources/gunsmith/icon.png",
+  "link": "https://d2gunsmith.com/",
+  "color": "#B88E2D",
+  "contributors": [
+    {
+      "contributor": "dre",
+      "role": "Maintainer",
+      "maintainer": true
+    }
+  ],
+  "tags": [
+    "collections"
+  ]
+}

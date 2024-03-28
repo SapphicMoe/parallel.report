@@ -1,0 +1,65 @@
+{
+  "title": "DestinyTracker",
+  "description": "The website for detailed profile and weapon statistics. Compete against top players in featured leaderboards.",
+  "icon": "/images/resources/destiny-tracker/icon.png",
+  "link": "https://destinytracker.com",
+  "color": "#e2263c",
+  "contributors": [
+    {
+      "contributor": "MoreofJay",
+      "role": "Media Lead & Content Manager",
+      "maintainer": true
+    },
+    {
+      "contributor": "Protheon",
+      "role": "Community Manager",
+      "maintainer": true
+    },
+    {
+      "contributor": "Suttledge",
+      "role": "Writer & Team Lead",
+      "maintainer": true
+    },
+    {
+      "contributor": "Dragosnuv",
+      "role": "Member",
+      "maintainer": false
+    },
+    {
+      "contributor": "Finkle",
+      "role": "Partner",
+      "maintainer": false
+    },
+    {
+      "contributor": "Heather",
+      "role": "Content Creator",
+      "maintainer": false
+    },
+    {
+      "contributor": "illPhysics",
+      "role": "Member",
+      "maintainer": false
+    },
+    {
+      "contributor": "Separer",
+      "role": "Member",
+      "maintainer": false
+    },
+    {
+      "contributor": "SweatyOrNot",
+      "role": "Member",
+      "maintainer": false
+    },
+    {
+      "contributor": "TooHardcore",
+      "role": "Member",
+      "maintainer": false
+    }
+  ],
+  "tags": [
+    "api",
+    "progress",
+    "rotations",
+    "stats"
+  ]
+}

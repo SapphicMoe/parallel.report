@@ -1,0 +1,18 @@
+{
+  "title": "aiobungie",
+  "description": "A Destiny 2 API wrapper in Python.",
+  "icon": "/images/resources/aiobungie/icon.png",
+  "link": "https://github.com/nxtlo/aiobungie",
+  "color": "#FFFFFF",
+  "contributors": [
+    {
+      "contributor": "fate",
+      "role": "Maintainer",
+      "maintainer": true
+    }
+  ],
+  "tags": [
+    "api",
+    "python"
+  ]
+}

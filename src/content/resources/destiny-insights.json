@@ -1,0 +1,22 @@
+{
+  "title": "Destiny Insights",
+  "description": "An app that provides insightful info for mods: how many times they were sold, when they made their last appearance, and more!",
+  "icon": "/images/resources/destiny-insights/icon.png",
+  "link": "https://twitter.com/DestinyInsights",
+  "color": "#c0316e",
+  "contributors": [
+    {
+      "contributor": "Matt Jarett",
+      "role": "Maintainer",
+      "maintainer": true
+    },
+    {
+      "contributor": "TinCanBeef",
+      "role": "Contributor",
+      "maintainer": false
+    }
+  ],
+  "tags": [
+    "rotations"
+  ]
+}

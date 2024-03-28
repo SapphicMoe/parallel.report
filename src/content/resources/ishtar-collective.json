@@ -1,0 +1,67 @@
+{
+  "title": "Ishtar Collective",
+  "description": "Categorizing Destiny Lore. ",
+  "icon": "/images/resources/ishtar-collective/icon.png",
+  "link": "https://ishtar-collective.net/",
+  "color": "#4485c4",
+  "contributors": [
+    {
+      "contributor": "baxter",
+      "role": "Maintainer",
+      "maintainer": true
+    },
+    {
+      "contributor": "nev",
+      "role": "Transcript Manager",
+      "maintainer": true
+    },
+    {
+      "contributor": "Throudin",
+      "role": "Developer",
+      "maintainer": true
+    },
+    {
+      "contributor": "unisys12",
+      "role": "Engineer",
+      "maintainer": true
+    },
+    {
+      "contributor": "waferbaby",
+      "role": "Engineer",
+      "maintainer": true
+    },
+    {
+      "contributor": "erinhc",
+      "role": "Archivist",
+      "maintainer": false
+    },
+    {
+      "contributor": "firecracker ace",
+      "role": "Server Mod",
+      "maintainer": false
+    },
+    {
+      "contributor": "MyNinjaH8sU",
+      "role": "Contributor",
+      "maintainer": false
+    },
+    {
+      "contributor": "ronnor",
+      "role": "Contributor",
+      "maintainer": false
+    },
+    {
+      "contributor": "Vertigo",
+      "role": "Archivist",
+      "maintainer": false
+    },
+    {
+      "contributor": "Wafflesquad",
+      "role": "Archivist",
+      "maintainer": false
+    }
+  ],
+  "tags": [
+    "lore"
+  ]
+}

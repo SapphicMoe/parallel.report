@@ -1,0 +1,34 @@
+{
+  "title": "Levante",
+  "description": "A multi-purpose Destiny 2 Discord bot. Track daily rotations, emblems, and more. ",
+  "icon": "/images/resources/levante/icon.png",
+  "link": "https://www.levante.dev/",
+  "color": "#87d3c6",
+  "contributors": [
+    {
+      "contributor": "Bailey",
+      "role": "Networking & Communications",
+      "maintainer": true
+    },
+    {
+      "contributor": "OatsFX",
+      "role": "Maintainer",
+      "maintainer": true
+    },
+    {
+      "contributor": "Jaken",
+      "role": "Staff",
+      "maintainer": false
+    },
+    {
+      "contributor": "Moonie",
+      "role": "Contributor",
+      "maintainer": false
+    }
+  ],
+  "tags": [
+    "discord",
+    "rotations",
+    "stats"
+  ]
+}

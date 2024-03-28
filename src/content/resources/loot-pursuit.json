@@ -1,0 +1,17 @@
+{
+  "title": "Loot Pursuit",
+  "description": "High-value Destiny 2 newsletter covering builds, guides and cheatsheets.",
+  "icon": "/images/resources/loot-pursuit/icon.png",
+  "link": "https://legionless.substack.com/",
+  "color": "#FFF",
+  "contributors": [
+    {
+      "contributor": "Legionless",
+      "role": "Maintainer",
+      "maintainer": true
+    }
+  ],
+  "tags": [
+    "misc"
+  ]
+}

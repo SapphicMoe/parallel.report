@@ -1,0 +1,18 @@
+{
+  "title": "D2ArmorPicker",
+  "description": "Optimize your Destiny 2 loadout stats with just a few clicks. ",
+  "icon": "/images/resources/d2-armor-picker/icon.png",
+  "link": "https://d2armorpicker.com",
+  "color": "#FFF",
+  "contributors": [
+    {
+      "contributor": "Mijago",
+      "role": "Maintainer",
+      "maintainer": true
+    }
+  ],
+  "tags": [
+    "planning",
+    "stats"
+  ]
+}

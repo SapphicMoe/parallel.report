@@ -1,0 +1,17 @@
+{
+  "title": "rich-destiny",
+  "description": "Discord Rich Presence utility app for Destiny 2. ",
+  "icon": "/images/resources/rich-destiny/icon.png",
+  "link": "https://richdestiny.app",
+  "color": "#FFFFFF",
+  "contributors": [
+    {
+      "contributor": "Lieuwe Berg",
+      "role": "Maintainer",
+      "maintainer": true
+    }
+  ],
+  "tags": [
+    "discord"
+  ]
+}

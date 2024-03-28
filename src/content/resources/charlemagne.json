@@ -1,0 +1,55 @@
+{
+  "title": "Charlemagne",
+  "description": "A Discord bot that provides detailed Destiny information. Check profile stats, clan ranking, and schedule LFG posts. ",
+  "icon": "/images/resources/charlemagne/icon.png",
+  "link": "https://warmind.io/",
+  "color": "#919191",
+  "contributors": [
+    {
+      "contributor": "Tor Kallon",
+      "role": "Developer",
+      "maintainer": true
+    },
+    {
+      "contributor": "Hanxa13",
+      "role": "Community Support",
+      "maintainer": false
+    },
+    {
+      "contributor": "icemanxbe",
+      "role": "Community Support",
+      "maintainer": false
+    },
+    {
+      "contributor": "KramRM",
+      "role": "Server Admin",
+      "maintainer": false
+    },
+    {
+      "contributor": "littleben4242",
+      "role": "Community Support",
+      "maintainer": false
+    },
+    {
+      "contributor": "LoraTheXplorer",
+      "role": "Server Admin",
+      "maintainer": false
+    },
+    {
+      "contributor": "PandaPaxxy",
+      "role": "Community Support",
+      "maintainer": false
+    },
+    {
+      "contributor": "TheSpartanAsh",
+      "role": "Server Admin",
+      "maintainer": false
+    }
+  ],
+  "tags": [
+    "clan",
+    "discord",
+    "rotations",
+    "stats"
+  ]
+}

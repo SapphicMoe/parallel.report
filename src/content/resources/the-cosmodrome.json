@@ -1,0 +1,17 @@
+{
+  "title": "The Cosmodrome",
+  "description": "Directory of third-party Destiny resources.",
+  "icon": "/images/resources/the-cosmodrome/icon.webp",
+  "link": "https://cosmodrome.page",
+  "color": "#C6663B",
+  "contributors": [
+    {
+      "contributor": "KramRM",
+      "role": "Maintainer",
+      "maintainer": true
+    }
+  ],
+  "tags": [
+    "misc"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "title": "DotNetBungieAPI",
+  "description": ".NET Bungie.net API wrapper.",
+  "icon": "/images/resources/dot-net-bungie-api/icon.png",
+  "link": "https://github.com/EndGameGl/DotNetBungieAPI",
+  "color": "#FFF",
+  "contributors": [
+    {
+      "contributor": "MeGl",
+      "role": "Maintainer",
+      "maintainer": true
+    }
+  ],
+  "tags": [
+    "api",
+    "csharp"
+  ]
+}

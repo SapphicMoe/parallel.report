@@ -1,0 +1,120 @@
+{
+  "title": "Destiny Item Manager",
+  "description": "Build the loadout you've always wanted, transfer items with ease, and check records at any time to Become Legend. ",
+  "icon": "/images/resources/destiny-item-manager/icon.png",
+  "link": "https://destinyitemmanager.com",
+  "color": "#f37422",
+  "contributors": [
+    {
+      "contributor": "Ben Hollis",
+      "role": "Maintainer",
+      "maintainer": true
+    },
+    {
+      "contributor": "eutral",
+      "role": "Developer",
+      "maintainer": true
+    },
+    {
+      "contributor": "Rick Casey",
+      "role": "Maintainer",
+      "maintainer": true
+    },
+    {
+      "contributor": "48klocs",
+      "role": "Contributor",
+      "maintainer": false
+    },
+    {
+      "contributor": "Agen",
+      "role": "Polish (pl-PL) Translator",
+      "maintainer": false
+    },
+    {
+      "contributor": "Apokalipsys_ZR7",
+      "role": "Spanish (es-ES) Translator",
+      "maintainer": false
+    },
+    {
+      "contributor": "DelphiActual",
+      "role": "Contributor",
+      "maintainer": false
+    },
+    {
+      "contributor": "duckmanBR",
+      "role": "Brazillian-Portuguese (pt-BR) Translator",
+      "maintainer": false
+    },
+    {
+      "contributor": "EAGLEMCHNG",
+      "role": "Mexican-Spanish (es-MX) Translator",
+      "maintainer": false
+    },
+    {
+      "contributor": "JulianCDC",
+      "role": "French (fr-FR) Translator",
+      "maintainer": false
+    },
+    {
+      "contributor": "Korben85",
+      "role": "German (de-DE) Translator",
+      "maintainer": false
+    },
+    {
+      "contributor": "Liminal Ace",
+      "role": "Contributor",
+      "maintainer": false
+    },
+    {
+      "contributor": "lion0738",
+      "role": "Korean (ko-KR) Translator",
+      "maintainer": false
+    },
+    {
+      "contributor": "nwL",
+      "role": "German (de-DE) Translator",
+      "maintainer": false
+    },
+    {
+      "contributor": "Pixel",
+      "role": "Contributor",
+      "maintainer": false
+    },
+    {
+      "contributor": "robojumper",
+      "role": "Contributor",
+      "maintainer": false
+    },
+    {
+      "contributor": "solelychloe",
+      "role": "Russian (ru-RU) Translator",
+      "maintainer": false
+    },
+    {
+      "contributor": "TekiRush",
+      "role": "Contributor",
+      "maintainer": false
+    },
+    {
+      "contributor": "Theovorn",
+      "role": "Italian (it-IT) Translator",
+      "maintainer": false
+    },
+    {
+      "contributor": "xyx0826",
+      "role": "Simplified Chinese (zh-CN) Translator",
+      "maintainer": false
+    },
+    {
+      "contributor": "YeezyGT",
+      "role": "Wishlist Curator",
+      "maintainer": false
+    }
+  ],
+  "tags": [
+    "collections",
+    "inventory",
+    "progress",
+    "rotations"
+  ]
+}

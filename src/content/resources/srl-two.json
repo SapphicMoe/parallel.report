@@ -1,0 +1,17 @@
+{
+  "title": "SRL²",
+  "description": "Randomize your Destiny 2 loadout! ",
+  "icon": "/images/resources/srl-two/icon.png",
+  "link": "https://d2srl.club/",
+  "color": "#6EC8B5",
+  "contributors": [
+    {
+      "contributor": "Chris Fried",
+      "role": "Maintainer",
+      "maintainer": true
+    }
+  ],
+  "tags": [
+    "inventory"
+  ]
+}

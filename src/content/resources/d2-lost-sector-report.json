@@ -1,0 +1,62 @@
+{
+  "title": "D2 Lost Sector Report",
+  "description": "Your daily Destiny 2 Legend & Master Lost Sector report.",
+  "icon": "/images/resources/d2-lost-sector-report/icon.png",
+  "link": "https://twitter.com/D2LostSector",
+  "color": "#c1b7fe",
+  "contributors": [
+    {
+      "contributor": "Quiff Boy",
+      "role": "Founder",
+      "maintainer": true
+    },
+    {
+      "contributor": "AbnormalBenjy7",
+      "role": "Contributor",
+      "maintainer": false
+    },
+    {
+      "contributor": "Bazz1984",
+      "role": "Contributor",
+      "maintainer": false
+    },
+    {
+      "contributor": "Fauxres",
+      "role": "Contributor",
+      "maintainer": false
+    },
+    {
+      "contributor": "Hank",
+      "role": "Contributor",
+      "maintainer": false
+    },
+    {
+      "contributor": "knight2qb3",
+      "role": "Contributor",
+      "maintainer": false
+    },
+    {
+      "contributor": "Nerfs",
+      "role": "Contributor",
+      "maintainer": false
+    },
+    {
+      "contributor": "Papilli0n",
+      "role": "Contributor",
+      "maintainer": false
+    },
+    {
+      "contributor": "Raver boyz",
+      "role": "Contributor",
+      "maintainer": false
+    },
+    {
+      "contributor": "Sep7ember",
+      "role": "Contributor",
+      "maintainer": false
+    }
+  ],
+  "tags": [
+    "rotations"
+  ]
+}

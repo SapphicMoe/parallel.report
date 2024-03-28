@@ -1,0 +1,18 @@
+{
+  "title": "Quria",
+  "description": "User-friendly Destiny 2 API wrapper, written in TypeScript. ",
+  "icon": "/images/resources/quria/icon.png",
+  "link": "https://github.com/FraWolf/quria",
+  "color": "#FFFFFF",
+  "contributors": [
+    {
+      "contributor": "FraWolf",
+      "role": "Maintainer",
+      "maintainer": true
+    }
+  ],
+  "tags": [
+    "api",
+    "typescript"
+  ]
+}

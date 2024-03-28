@@ -1,0 +1,17 @@
+{
+  "title": "glory.report",
+  "description": "A resource of PvP tools for Destiny.",
+  "icon": "/images/resources/glory-report/icon.png",
+  "link": "https://glory.report",
+  "color": "#C71D18",
+  "contributors": [
+    {
+      "contributor": "Jules Raffoux",
+      "role": "Maintainer",
+      "maintainer": true
+    }
+  ],
+  "tags": [
+    "stats"
+  ]
+}

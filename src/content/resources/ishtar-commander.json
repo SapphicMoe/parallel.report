@@ -1,0 +1,39 @@
+{
+  "title": "Ishtar Commander",
+  "description": "Tap into your Guardian's arsenal, vault, and inventory; all from your device. ",
+  "icon": "/images/resources/ishtar-commander/icon.png",
+  "link": "https://ishtar.app/",
+  "color": "#7C7C7C",
+  "contributors": [
+    {
+      "contributor": "Nigel Hietala",
+      "role": "Maintainer",
+      "maintainer": true
+    },
+    {
+      "contributor": "cowgod77",
+      "role": "Contributor",
+      "maintainer": false
+    },
+    {
+      "contributor": "Daskeladden",
+      "role": "Contributor",
+      "maintainer": false
+    },
+    {
+      "contributor": "Dredgenerate",
+      "role": "Contributor",
+      "maintainer": false
+    },
+    {
+      "contributor": "Ethan_e_e_e",
+      "role": "Contributor",
+      "maintainer": false
+    }
+  ],
+  "tags": [
+    "collections",
+    "inventory",
+    "progress"
+  ]
+}

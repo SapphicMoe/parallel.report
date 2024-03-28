@@ -1,0 +1,17 @@
+{
+  "title": "Rollfinder",
+  "description": "Find your god rolls in Destiny.",
+  "icon": "/images/resources/rollfinder/icon.png",
+  "link": "https://rollfinder.net",
+  "color": "#89D0FE",
+  "contributors": [
+    {
+      "contributor": "DrGodroll",
+      "role": "Maintainer",
+      "maintainer": true
+    }
+  ],
+  "tags": [
+    "inventory"
+  ]
+}

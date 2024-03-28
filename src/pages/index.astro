@@ -1,19 +1,15 @@
 ---
 import Layout from '@layouts/Page.astro';
 
-import type { ResourceModule } from '@utils/index';
 import { Image } from 'astro:assets';
+import { collections } from '@lib/keystatic';
 
 import Footer from '@components/base/Footer.astro';
 import Header from '@components/home/Header.md';
-import Line from '@components/base/Underline.astro';
 import Notice from '@components/home/Notice.md';
+import Resources from '@components/home/Resources.astro';
 
-import MainResources from '@components/home/MainResources.astro';
-import OtherResources from '@components/home/OtherResources.astro';
-
-const resources = (await Astro.glob<ResourceModule>('../utils/resources/*.ts')).map((entry) => entry.default);
-const otherResources = (await import('@utils/other')).default;
+const resources = await collections.resources.all();
 ---
 
 <Layout
@@ -27,39 +23,16 @@ const otherResources = (await import('@utils/other')).default;
 
   <Header />
 
-  {
-    resources.map((resource) => {
-      return <MainResources {resource} />;
-    })
-  }
-
-  <span class="flex flex-col pt-2">
-    <Line class="pt-6">Other resources</Line>
-    <ul class="flex list-disc flex-col gap-2 pb-5 pl-6 pt-4 font-display">
-      {
-        otherResources.map((author) => {
-          return <OtherResources {author} />;
-        })
-      }
-    </ul>
-  </span>
+  <div class="flex flex-col gap-5">
+    {
+      resources.map((resource) => {
+        return <Resources resource={resource.entry} />;
+      })
+    }
+  </div>
 
   <Footer>
     <hr class="pt-5 text-ctp-red" />
     <Notice />
   </Footer>
-
-  <style>
-    img[alt*='Logo of DestinyTracker'] {
-      @apply pb-3 pt-3;
-    }
-
-    img[alt*='Logo of Ishtar Commander'] {
-      @apply grayscale;
-    }
-
-    img[alt*='Logo of Ghost Overlay'] {
-      @apply invert dark:invert-0;
-    }
-  </style>
 </Layout>

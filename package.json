@@ -28,7 +28,15 @@
   },
   "packageManager": "pnpm@8.10.3",
   "dependencies": {
-    "astro": "^4.5.10"
+    "@astrojs/cloudflare": "^10.0.0",
+    "@astrojs/react": "^3.1.0",
+    "@keystatic/astro": "^5.0.0",
+    "@keystatic/core": "^0.5.9",
+    "@types/react": "^18.2.73",
+    "@types/react-dom": "^18.2.22",
+    "astro": "^4.5.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@astrojs/check": "^0.5.10",

@@ -1,0 +1,109 @@
+{
+  "title": "Little Light",
+  "description": "An item manager for Destiny that will make your Guardian's life a lot easier.",
+  "icon": "/images/resources/little-light/icon.png",
+  "link": "https://littlelight.club/",
+  "color": "#a492ff",
+  "contributors": [
+    {
+      "contributor": "jaoryuken",
+      "role": "Maintainer",
+      "maintainer": true
+    },
+    {
+      "contributor": "alexcerlini",
+      "role": "Brazillian-Portuguese (pt-BR) Translator",
+      "maintainer": false
+    },
+    {
+      "contributor": "alexfa55",
+      "role": "Spanish (es-ES) Translator",
+      "maintainer": false
+    },
+    {
+      "contributor": "Azared",
+      "role": "Wishlist Curator",
+      "maintainer": false
+    },
+    {
+      "contributor": "Beenlab",
+      "role": "Wishlist Curator",
+      "maintainer": false
+    },
+    {
+      "contributor": "Big Bird",
+      "role": "Wishlist Curator",
+      "maintainer": false
+    },
+    {
+      "contributor": "Eysenor",
+      "role": "Italian (it-IT Translator)",
+      "maintainer": false
+    },
+    {
+      "contributor": "iMahou",
+      "role": "Wishlist Curator",
+      "maintainer": false
+    },
+    {
+      "contributor": "iMatcha",
+      "role": "Wishlist Curator",
+      "maintainer": false
+    },
+    {
+      "contributor": "Juarez Turrini",
+      "role": "Brazillian-Portuguese (pt-BR) Translator",
+      "maintainer": false
+    },
+    {
+      "contributor": "kj415j45",
+      "role": "Chinese (zh-CN) Translator",
+      "maintainer": false
+    },
+    {
+      "contributor": "MyNameIsAlph",
+      "role": "Wishlist Curator",
+      "maintainer": false
+    },
+    {
+      "contributor": "Nicolas",
+      "role": "Polish (pl-PL) Translator",
+      "maintainer": false
+    },
+    {
+      "contributor": "PandaPaxxy",
+      "role": "Wishlist Curator",
+      "maintainer": false
+    },
+    {
+      "contributor": "RaSSieL",
+      "role": "Spanish (es-ES) Translator",
+      "maintainer": false
+    },
+    {
+      "contributor": "riceOtaku",
+      "role": "Japanese (ja-JP) Translator",
+      "maintainer": false
+    },
+    {
+      "contributor": "Reign",
+      "role": "Polish (pl-PL) Translator",
+      "maintainer": false
+    },
+    {
+      "contributor": "Viridis Draco",
+      "role": "Italian (it-IT) Translator",
+      "maintainer": false
+    },
+    {
+      "contributor": "yehard",
+      "role": "Russian (ru-RU) Translator",
+      "maintainer": false
+    }
+  ],
+  "tags": [
+    "collections",
+    "inventory",
+    "progress"
+  ]
+}

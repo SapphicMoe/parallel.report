@@ -1,0 +1,52 @@
+{
+  "title": "Destiny Recipes",
+  "description": "A collection of useful tools for Destiny. Prep for future seasons with the Pre-seasonal Checklist, clean your vault with the Vault Cleaner, and much more!",
+  "icon": "/images/resources/destiny-recipes/icon.png",
+  "link": "https://destinyrecipes.com",
+  "color": "#c8435d",
+  "contributors": [
+    {
+      "contributor": "HerrExion",
+      "role": "Maintainer",
+      "maintainer": true
+    },
+    {
+      "contributor": "ARTES",
+      "role": "Polish (pl-PL) Translator",
+      "maintainer": false
+    },
+    {
+      "contributor": "Catchup",
+      "role": "German (de-DE) Translator",
+      "maintainer": false
+    },
+    {
+      "contributor": "Fly",
+      "role": "Italian (it-IT) Translator",
+      "maintainer": false
+    },
+    {
+      "contributor": "Frozty",
+      "role": "Chinese (zh-CN) Translator",
+      "maintainer": false
+    },
+    {
+      "contributor": "gevoup",
+      "role": "Russian (ru-RU) Translator",
+      "maintainer": false
+    },
+    {
+      "contributor": "R4NDO",
+      "role": "Japanese (ja-JP) Translator",
+      "maintainer": false
+    },
+    {
+      "contributor": "ThePanicEnd",
+      "role": "Mexican-Spanish (es-MX) Translator",
+      "maintainer": false
+    }
+  ],
+  "tags": [
+    "planning"
+  ]
+}
