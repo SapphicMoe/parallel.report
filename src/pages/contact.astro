@@ -12,11 +12,11 @@ import Turnstile from '@components/contact/Turnstile.astro';
   title="Contact | Parallel Program Report"
   turnstile={true}
 >
-  <Line>Submit a resource</Line>
+  <Line>Contact</Line>
 
   <span class="pt-1 italic"> Do you have the Parallel Program emblem, and are looking to see your name here? Let me know!</span>
 
-  <div class="flex flex-col gap-2">
+  <div class="flex flex-col gap-4">
     <label for="name" class="font-semibold">
       Name:
       <input placeholder="Guardian" type="text" id="name" class="w-full pl-1 font-normal" maxlength="128" required />
@@ -28,7 +28,7 @@ import Turnstile from '@components/contact/Turnstile.astro';
     </label>
 
     <label for="resourceURL" class="font-semibold">
-      Resource URL:
+      Resource link:
       <input placeholder="https://example.com" type="url" id="resourceURL" class="w-full pl-1 font-normal" maxlength="128" required />
     </label>
 
@@ -37,9 +37,15 @@ import Turnstile from '@components/contact/Turnstile.astro';
       <input placeholder="Developer" id="role" class="w-full pl-1 font-normal" maxlength="256" required />
     </label>
 
-    <label for="email" class="font-semibold">
-      Your email, so I can reach back to you: (optional)
-      <input placeholder="example@gmail.com" type="email" id="email" class="w-full pl-1 font-normal" maxlength="128" />
+    <label for="contact" class="font-semibold">
+      Your means of communication, so I can reach back to you: (optional)
+      <input
+        placeholder="Email (example@gmail.com), Discord tag (Guardian#1234) or etc"
+        type="text"
+        id="contact"
+        class="w-full pl-1 font-normal"
+        maxlength="128"
+      />
     </label>
 
     <div class="flex flex-col">
