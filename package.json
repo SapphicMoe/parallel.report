@@ -19,6 +19,13 @@
     "wrangler:start": "wrangler pages dev --proxy 3000 -- pnpm start"
   },
   "repository": "https://github.com/solelychloe/parallel.report",
+  "postcss": {
+    "plugins": {
+      "tailwindcss/nesting": {},
+      "tailwindcss": {},
+      "autoprefixer": {}
+    }
+  },
   "packageManager": "pnpm@8.10.3",
   "dependencies": {
     "astro": "^3.6.4"
