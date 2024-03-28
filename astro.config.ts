@@ -26,4 +26,9 @@ export default defineConfig({
     ],
   },
   integrations: [tailwind(), mdx(), react(), keystatic(), compress()],
+  vite: {
+    ssr: {
+      noExternal: ['@keystatic/core'],
+    },
+  },
 });
