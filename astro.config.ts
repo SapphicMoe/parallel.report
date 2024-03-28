@@ -1,7 +1,6 @@
 import { defineConfig } from 'astro/config';
 
 import mdx from '@astrojs/mdx';
-import prefetch from '@astrojs/prefetch';
 import tailwind from '@astrojs/tailwind';
 import compress from 'astro-compress';
 
@@ -21,12 +20,5 @@ export default defineConfig({
       ],
     ],
   },
-  integrations: [
-    tailwind(),
-    prefetch(),
-    mdx(),
-
-    // TEMP: The Lost Sector logo looks weird when compressed.
-    compress({ Exclude: 'LostSector.svg' }),
-  ],
+  integrations: [tailwind(), mdx(), compress()],
 });
