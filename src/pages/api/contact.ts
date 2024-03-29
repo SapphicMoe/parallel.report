@@ -53,7 +53,7 @@ const sendDiscordMessage = async (details: Props, url: string) => {
   });
 };
 
-export const POST: APIRoute = async ({ request }: APIContext) => {
+export const POST: APIRoute = async ({ request, redirect }: APIContext) => {
   const data = await request.formData();
 
   const turnstile_token = data.get('cf-turnstile-response');
@@ -97,5 +97,5 @@ export const POST: APIRoute = async ({ request }: APIContext) => {
 
   await sendDiscordMessage({ name, resourceName, resourceLink, role, contact }, import.meta.env.DISCORD_WEBHOOK_URL);
 
-  return new Response('OK', { status: 200 });
+  return redirect('/success');
 };
