@@ -44,6 +44,11 @@
       "contributor": "TheSpartanAsh",
       "role": "Server Admin",
       "maintainer": false
+    },
+    {
+      "contributor": "waterpolotrev67",
+      "role": "Developer",
+      "maintainer": true
     }
   ],
   "tags": [
