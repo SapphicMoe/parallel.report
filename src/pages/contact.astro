@@ -3,69 +3,18 @@ import Layout from '@layouts/Page.astro';
 
 import Footer from '@components/base/Footer.astro';
 import Line from '@components/base/Underline.astro';
-import Turnstile from '@components/contact/Turnstile.astro';
+import ContactForm from '@components/contact/ContactForm.astro';
 ---
 
 <Layout
   description="Want to be included in this site? Submit your contribution for a review."
   pageTitle="Contact"
   title="Contact | Parallel Program Report"
-  turnstile={true}
 >
   <Line>Contact</Line>
-
   <span class="pt-1 italic"> Do you have the Parallel Program emblem, and are looking to see your name here? Let me know!</span>
 
-  <div class="flex flex-col gap-4">
-    <label for="name" class="font-semibold">
-      Name:
-      <input placeholder="Guardian" type="text" id="name" class="w-full pl-1 font-normal" maxlength="128" required />
-    </label>
+  <ContactForm />
 
-    <label for="resourceName" class="font-semibold">
-      Resource Name:
-      <input placeholder="Destiny Item Manager" type="text" id="resourceName" class="w-full pl-1 font-normal" maxlength="128" required />
-    </label>
-
-    <label for="resourceURL" class="font-semibold">
-      Resource link:
-      <input placeholder="https://example.com" type="url" id="resourceURL" class="w-full pl-1 font-normal" maxlength="128" required />
-    </label>
-
-    <label for="role" class="font-semibold">
-      Your role / contribution:
-      <input placeholder="Developer" id="role" class="w-full pl-1 font-normal" maxlength="256" required />
-    </label>
-
-    <label for="contact" class="font-semibold">
-      Your means of communication, so I can reach back to you: (optional)
-      <input
-        placeholder="Email (example@gmail.com), Discord tag (Guardian#1234) or etc"
-        type="text"
-        id="contact"
-        class="w-full pl-1 font-normal"
-        maxlength="128"
-      />
-    </label>
-
-    <div class="flex flex-col">
-      <div id="turnstile" class="cf-turnstile pb-5 pt-3" data-sitekey="0x4AAAAAAADTMZcYKETjz8js" data-size="normal"></div>
-      <button
-        class="h-10 w-32 rounded-full bg-ctp-red text-center font-medium text-ctp-base transition ease-out hover:opacity-80 dark:bg-ctp-red"
-        onclick="validate(event)"
-        type="submit"
-        id="submit">Submit</button
-      >
-      <span id="status" class="pt-3"></span>
-    </div>
-  </div>
   <Footer />
-
-  <Turnstile />
-
-  <style>
-    input {
-      @apply border dark:border-ctp-red dark:border-opacity-60 dark:bg-ctp-base;
-    }
-  </style>
 </Layout>

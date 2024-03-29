@@ -15,8 +15,8 @@ const { description, pageTitle, title, turnstile } = Astro.props;
 
 <!doctype html>
 <html class="flex flex-col" lang="en">
-  <Head description={description} pageTitle={pageTitle} title={title}>
-    {turnstile && <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" class="turnstile" />}
+  <Head {description} {pageTitle} {title}>
+    {turnstile && <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer is:inline />}
   </Head>
 
   <body class="flex flex-col text-xl md:self-center">

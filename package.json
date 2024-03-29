@@ -28,8 +28,8 @@
   },
   "packageManager": "pnpm@8.10.3",
   "dependencies": {
-    "@astrojs/cloudflare": "^10.0.0",
     "@astrojs/react": "^3.1.0",
+    "@astrojs/vercel": "^7.5.0",
     "@keystatic/astro": "^5.0.0",
     "@keystatic/core": "^0.5.9",
     "@types/react": "^18.2.73",

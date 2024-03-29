@@ -9,9 +9,8 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  rules: {},
-  globals: {
-    turnstile: 'readonly',
+  rules: {
+    'jsx-a11y/label-has-associated-control': 'off',
   },
   overrides: [
     {
@@ -27,10 +26,7 @@ module.exports = {
       parser: '@typescript-eslint/parser',
       extends: ['plugin:@typescript-eslint/recommended'],
       rules: {
-        '@typescript-eslint/no-unused-vars': [
-          'error',
-          { argsIgnorePattern: '^_', destructuredArrayIgnorePattern: '^_' },
-        ],
+        '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_', destructuredArrayIgnorePattern: '^_' }],
         '@typescript-eslint/no-non-null-assertion': 'off',
       },
     },
