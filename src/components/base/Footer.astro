@@ -1,24 +1,22 @@
----
-import Separator from '@components/base/Separator.astro';
-import Link from '@components/home/Link.astro';
----
-
-<footer class="flex flex-col pt-1">
-  <slot />
-
+<footer class="flex flex-col pt-5">
   <hr class="text-ctp-red" />
 
-  <p class="flex flex-row justify-center gap-1 pt-5">
-    <span>&copy; {new Date().getFullYear()}</span>
+  <div class="flex flex-col gap-1 pt-5 text-center">
+    <div class="flex flex-col gap-3 pb-3">
+      <p class="italic">Destiny and the Destiny logo are among the trademarks of Bungie, Inc.</p>
 
-    <Link name="Chloe Arciniega" class="font-semibold" link="https://arciniega.one" alt="A redirect to my site." />
-  </p>
+      <p>
+        Compiled with the help of <a href="https://bray.tech">Braytech</a> and <a href="https://destinyemblemcollector.com"
+          >Destiny Emblem Collector</a
+        >. Thank you! 💖
+      </p>
+    </div>
 
-  <nav class="flex flex-wrap justify-center gap-4 pb-1 pt-4 font-display md:gap-3">
-    <a href="/" title="Home">Home</a>
-    <Separator />
-    <a href="/contact" title="Submit a resource">Submit a resource</a>
-    <Separator />
-    <a href="/credits.txt" title="Credits">Credits</a>
-  </nav>
+    <p>
+      &copy; {new Date().getFullYear()}
+      <a class="font-semibold" href="https://sapphic.moe" target="_blank">Chloe Arciniega</a>
+    </p>
+
+    <p>Licensed under <a href="https://github.com/SapphicMoe/parallel.report/blob/master/LICENSE">zlib</a>.</p>
+  </div>
 </footer>
