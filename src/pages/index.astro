@@ -7,6 +7,7 @@ import Resource from '@components/Resource.astro';
 import Search from '@components/Search.astro';
 
 const resources = await collections.resources.all();
+const guardians = await collections.contributors.all();
 ---
 
 <Layout
@@ -22,6 +23,11 @@ const resources = await collections.resources.all();
         href="https://destinyemblemcollector.com/emblem?id=3936625542"
         target="_blank">Parallel Program emblem</a
       >.
+    </p>
+
+    <p>
+      Currently showcasing <span class="font-bold">{resources.length}</span> resources and <span class="font-bold">{guardians.length}</span>
+      Guardians.
     </p>
   </div>
 
