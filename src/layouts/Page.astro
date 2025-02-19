@@ -55,6 +55,13 @@ const { description, pageTitle, title, turnstile } = Astro.props;
       // Runs on view transitions navigation + process the new HTML
       document.addEventListener('astro:after-swap', () => {
         htmx.process(document.documentElement);
+
+        if (window.turnstile) {
+          try {
+            window.turnstile.reset();
+          } catch (e) {}
+          window.turnstile.implicitRender();
+        }
       });
     </script>
   </body>
