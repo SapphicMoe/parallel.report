@@ -5,7 +5,7 @@ import collections from '@lib/keystatic/collections';
 export default config({
   storage: {
     kind: 'github',
-    repo: 'solelychloe/parallel.report',
+    repo: 'SapphicMoe/parallel.report',
   },
 
   ui: {
