@@ -2,7 +2,7 @@
   "title": "Vault Item Manager",
   "description": "Lightning-fast item manager app for Destiny.",
   "icon": "/images/resources/vault-item-manager/icon.png",
-  "link": "https://twitter.com/Vault_Destiny",
+  "link": "https://smarturl.it/vaultdestiny",
   "color": "#6c809e",
   "contributors": [
     {
@@ -11,8 +11,5 @@
       "maintainer": true
     }
   ],
-  "tags": [
-    "collections",
-    "inventory"
-  ]
+  "tags": ["collections", "inventory"]
 }

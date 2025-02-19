@@ -2,7 +2,7 @@
   "title": "Redrix",
   "description": "A Destiny app which provides tools to improve your PvP skills.",
   "icon": "/images/resources/redrix/icon.png",
-  "link": "https://redrix.io",
+  "link": "https://twitter.com/redrixapp",
   "color": "#FFFFFF",
   "contributors": [
     {
@@ -11,7 +11,5 @@
       "maintainer": true
     }
   ],
-  "tags": [
-    "stats"
-  ]
+  "tags": ["stats"]
 }
