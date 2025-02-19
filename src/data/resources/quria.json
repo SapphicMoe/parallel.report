@@ -9,6 +9,16 @@
       "contributor": "FraWolf",
       "role": "Maintainer",
       "maintainer": true
+    },
+    {
+      "contributor": "Kasui92",
+      "role": "Testing & Documentation",
+      "maintainer": true
+    },
+    {
+      "contributor": "Romans96",
+      "role": "Contributor",
+      "maintainer": false
     }
   ],
   "tags": [

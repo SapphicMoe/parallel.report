@@ -9,6 +9,16 @@
       "contributor": "Mijago",
       "role": "Maintainer",
       "maintainer": true
+    },
+    {
+      "contributor": "TheYeshir",
+      "role": "QA Testing & Support",
+      "maintainer": true
+    },
+    {
+      "contributor": "Mojo",
+      "role": "QA Testing & Support",
+      "maintainer": true
     }
   ],
   "tags": [

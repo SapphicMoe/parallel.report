@@ -9,6 +9,11 @@
       "contributor": "mesh",
       "role": "Maintainer",
       "maintainer": true
+    },
+    {
+      "contributor": "gego",
+      "role": "Co-developer",
+      "maintainer": true
     }
   ],
   "tags": ["stats"]

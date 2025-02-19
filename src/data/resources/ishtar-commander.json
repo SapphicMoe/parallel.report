@@ -29,6 +29,11 @@
       "contributor": "Ethan_e_e_e",
       "role": "Contributor",
       "maintainer": false
+    },
+    {
+      "contributor": "Réin",
+      "role": "Korean (ko-KR) Translator",
+      "maintainer": false
     }
   ],
   "tags": ["collections", "inventory", "progress"]

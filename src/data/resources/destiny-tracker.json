@@ -46,6 +46,11 @@
       "maintainer": false
     },
     {
+      "contributor": "SpartanZero",
+      "role": "Member",
+      "maintainer": false
+    },
+    {
       "contributor": "SweatyOrNot",
       "role": "Member",
       "maintainer": false
@@ -56,10 +61,5 @@
       "maintainer": false
     }
   ],
-  "tags": [
-    "api",
-    "progress",
-    "rotations",
-    "stats"
-  ]
+  "tags": ["api", "progress", "rotations", "stats"]
 }

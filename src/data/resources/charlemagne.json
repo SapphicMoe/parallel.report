@@ -26,6 +26,11 @@
       "maintainer": false
     },
     {
+      "contributor": "jayyy",
+      "role": "Contributor",
+      "maintainer": false
+    },
+    {
       "contributor": "KramRM",
       "role": "Server Admin",
       "maintainer": false
@@ -42,6 +47,11 @@
     },
     {
       "contributor": "PandaPaxxy",
+      "role": "Community Support",
+      "maintainer": false
+    },
+    {
+      "contributor": "The Fish Boxer",
       "role": "Community Support",
       "maintainer": false
     },

@@ -16,12 +16,15 @@
       "maintainer": true
     },
     {
+      "contributor": "rgx",
+      "role": "Discord Admin",
+      "maintainer": false
+    },
+    {
       "contributor": "Steffwiz",
       "role": "Contributor",
       "maintainer": false
     }
   ],
-  "tags": [
-    "stats"
-  ]
+  "tags": ["stats"]
 }

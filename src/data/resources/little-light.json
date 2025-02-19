@@ -11,6 +11,11 @@
       "maintainer": true
     },
     {
+      "contributor": "Billt4kill",
+      "role": "Developer & Support",
+      "maintainer": true
+    },
+    {
       "contributor": "alexcerlini",
       "role": "Brazillian-Portuguese (pt-BR) Translator",
       "maintainer": false
@@ -38,6 +43,11 @@
     {
       "contributor": "Eysenor",
       "role": "Italian (it-IT Translator)",
+      "maintainer": false
+    },
+    {
+      "contributor": "iDakimakura",
+      "role": "Wishlist Curator",
       "maintainer": false
     },
     {
@@ -101,9 +111,5 @@
       "maintainer": false
     }
   ],
-  "tags": [
-    "collections",
-    "inventory",
-    "progress"
-  ]
+  "tags": ["collections", "inventory", "progress"]
 }
