@@ -12,7 +12,12 @@ const config = {
 
   analytics: true, // Whether to enable Plausible Analytics or not
 
-  navLinks: [{ link: '/', icon: 'mdi:home', text: 'Home' }] satisfies Link[],
+  navLinks: [
+    { link: '/', icon: 'mdi:home', text: 'Home' },
+    { link: '/contact', icon: 'mdi:link-variant', text: 'Contact' },
+    { link: '/faq', icon: 'mdi:help-circle', text: 'FAQ' },
+    { link: '/credits', icon: 'mdi:heart', text: 'Credits' },
+  ] satisfies Link[],
 };
 
 export default config;

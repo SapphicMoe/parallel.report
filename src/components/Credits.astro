@@ -1,0 +1,18 @@
+---
+import credits from '@utils/credits';
+---
+
+<div class="flex flex-col gap-6">
+  {
+    credits.map((credit) => {
+      return (
+        <div class="flex flex-col">
+          <a href={credit.link} class="w-fit text-2xl font-bold" target="_blank">
+            {credit.name}
+          </a>
+          <p>{credit.reason}</p>
+        </div>
+      );
+    })
+  }
+</div>

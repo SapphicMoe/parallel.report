@@ -8,4 +8,10 @@ export interface Link {
   alt?: string;
 }
 
+export interface Credits {
+  name: string;
+  link: string;
+  reason: string;
+}
+
 export type Resource = Entry<(typeof keystaticConfig)['collections']['resources']>;

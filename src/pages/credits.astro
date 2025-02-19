@@ -1,0 +1,28 @@
+---
+import Layout from '@layouts/Page.astro';
+
+import CreditsList from '@components/Credits.astro';
+---
+
+<Layout
+  description="Credits to other people / projects that made this site possible."
+  pageTitle="Credits"
+  title="Credits | Parallel Program Report"
+>
+  <div class="flex flex-col gap-3 pb-5 pt-3">
+    <h1 class="title">Credits</h1>
+
+    <span>Special thanks to the following people who made this website possible!</span>
+  </div>
+
+  <CreditsList />
+
+  <div class="flex flex-col gap-3 pt-3">
+    <h1 class="title">Support</h1>
+
+    <p>
+      If you would like to support me, please consider donating using <a href="https://ko-fi.com/solelychloe">this Ko-fi link</a>. Thank you
+      so much! Every cent helps.
+    </p>
+  </div>
+</Layout>
