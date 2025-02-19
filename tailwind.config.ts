@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss';
+import type { PluginAPI } from 'tailwindcss/types/config';
 
 import catppuccin from '@catppuccin/tailwindcss';
 
@@ -13,5 +14,12 @@ export default {
     catppuccin({
       prefix: 'ctp',
     }),
+
+    ({ addComponents }: PluginAPI) =>
+      addComponents({
+        '.title': {
+          '@apply text-3xl font-bold': {},
+        },
+      }),
   ],
 } satisfies Config;
