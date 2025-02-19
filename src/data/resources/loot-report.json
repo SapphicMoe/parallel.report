@@ -1,0 +1,15 @@
+{
+  "title": "loot.report",
+  "description": "Check what Exotic weapons your clanmates are missing in Destiny 2.",
+  "icon": "/images/resources/loot-report/icon.svg",
+  "link": "https://loot.report",
+  "color": "#eab308",
+  "contributors": [
+    {
+      "contributor": "BinarMorker",
+      "role": "Developer",
+      "maintainer": true
+    }
+  ],
+  "tags": ["progress"]
+}

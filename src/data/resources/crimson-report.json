@@ -1,0 +1,15 @@
+{
+  "title": "crimson.report",
+  "description": "Check what content you can play with your friends in Destiny 2.",
+  "icon": "/images/resources/crimson-report/icon.svg",
+  "link": "https://crimson.report",
+  "color": "#ee4444",
+  "contributors": [
+    {
+      "contributor": "BinarMorker",
+      "role": "Developer",
+      "maintainer": true
+    }
+  ],
+  "tags": ["planning"]
+}

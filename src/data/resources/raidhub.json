@@ -1,0 +1,15 @@
+{
+  "title": "Raidhub",
+  "description": "The fastest open source Destiny 2 platform for raiding stats, leaderboards, and analytics.",
+  "icon": "/images/resources/raidhub/icon.png",
+  "link": "https://raidhub.io/",
+  "color": "#F0802F",
+  "contributors": [
+    {
+      "contributor": "Newo",
+      "role": "Maintainer",
+      "maintainer": true
+    }
+  ],
+  "tags": ["stats"]
+}

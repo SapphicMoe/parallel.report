@@ -1,0 +1,19 @@
+{
+  "title": "Blue Engram",
+  "description": "Assorted Destiny tools of questionable worth.",
+  "icon": "/images/resources/blue-engram/icon.png",
+  "link": "https://engram.blue/",
+  "color": "#3774e4",
+  "contributors": [
+    {
+      "contributor": "Ciarán",
+      "role": "Developer",
+      "maintainer": true
+    }
+  ],
+  "tags": [
+    "api",
+    "planning",
+    "stats"
+  ]
+}

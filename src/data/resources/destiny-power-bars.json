@@ -1,0 +1,18 @@
+{
+  "title": "Destiny Power Bars",
+  "description": "Quickly see your highest power item per slot for your Destiny 2 characters, and displays your maximum power per character including artifact bonus.",
+  "icon": "/images/resources/destiny-power-bars/icon.png",
+  "inactive": false,
+  "link": "https://destiny-power-bars.corke.dev/",
+  "color": "#00ffff",
+  "contributors": [
+    {
+      "contributor": "Tom Corke",
+      "role": "Developer",
+      "maintainer": true
+    }
+  ],
+  "tags": [
+    "planning"
+  ]
+}

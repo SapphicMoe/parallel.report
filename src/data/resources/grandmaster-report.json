@@ -1,0 +1,18 @@
+{
+  "title": "Grandmaster Report",
+  "description": "Leaderboards, player profiles, seasonal loot and rotation calendar, and other information on Destiny 2 GM Nightfalls.",
+  "icon": "/images/resources/grandmaster-report/icon.svg",
+  "link": "https://gm.report",
+  "color": "#FFFFFF",
+  "contributors": [
+    {
+      "contributor": "cbro",
+      "role": "Developer",
+      "maintainer": true
+    }
+  ],
+  "tags": [
+    "rotations",
+    "stats"
+  ]
+}

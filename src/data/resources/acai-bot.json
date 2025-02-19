@@ -1,0 +1,15 @@
+{
+  "title": "Açaí Bot",
+  "description": "A Discord bot to organize Raids, Dungeons and Events in general quickly and easily.",
+  "icon": "/images/resources/acai-bot/icon.png",
+  "link": "https://acai.bot",
+  "color": "#a35cd1",
+  "contributors": [
+    {
+      "contributor": "Jocafamaka",
+      "role": "Developer",
+      "maintainer": true
+    }
+  ],
+  "tags": ["discord", "planning"]
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Crucible Intel",
+  "description": "A companion app for tracking results of recent PvP games in Destiny 2.",
+  "icon": "/images/resources/crucible-intel/icon.png",
+  "link": "https://mcbay.net/",
+  "color": "#FFFFFF",
+  "contributors": [
+    {
+      "contributor": "George McBay",
+      "role": "Developer",
+      "maintainer": true
+    }
+  ],
+  "tags": [
+    "app",
+    "stats"
+  ]
+}

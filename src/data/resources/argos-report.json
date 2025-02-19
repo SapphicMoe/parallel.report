@@ -1,0 +1,15 @@
+{
+  "title": "argos.report",
+  "description": "Tracking solo Argos kills in the Leviathan: Eater of Worlds raid lair.",
+  "icon": "/images/resources/argos-report/icon.png",
+  "link": "https://argos.report",
+  "color": "#de4a4a",
+  "contributors": [
+    {
+      "contributor": "Zeta",
+      "role": "Maintainer",
+      "maintainer": true
+    }
+  ],
+  "tags": ["api"]
+}

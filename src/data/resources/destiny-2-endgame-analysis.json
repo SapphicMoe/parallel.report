@@ -1,0 +1,18 @@
+{
+  "title": "Destiny 2: Endgame Analysis",
+  "description": "A spreadsheet detailing the best-in-slot weapons and armor.",
+  "icon": "/images/resources/destiny-2-endgame-analysis/icon.png",
+  "link": "https://docs.google.com/spreadsheets/d/1JM-0SlxVDAi-C6rGVlLxa-J1WGewEeL8Qvq4htWZHhY/htmlview?gid=288998351#",
+  "color": "#FFFFFF",
+  "contributors": [
+    {
+      "contributor": "Aegis",
+      "role": "Maintainer",
+      "maintainer": true
+    }
+  ],
+  "tags": [
+    "planning",
+    "spreadsheet"
+  ]
+}

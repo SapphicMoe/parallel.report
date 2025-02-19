@@ -1,0 +1,14 @@
+{
+  "title": "Seccy.dev",
+  "description": "A random assortment of Destiny 2 related tools.",
+  "link": "https://seccy.dev/",
+  "color": "#ED960B",
+  "contributors": [
+    {
+      "contributor": "Lab",
+      "role": "Developer",
+      "maintainer": true
+    }
+  ],
+  "tags": ["api"]
+}

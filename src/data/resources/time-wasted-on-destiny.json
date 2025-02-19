@@ -1,0 +1,15 @@
+{
+  "title": "Time Wasted on Destiny",
+  "description": "Check how much time you and your friends spent in Destiny 2.",
+  "icon": "/images/resources/time-wasted-on-destiny/icon.svg",
+  "link": "https://wastedondestiny.com",
+  "color": "#3b82f6",
+  "contributors": [
+    {
+      "contributor": "BinarMorker",
+      "role": "Developer",
+      "maintainer": true
+    }
+  ],
+  "tags": ["progress"]
+}

@@ -1,0 +1,30 @@
+{
+  "title": "D2Checkpoint",
+  "description": "A community-driven website and Discord server that provides checkpoints via in-game bots, enabling you to instantly access specific raid and dungeon encounters.",
+  "icon": "/images/resources/d2-checkpoint/icon.png",
+  "link": "https://d2checkpoint.com/",
+  "color": "#f08c00",
+  "contributors": [
+    {
+      "contributor": "camo",
+      "role": "Founder",
+      "maintainer": true
+    },
+    {
+      "contributor": "thelooter",
+      "role": "Developer",
+      "maintainer": true
+    },
+    {
+      "contributor": "St4n",
+      "role": "Developer",
+      "maintainer": true
+    },
+    {
+      "contributor": "Prism",
+      "role": "Admin",
+      "maintainer": true
+    }
+  ],
+  "tags": ["checkpoints", "discord", "planning"]
+}
