@@ -12,9 +12,7 @@
     "format": "prettier --w --plugin-search-dir=. --cache .",
     "lint": "eslint --fix src/**/*.{ts,astro}",
     "start": "astro preview",
-    "test": "eslint .; prettier -c .",
-    "wrangler:dev": "wrangler pages dev --proxy 3000 -- pnpm dev",
-    "wrangler:start": "wrangler pages dev --proxy 3000 -- pnpm start"
+    "test": "eslint .; prettier -c ."
   },
   "repository": "https://github.com/SapphicMoe/parallel.report",
   "postcss": {
@@ -45,20 +43,19 @@
     "@astrojs/check": "^0.9.4",
     "@eslint/js": "^9.20.0",
     "@types/eslint": "^9.6.1",
-    "@types/react": "^19.0.8",
-    "@types/react-dom": "^19.0.3",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.20.1",
     "eslint-plugin-astro": "^1.3.1",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "jiti": "^2.4.2",
-    "postcss": "^8.5.2",
+    "postcss": "^8.5.3",
     "prettier": "^3.5.1",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.3",
-    "typescript-eslint": "^8.24.0",
-    "wrangler": "^3.109.1"
+    "typescript-eslint": "^8.24.1"
   }
 }
