@@ -21,11 +21,6 @@
       "maintainer": false
     },
     {
-      "contributor": "Fauxres",
-      "role": "Contributor",
-      "maintainer": false
-    },
-    {
       "contributor": "Hank",
       "role": "Contributor",
       "maintainer": false
@@ -56,7 +51,5 @@
       "maintainer": false
     }
   ],
-  "tags": [
-    "rotations"
-  ]
+  "tags": ["rotations"]
 }
