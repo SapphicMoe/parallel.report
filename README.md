@@ -18,14 +18,10 @@
   </p>
 </div>
 
-## Getting yourself added
-
-Have the emblem? Visit [https://parallel.report/contact](https://parallel.report/contact 'Contact (parallel.report)') and let me know!
-
 ## License
 
 This website is licensed under the [zlib][license] license.
 
-&copy; 2023 Chloe Arciniega.
+&copy; 2025 Sapphic Angels.
 
-[license]: https://github.com/solelychloe/arciniega.one/blob/main/LICENSE 'zlib License'
+[license]: https://github.com/SapphicMoe/parallel.report/blob/main/LICENSE 'zlib License'

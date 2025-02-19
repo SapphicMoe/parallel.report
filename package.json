@@ -1,8 +1,8 @@
 {
-  "name": "@solely/parallel",
+  "name": "@sapphic/parallel",
   "version": "3.0.0",
   "type": "module",
-  "author": "Chloe Arciniega <solely@riseup.net>",
+  "author": "Sapphic Angels <chloe@sapphic.moe>",
   "license": "zlib",
   "private": true,
   "scripts": {
@@ -18,7 +18,7 @@
     "wrangler:dev": "wrangler pages dev --proxy 3000 -- pnpm dev",
     "wrangler:start": "wrangler pages dev --proxy 3000 -- pnpm start"
   },
-  "repository": "https://github.com/solelychloe/parallel.report",
+  "repository": "https://github.com/SapphicMoe/parallel.report",
   "postcss": {
     "plugins": {
       "tailwindcss/nesting": {},
