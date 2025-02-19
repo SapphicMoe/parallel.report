@@ -2,6 +2,7 @@
 dist/
 .output/
 .astro/
+.vercel
 
 # dependencies
 node_modules/
@@ -22,5 +23,3 @@ yarn-error.log*
 # OS-specific files
 .DS_Store
 desktop.ini
-
-.wrangler
