@@ -1,7 +1,7 @@
 ---
-import Head from '@components/base/Head.astro';
+import Head from '@components/Head.astro';
 import '@fontsource/atkinson-hyperlegible';
-import '@fontsource/inter';
+import Footer from '@components/Footer.astro';
 
 interface Props {
   description?: string;
@@ -14,7 +14,7 @@ const { description, pageTitle, title, turnstile } = Astro.props;
 ---
 
 <!doctype html>
-<html class="flex flex-col" lang="en">
+<html class="flex flex-col" lang="en" transition:animate="fade">
   <Head {description} {pageTitle} {title}>
     {turnstile && <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer is:inline />}
   </Head>
@@ -22,6 +22,8 @@ const { description, pageTitle, title, turnstile } = Astro.props;
   <body class="flex flex-col text-xl md:self-center">
     <main class="flex flex-col gap-2">
       <slot />
+
+      <Footer />
     </main>
 
     <style is:global>
