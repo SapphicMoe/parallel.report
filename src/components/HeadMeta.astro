@@ -1,6 +1,6 @@
 ---
 import { SEO } from 'astro-seo';
-import { site } from '@config';
+import site from '@config';
 
 const { description, pageTitle, title } = Astro.props;
 
@@ -28,7 +28,7 @@ const image = new URL(site.icon?.name || '/favicon.png', Astro.site).href;
   }}
   twitter={{
     card: 'summary',
-    creator: '@solelychloe',
+    creator: '@SapphoSys',
 
     image,
     imageAlt: site.icon && site.icon.altText,
@@ -39,9 +39,6 @@ const image = new URL(site.icon?.name || '/favicon.png', Astro.site).href;
       { name: 'generator', content: Astro.generator },
       { name: 'theme-color', content: site.themeColor },
     ],
-    link: [
-      { rel: 'icon', href: image },
-      { rel: 'me', href: 'https://tech.lgbt/@solely' },
-    ],
+    link: [{ rel: 'icon', href: image }],
   }}
 />
