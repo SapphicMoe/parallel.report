@@ -2,6 +2,7 @@
   "title": "Destiny Insights",
   "description": "An app that provides insightful info for mods: how many times they were sold, when they made their last appearance, and more!",
   "icon": "/images/resources/destiny-insights/icon.png",
+  "inactive": true,
   "link": "https://twitter.com/DestinyInsights",
   "color": "#c0316e",
   "contributors": [

@@ -31,6 +31,12 @@ const { resource } = Astro.props;
 
   <p>{resource.description}</p>
 
+  {
+    resource.inactive && (
+      <span class="font-semibold text-ctp-red">Notice: This resource is marked inactive, and is thus no longer maintained.</span>
+    )
+  }
+
   <span class="flex flex-wrap gap-2 pb-2 pt-1">
     {
       resource.tags.map((tag) => {

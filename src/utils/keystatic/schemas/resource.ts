@@ -34,6 +34,11 @@ export default {
     publicPath: '/images/resources',
   }),
 
+  inactive: fields.checkbox({
+    label: 'Inactive',
+    description: 'Is this resource inactive?',
+  }),
+
   link: fields.url({
     label: 'Link',
     description: 'URL of the resource.',
