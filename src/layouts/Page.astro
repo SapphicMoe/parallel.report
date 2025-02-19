@@ -42,6 +42,20 @@ const { description, pageTitle, title, turnstile } = Astro.props;
 
     <script>
       import htmx from 'htmx.org';
+
+      declare global {
+        interface Window {
+          turnstile: {
+            reset: () => void;
+            implicitRender: () => void;
+          };
+        }
+      }
+
+      // Runs on view transitions navigation + process the new HTML
+      document.addEventListener('astro:after-swap', () => {
+        htmx.process(document.documentElement);
+      });
     </script>
   </body>
 </html>
