@@ -1,13 +1,13 @@
 ---
 import Layout from '@layouts/Page.astro';
 
-import { collections } from '@utils/keystatic';
-
 import Resource from '@components/Resource.astro';
 import Search from '@components/Search.astro';
 
-const resources = await collections.resources.all();
-const guardians = await collections.contributors.all();
+import { getCollection, getEntry } from 'astro:content';
+
+const resources = await getCollection('resources');
+const guardians = await getCollection('contributors');
 ---
 
 <Layout
@@ -38,8 +38,10 @@ const guardians = await collections.contributors.all();
     id="resources"
   >
     {
-      resources.map((resource) => {
-        return <Resource resource={resource.entry} />;
+      resources.map(async (resource) => {
+        const resourceEntry = await getEntry('resources', resource.id)!;
+
+        return <Resource resource={resourceEntry.data} />;
       })
     }
   </div>
