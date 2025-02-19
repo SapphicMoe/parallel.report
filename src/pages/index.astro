@@ -3,8 +3,8 @@ import Layout from '@layouts/Page.astro';
 
 import { collections } from '@utils/keystatic';
 
-import Footer from '@components/Footer.astro';
 import Resource from '@components/Resource.astro';
+import Search from '@components/Search.astro';
 
 const resources = await collections.resources.all();
 ---
@@ -25,12 +25,16 @@ const resources = await collections.resources.all();
     </p>
   </div>
 
-  <div class="flex flex-col gap-5">
+  <Search />
+
+  <div
+    class="flex flex-col gap-10 pt-3 [&.htmx-swapping]:opacity-0 [&.htmx-swapping]:transition-opacity [&.htmx-swapping]:duration-700 [&.htmx-swapping]:ease-out"
+    id="resources"
+  >
     {
       resources.map((resource) => {
         return <Resource resource={resource.entry} />;
       })
     }
   </div>
-
 </Layout>

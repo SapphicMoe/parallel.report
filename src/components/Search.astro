@@ -1,0 +1,11 @@
+<input
+  type="text"
+  name="search"
+  class="rounded-md border-2 border-ctp-surface2 border-opacity-60 bg-ctp-base p-3 transition ease-out focus:border-ctp-red focus:outline-none focus:ring-0"
+  value={Astro.url.searchParams.get('search')}
+  placeholder="🔎 Search by name, description, tag, or contributor..."
+  hx-get="/partials/search"
+  hx-target="#resources"
+  hx-trigger="keyup changed delay:500ms"
+  hx-swap="innerHTML swap:500ms"
+/>
