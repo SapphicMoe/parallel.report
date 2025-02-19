@@ -1,12 +1,15 @@
 import { config } from '@keystatic/core';
 
 import collections from '@utils/keystatic/collections';
+import { IS_PRODUCTION } from '@utils/helpers';
 
 export default config({
-  storage: {
-    kind: 'github',
-    repo: 'SapphicMoe/parallel.report',
-  },
+  storage: IS_PRODUCTION
+    ? {
+        kind: 'github',
+        repo: 'SapphicMoe/parallel.report',
+      }
+    : { kind: 'local' },
 
   ui: {
     brand: {
