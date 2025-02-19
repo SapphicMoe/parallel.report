@@ -55,7 +55,7 @@ const { resource } = Astro.props;
 
   <hr style={{ 'border-color': resource.color }} />
 
-  <ul class="flex list-disc flex-col gap-1 pb-2 pl-6 pt-2 font-display">
+  <ul class="flex list-disc flex-col gap-1 pb-2 pl-6 pt-2">
     {
       resource.contributors.length > 0 ? (
         resource.contributors.map(async (_) => {

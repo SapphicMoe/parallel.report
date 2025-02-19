@@ -1,10 +1,10 @@
 import { collection } from '@keystatic/core';
-import schema from '@lib/keystatic/schemas/resource';
+import schema from '@utils/keystatic/schemas/contributor';
 
 export default collection({
-  label: 'Resources',
-  slugField: 'title',
-  path: 'src/data/resources/*',
+  label: 'Contributors',
+  slugField: 'name',
+  path: 'src/data/contributors/*',
   schema,
   format: { data: 'json' },
   // previewUrl: '/article/{slug}',

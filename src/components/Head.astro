@@ -1,0 +1,19 @@
+---
+import site from '@config';
+import SEO from '@components/HeadMeta.astro';
+import { IS_PRODUCTION } from '@utils/helpers';
+
+const { description, pageTitle, title } = Astro.props;
+---
+
+<head>
+  {
+    IS_PRODUCTION && !!site.analytics && !!site.name && (
+      <script defer data-domain={site.name} data-api="https://stats.ovy.sh/api/event" src="https://stats.ovy.sh/js/script.js" />
+    )
+  }
+
+  <SEO {description} {pageTitle} {title} />
+
+  <slot />
+</head>

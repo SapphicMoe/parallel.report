@@ -9,8 +9,8 @@
       "~/*": ["src/*"],
       "@components/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"],
-      "@lib/*": ["src/lib/*"],
-      "@config": ["src/site.config.ts"]
+      "@utils/*": ["src/utils/*"],
+      "@config": ["src/utils/config.ts"]
     },
     "jsx": "react-jsx",
     "jsxImportSource": "react"

@@ -1,6 +1,6 @@
 import { config } from '@keystatic/core';
 
-import collections from '@lib/keystatic/collections';
+import collections from '@utils/keystatic/collections';
 
 export default config({
   storage: {
