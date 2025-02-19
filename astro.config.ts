@@ -4,7 +4,6 @@ import react from '@astrojs/react';
 import keystatic from '@keystatic/astro';
 import tailwind from '@astrojs/tailwind';
 import vercel from '@astrojs/vercel';
-import compress from 'astro-compress';
 import rehypeExternalLinks from 'rehype-external-links';
 
 // https://astro.build/config
@@ -23,5 +22,5 @@ export default defineConfig({
       ],
     ],
   },
-  integrations: [tailwind(), mdx(), react(), keystatic(), compress()],
+  integrations: [tailwind(), mdx(), react(), keystatic()],
 });
