@@ -1,0 +1,20 @@
+---
+import Layout from '@layouts/Page.astro';
+
+import ContributorForm from '@components/contact/ContributorForm.astro';
+---
+
+<Layout
+  description="Have the Parallel Program emblem, and are looking to see your name in an existing resource? Fill this form and let us know!"
+  pageTitle="Contacting as a contributor"
+  title="Contacting as a contributor | Parallel Program Report"
+  turnstile={true}
+>
+  <div class="flex flex-col gap-3 pb-5 pt-3">
+    <h1 class="title">Contacting as a contributor</h1>
+
+    <span>Have the Parallel Program emblem, and are looking to see your name in an existing resource? Fill this form and let us know!</span>
+  </div>
+
+  <ContributorForm />
+</Layout>

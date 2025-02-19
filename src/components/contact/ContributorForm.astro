@@ -1,0 +1,102 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+
+<form class="flex flex-col gap-4" action="/api/contact/contributor" method="POST">
+  <div>
+    <label for="name" class="font-semibold">Your name</label>
+    <input type="text" id="name" name="name" placeholder="John Doe" class="w-full rounded-md px-4 py-2 focus:outline-none" required />
+    <p class="pt-1 text-base opacity-80">This can be your preferred name.</p>
+  </div>
+
+  <div>
+    <label for="bungieName" class="font-semibold">Your Bungie Name</label>
+    <input
+      type="text"
+      id="bungieName"
+      name="bungieName"
+      placeholder="Guardian#1234"
+      class="w-full rounded-md px-4 py-2 focus:outline-none"
+      required
+    />
+    <p class="pt-1 text-base opacity-80">Your Destiny 2 Bungie Name, to check if you have the Parallel Program emblem.</p>
+  </div>
+
+  <div>
+    <label for="link" class="font-semibold">Your link</label>
+    <input
+      type="url"
+      id="link"
+      name="link"
+      placeholder="https://myawesomewebsite.com"
+      class="w-full rounded-md px-4 py-2 focus:outline-none"
+      required
+    />
+    <p class="pt-1 text-base opacity-80">
+      This can be your Bungie.net profile, your personal website, a GitHub profile, or anything, really.
+    </p>
+  </div>
+
+  <div>
+    <label for="resourceName" class="font-semibold">Resource name</label>
+    <input
+      type="text"
+      id="resourceName"
+      name="resourceName"
+      placeholder="Destiny Item Manager"
+      class="w-full rounded-md px-4 py-2 focus:outline-none"
+      required
+    />
+    <p class="pt-1 text-base opacity-80">The name of the resource you've contributed to.</p>
+  </div>
+
+  <div>
+    <label for="resourceRole" class="font-semibold">Your role / contribution</label>
+    <input
+      type="text"
+      id="resourceRole"
+      name="resourceRole"
+      placeholder="Wishlist Curator"
+      class="w-full rounded-md px-4 py-2 focus:outline-none"
+      required
+    />
+    <p class="pt-1 text-base opacity-80">Your role in the resource.</p>
+  </div>
+
+  <div>
+    <label for="contact" class="font-semibold"
+      >Your means of communication, so we can reach back to you <span class="text-base font-normal">(optional)</span></label
+    >
+    <input
+      type="text"
+      id="contact"
+      name="contact"
+      placeholder="Email (hello@example.com), Discord tag (username), etc"
+      class="w-full rounded-md px-4 py-2 focus:outline-none"
+    />
+    <p class="pt-1 text-base opacity-80">
+      This step is optional, but we can contact you in case we add you to a resource, or if we have follow-up questions.
+    </p>
+  </div>
+
+  <div class="cf-turnstile" data-sitekey={import.meta.env.TURNSTILE_SITE_KEY}></div>
+
+  <div>
+    <button
+      type="submit"
+      class="flex flex-row items-center gap-2 rounded-lg bg-ctp-red p-3 text-center font-medium text-ctp-base transition ease-out hover:opacity-80"
+    >
+      <Icon name="mdi:alternate-email" />
+      Submit
+    </button>
+  </div>
+</form>
+
+<style>
+  label {
+    @apply block pb-1;
+  }
+  input {
+    @apply border border-ctp-red border-opacity-60 bg-ctp-base;
+  }
+</style>

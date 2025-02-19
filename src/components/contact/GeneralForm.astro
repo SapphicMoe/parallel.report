@@ -1,0 +1,61 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+
+<form class="flex flex-col gap-4" action="/api/contact/general" method="POST">
+  <div>
+    <label for="name" class="font-semibold">Your name</label>
+    <input type="text" id="name" name="name" placeholder="John Doe" class="w-full rounded-md px-4 py-2 focus:outline-none" required />
+    <p class="pt-1 text-base opacity-80">This can be your preferred name.</p>
+  </div>
+
+  <div>
+    <label for="contact" class="font-semibold">Your means of communication</label>
+    <input
+      type="text"
+      id="contact"
+      name="contact"
+      placeholder="Email (hello@example.com), Discord tag (username), etc"
+      required
+      class="w-full rounded-md px-4 py-2 focus:outline-none"
+    />
+    <p class="pt-1 text-base opacity-80">If you don't include a contact method, we won't be able to reach back to you.</p>
+  </div>
+
+  <div>
+    <label for="message" class="font-semibold">Your message</label>
+    <textarea
+      id="message"
+      name="message"
+      required
+      placeholder="Hello, world!"
+      rows="2"
+      class="w-full rounded-md px-4 py-2 focus:outline-none"></textarea>
+    <p class="pt-1 text-base opacity-80">Your message goes here!</p>
+  </div>
+
+  <div class="cf-turnstile" data-sitekey={import.meta.env.TURNSTILE_SITE_KEY}></div>
+
+  <div>
+    <button
+      type="submit"
+      class="flex flex-row items-center gap-2 rounded-lg bg-ctp-red p-3 text-center font-medium text-ctp-base transition ease-out hover:opacity-80"
+    >
+      <Icon name="mdi:alternate-email" />
+      Submit
+    </button>
+  </div>
+</form>
+
+<style>
+  label {
+    @apply block pb-1;
+  }
+  input,
+  textarea {
+    @apply border border-ctp-red border-opacity-60 bg-ctp-base;
+  }
+  textarea + p {
+    @apply -mt-1.5;
+  }
+</style>

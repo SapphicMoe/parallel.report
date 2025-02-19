@@ -1,13 +1,13 @@
 export const prerender = false;
 
-import type { APIRoute } from 'astro';
-import type { APIContext } from 'astro';
+import type { APIRoute, APIContext } from 'astro';
 
 interface Props {
   name: string;
+  bungieName: string;
+  link: string;
   resourceName: string;
-  resourceLink: string;
-  role: string;
+  resourceRole: string;
   contact?: string;
 }
 
@@ -23,28 +23,34 @@ const sendDiscordMessage = async (details: Props, url: string) => {
       content: '<@312145496179474434>',
       embeds: [
         {
-          title: 'New Suggestion',
+          title: 'New suggestion (contributor)',
           type: 'rich',
+          color: 0xa6e3a1,
+          timestamp: new Date().toISOString(),
           fields: [
             {
               name: 'Name',
               value: details.name,
             },
             {
-              name: 'Resource Name',
+              name: 'Bungie Name',
+              value: details.bungieName,
+            },
+            {
+              name: 'Link',
+              value: details.link,
+            },
+            {
+              name: 'Resource name',
               value: details.resourceName,
             },
             {
-              name: 'Resource URL',
-              value: details.resourceLink,
-            },
-            {
-              name: 'Role / Contribution',
-              value: details.role,
+              name: 'Resource role / contribution',
+              value: details.resourceRole,
             },
             {
               name: 'Method of Contact',
-              value: details.contact || 'None specified',
+              value: details.contact || 'None',
             },
           ],
         },
@@ -80,13 +86,14 @@ export const POST: APIRoute = async ({ request, redirect }: APIContext) => {
   }
 
   const name = data.get('name')?.toString();
+  const bungieName = data.get('bungieName')?.toString();
+  const link = data.get('link')?.toString();
   const resourceName = data.get('resourceName')?.toString();
-  const resourceLink = data.get('resourceLink')?.toString();
-  const role = data.get('role')?.toString();
+  const resourceRole = data.get('resourceRole')?.toString();
   const contact = data.get('contact')?.toString();
 
   // Validate the data
-  if (!name || !resourceName || !resourceLink || !role) {
+  if (!name || !bungieName || !link || !resourceName || !resourceRole) {
     return new Response(
       JSON.stringify({
         message: 'Missing required fields',
@@ -95,7 +102,7 @@ export const POST: APIRoute = async ({ request, redirect }: APIContext) => {
     );
   }
 
-  await sendDiscordMessage({ name, resourceName, resourceLink, role, contact }, import.meta.env.DISCORD_WEBHOOK_URL);
+  await sendDiscordMessage({ name, bungieName, link, resourceName, resourceRole, contact }, import.meta.env.DISCORD_WEBHOOK_URL);
 
   return redirect('/success');
 };
