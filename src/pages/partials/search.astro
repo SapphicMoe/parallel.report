@@ -1,0 +1,31 @@
+---
+export const prerender = false;
+export const partial = true;
+
+import Resource from '@components/Resource.astro';
+import { collections } from '@utils/keystatic';
+import type { ResourcesCollection } from '@utils/types';
+
+const search = (Astro.url.searchParams.get('search') || '').toLowerCase();
+
+const allResources: ResourcesCollection[] = await collections.resources.all();
+
+const resources = allResources.filter((resource) => {
+  return (
+    resource.entry.title.toLowerCase().includes(search) ||
+    resource.entry.description.toLowerCase().includes(search) ||
+    resource.entry.tags.some((tag) => tag.toLowerCase().includes(search)) ||
+    resource.entry.contributors.some((contributor) => contributor.contributor.toLowerCase().includes(search))
+  );
+});
+---
+
+{
+  resources.length === 0 ? (
+    <p>No results found.</p>
+  ) : (
+    resources.map((resource) => {
+      return <Resource resource={resource.entry} />;
+    })
+  )
+}
