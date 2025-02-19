@@ -1,5 +1,0 @@
-Contact: mailto:solely@riseup.net
-Expires: 2024-01-03T19:00:00.000Z
-Encryption: https://arciniega.one/key.txt
-Preferred-Languages: en,ru
-Canonical: https://parallel.report/.well-known/security.txt
