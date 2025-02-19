@@ -8,8 +8,7 @@ export default {
   content: ['./src/**/*.{astro,html,js,md,mdx,ts,tsx}'],
   theme: {
     fontFamily: {
-      body: ['Inter', 'sans-serif'],
-      display: ['Atkinson Hyperlegible', 'sans-serif'],
+      body: ['Atkinson Hyperlegible', 'sans-serif'],
     },
     colors: {
       'accent-light': '#d20f39',

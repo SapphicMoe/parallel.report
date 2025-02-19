@@ -30,12 +30,12 @@ const { description, pageTitle, title, turnstile } = Astro.props;
       }
 
       body {
-        @apply ctp-mocha bg-ctp-crust text-ctp-text selection:bg-ctp-red selection:text-ctp-crust;
+        @apply ctp-mocha bg-ctp-crust font-body text-ctp-text selection:bg-ctp-red selection:text-ctp-crust;
         @apply max-w-[45em] px-[1em] py-[2em] md:px-[2.5em];
       }
 
       .line {
-        @apply font-display;
+        @apply font-body;
       }
     </style>
   </body>

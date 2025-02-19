@@ -30,6 +30,7 @@
   "dependencies": {
     "@astrojs/react": "^4.2.0",
     "@astrojs/vercel": "^8.0.7",
+    "@fontsource/atkinson-hyperlegible": "^5.1.1",
     "@keystatic/astro": "^5.0.5",
     "@keystatic/core": "^0.5.45",
     "@types/react": "^19.0.8",
@@ -44,8 +45,6 @@
     "@astrojs/mdx": "^4.0.8",
     "@astrojs/tailwind": "^6.0.0",
     "@catppuccin/tailwindcss": "^0.1.6",
-    "@fontsource/atkinson-hyperlegible": "^5.1.1",
-    "@fontsource/inter": "^5.1.1",
     "@tailwindcss/typography": "^0.5.16",
     "@types/eslint": "^9.6.1",
     "astro-compress": "^2.3.6",
