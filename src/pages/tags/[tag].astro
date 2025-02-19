@@ -1,0 +1,46 @@
+---
+import Layout from '@layouts/Page.astro';
+import { collections } from '@utils/keystatic';
+import type { GetStaticPaths } from 'astro';
+
+import Resource from '@components/Resource.astro';
+import type { ResourcesCollection } from '@utils/types';
+
+interface Props {
+  resources: ResourcesCollection[];
+}
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const allResources = await collections.resources.all();
+  const tags = allResources.map((resource) => resource.entry.tags);
+
+  const uniqueTags = [...new Set(tags.flat())];
+
+  return uniqueTags.map((tag) => ({
+    params: { tag },
+    props: { resources: allResources.filter((resource) => resource.entry.tags.includes(tag)) },
+  }));
+};
+
+const { tag } = Astro.params;
+const { resources } = Astro.props;
+---
+
+<Layout
+  description={`Resources with the tag ${tag}`}
+  pageTitle={`Tag "${tag}" | Parallel Program Report`}
+  title={`Resources with the tag "${tag}" | Parallel Program Report`}
+>
+  <div class="flex flex-col gap-3 pb-5 pt-3">
+    <h1 class="text-3xl">Resources with the tag <span class="font-bold">"{tag}"</span></h1>
+    <p>{resources.length} resources found.</p>
+  </div>
+
+  <div class="flex flex-col gap-10">
+    {
+      resources.map((resource) => {
+        return <Resource resource={resource.entry} />;
+      })
+    }
+  </div>
+</Layout>

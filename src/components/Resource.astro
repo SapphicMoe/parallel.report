@@ -31,12 +31,14 @@ const { resource } = Astro.props;
     {
       resource.tags.map((tag) => {
         return (
-          <span
-            class={`rounded-xl border px-2 py-0.5 font-medium text-ctp-base`}
+          <a
+            href={`/tags/${tag}`}
+            class={`rounded-lg border px-2 py-0.5 font-medium text-ctp-base`}
             style={{ 'background-color': resource.color, 'border-color': resource.color }}
+            title={`Resource tagged with "${tag}". Click to view other resources with this tag.`}
           >
             {tag}
-          </span>
+          </a>
         );
       })
     }

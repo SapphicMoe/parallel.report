@@ -15,3 +15,8 @@ export interface Credits {
 }
 
 export type Resource = Entry<(typeof keystaticConfig)['collections']['resources']>;
+
+export interface ResourcesCollection {
+  slug: string;
+  entry: Resource;
+}
