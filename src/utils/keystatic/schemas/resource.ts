@@ -20,6 +20,7 @@ export default {
   description: fields.text({
     label: 'Description',
     description: 'Description of the resource.',
+    multiline: true,
     validation: {
       length: {
         min: 1,
