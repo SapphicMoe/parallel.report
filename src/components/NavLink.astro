@@ -1,0 +1,33 @@
+---
+import { Icon } from 'astro-icon/components';
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends HTMLAttributes<'a'> {
+  class: string;
+  text: string;
+  icon: string;
+}
+
+const { text, href, icon, class: className, ...props } = Astro.props;
+
+let isActive: boolean;
+
+if (!href) {
+  isActive = false;
+} else if (href === '/') {
+  isActive = href === Astro.url.pathname;
+} else {
+  isActive = Astro.url.pathname.includes(typeof href === 'string' ? href : href.href);
+}
+---
+
+<a
+  class:list={[className, { 'font-extrabold underline': isActive }, 'flex flex-row items-center gap-1']}
+  {href}
+  {...props}
+  title={`${text} page`}
+>
+  <slot />
+  {icon && <Icon size={20} name={icon} aria-hidden={true} />}
+  {text}
+</a>

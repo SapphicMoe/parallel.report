@@ -4,9 +4,6 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-  "files.associations": {
-    "*.mdx": "markdown"
-  },
   "eslint.validate": ["javascript", "astro", "typescript"],
   "prettier.documentSelectors": ["**/*.astro"],
   "[css]": {

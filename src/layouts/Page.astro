@@ -1,6 +1,7 @@
 ---
 import Head from '@components/Head.astro';
 import '@fontsource/atkinson-hyperlegible';
+import NavBar from '@components/NavBar.astro';
 import Footer from '@components/Footer.astro';
 
 interface Props {
@@ -21,6 +22,8 @@ const { description, pageTitle, title, turnstile } = Astro.props;
 
   <body class="flex flex-col text-xl md:self-center">
     <main class="flex flex-col gap-2">
+      <NavBar />
+
       <slot />
 
       <Footer />
@@ -34,10 +37,6 @@ const { description, pageTitle, title, turnstile } = Astro.props;
       body {
         @apply ctp-mocha bg-ctp-crust font-body text-ctp-text selection:bg-ctp-red selection:text-ctp-crust;
         @apply max-w-[45em] px-[1em] py-[2em] md:px-[2.5em];
-      }
-
-      .line {
-        @apply font-body;
       }
     </style>
   </body>

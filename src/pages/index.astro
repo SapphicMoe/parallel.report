@@ -1,13 +1,10 @@
 ---
 import Layout from '@layouts/Page.astro';
 
-import { Image } from 'astro:assets';
-import { collections } from '@lib/keystatic';
+import { collections } from '@utils/keystatic';
 
-import Footer from '@components/base/Footer.astro';
-import Header from '@components/home/Header.md';
-import Notice from '@components/home/Notice.md';
-import Resources from '@components/home/Resources.astro';
+import Footer from '@components/Footer.astro';
+import Resource from '@components/Resource.astro';
 
 const resources = await collections.resources.all();
 ---
@@ -17,16 +14,21 @@ const resources = await collections.resources.all();
   pageTitle="Parallel Program Report"
   title="Home | Parallel Program Report"
 >
-  <span class="flex flex-wrap justify-center pb-5">
-    <Image class="w-24" src="/favicon.png" title="The Parallel Program emblem." alt="The Parallel Program emblem." width={96} height={96} />
-  </span>
+  <div class="flex flex-col gap-3 pb-3 pt-3">
+    <h1 class="title">Home</h1>
 
-  <Header />
+    <p>
+      Covers Guardians who contributed to Destiny 2 and have received the <a
+        href="https://destinyemblemcollector.com/emblem?id=3936625542"
+        target="_blank">Parallel Program emblem</a
+      >.
+    </p>
+  </div>
 
   <div class="flex flex-col gap-5">
     {
       resources.map((resource) => {
-        return <Resources resource={resource.entry} />;
+        return <Resource resource={resource.entry} />;
       })
     }
   </div>

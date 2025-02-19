@@ -1,21 +1,10 @@
 ---
 import { collections } from '@lib/keystatic';
 import Link from '@components/home/Link.astro';
+import type { Resource } from '@utils/types';
 
 interface Props {
-  resource: {
-    title: string;
-    description: string;
-    icon: string;
-    link: string;
-    color: string;
-    contributors: readonly {
-      contributor: string;
-      role: string;
-      maintainer: boolean;
-    }[];
-    tags: readonly string[];
-  };
+  resource: Resource;
 }
 
 const { resource } = Astro.props;

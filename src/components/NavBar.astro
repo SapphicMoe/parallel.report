@@ -1,0 +1,21 @@
+---
+import { Image } from 'astro:assets';
+
+import NavLink from '@components/NavLink.astro';
+import { config } from '@config';
+---
+
+<div class="flex flex-col flex-wrap justify-between gap-y-1 text-center md:flex-row md:items-center">
+  <a href="/" class="flex w-fit flex-wrap gap-2 text-center text-ctp-text md:flex-row md:items-center md:justify-center">
+    <Image class="w-10" src="/favicon.png" alt="The icon for the Parallel Program emblem." width={32} height={32} />
+    <p class="text-2xl font-bold">Parallel Program Report</p>
+  </a>
+
+  <div class="flex flex-row flex-wrap gap-3">
+    {
+      config.navLinks.map(({ link, icon, text }) => {
+        return <NavLink href={link} {icon} {text} class="underline-offset-4" />;
+      })
+    }
+  </div>
+</div>

@@ -31,9 +31,11 @@
     "@astrojs/vercel": "^8.0.7",
     "@catppuccin/tailwindcss": "^0.1.6",
     "@fontsource/atkinson-hyperlegible": "^5.1.1",
+    "@iconify-json/mdi": "^1.2.3",
     "@keystatic/astro": "^5.0.5",
     "@keystatic/core": "^0.5.45",
     "astro": "^5.3.0",
+    "astro-icon": "^1.1.5",
     "astro-seo": "^0.8.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
