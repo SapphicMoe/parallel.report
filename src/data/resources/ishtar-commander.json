@@ -6,7 +6,7 @@
   "color": "#7C7C7C",
   "contributors": [
     {
-      "contributor": "Nigel Hietala",
+      "contributor": "Nigel Breslaw",
       "role": "Maintainer",
       "maintainer": true
     },
@@ -31,9 +31,5 @@
       "maintainer": false
     }
   ],
-  "tags": [
-    "collections",
-    "inventory",
-    "progress"
-  ]
+  "tags": ["collections", "inventory", "progress"]
 }

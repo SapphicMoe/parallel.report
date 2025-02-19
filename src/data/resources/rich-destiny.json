@@ -6,12 +6,10 @@
   "color": "#FFFFFF",
   "contributors": [
     {
-      "contributor": "Lieuwe Berg",
+      "contributor": "lieuwe_berg",
       "role": "Maintainer",
       "maintainer": true
     }
   ],
-  "tags": [
-    "discord"
-  ]
+  "tags": ["discord"]
 }

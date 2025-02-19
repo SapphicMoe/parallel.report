@@ -86,7 +86,7 @@
       "maintainer": false
     },
     {
-      "contributor": "solelychloe",
+      "contributor": "Sapphic Angels",
       "role": "Russian (ru-RU) Translator",
       "maintainer": false
     },
@@ -111,10 +111,5 @@
       "maintainer": false
     }
   ],
-  "tags": [
-    "collections",
-    "inventory",
-    "progress",
-    "rotations"
-  ]
+  "tags": ["collections", "inventory", "progress", "rotations"]
 }
