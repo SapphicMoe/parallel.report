@@ -61,5 +61,5 @@
       "maintainer": false
     }
   ],
-  "tags": ["api", "progress", "rotations", "stats"]
+  "tags": ["progress", "rotations", "stats"]
 }
