@@ -11,12 +11,5 @@
       "maintainer": true
     }
   ],
-  "tags": [
-    "collections",
-    "maps",
-    "planning",
-    "progress",
-    "rotations",
-    "stats"
-  ]
+  "tags": ["app", "collections", "maps", "planning", "progress", "rotations", "stats"]
 }

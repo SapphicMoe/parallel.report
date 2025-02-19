@@ -126,5 +126,5 @@
       "maintainer": false
     }
   ],
-  "tags": ["collections", "inventory", "progress", "rotations"]
+  "tags": ["app", "collections", "inventory", "progress", "rotations", "stats"]
 }
