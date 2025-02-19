@@ -21,7 +21,5 @@
       "maintainer": false
     }
   ],
-  "tags": [
-    "stats"
-  ]
+  "tags": ["stats"]
 }

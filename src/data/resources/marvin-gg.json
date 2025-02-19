@@ -11,9 +11,5 @@
       "maintainer": true
     }
   ],
-  "tags": [
-    "clan",
-    "discord",
-    "stats"
-  ]
+  "tags": ["clan", "discord", "stats"]
 }

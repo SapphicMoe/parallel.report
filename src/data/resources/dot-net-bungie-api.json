@@ -11,8 +11,5 @@
       "maintainer": true
     }
   ],
-  "tags": [
-    "api",
-    "csharp"
-  ]
+  "tags": ["api", "csharp"]
 }

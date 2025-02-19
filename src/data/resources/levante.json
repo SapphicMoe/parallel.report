@@ -26,9 +26,5 @@
       "maintainer": false
     }
   ],
-  "tags": [
-    "discord",
-    "rotations",
-    "stats"
-  ]
+  "tags": ["discord", "rotations", "stats"]
 }

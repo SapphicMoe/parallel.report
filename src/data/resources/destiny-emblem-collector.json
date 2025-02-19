@@ -11,7 +11,5 @@
       "maintainer": true
     }
   ],
-  "tags": [
-    "collections"
-  ]
+  "tags": ["collections"]
 }

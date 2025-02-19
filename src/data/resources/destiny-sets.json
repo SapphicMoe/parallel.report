@@ -16,8 +16,5 @@
       "maintainer": true
     }
   ],
-  "tags": [
-    "api",
-    "collections"
-  ]
+  "tags": ["api", "collections"]
 }

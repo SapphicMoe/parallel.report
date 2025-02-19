@@ -16,11 +16,5 @@
       "maintainer": false
     }
   ],
-  "tags": [
-    "collections",
-    "discord",
-    "planning",
-    "progress",
-    "stats"
-  ]
+  "tags": ["collections", "discord", "planning", "progress", "stats"]
 }

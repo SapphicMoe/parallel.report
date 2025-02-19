@@ -46,7 +46,5 @@
       "maintainer": false
     }
   ],
-  "tags": [
-    "planning"
-  ]
+  "tags": ["planning"]
 }

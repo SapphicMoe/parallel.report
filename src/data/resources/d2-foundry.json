@@ -31,8 +31,5 @@
       "maintainer": false
     }
   ],
-  "tags": [
-    "planning",
-    "stats"
-  ]
+  "tags": ["planning", "stats"]
 }

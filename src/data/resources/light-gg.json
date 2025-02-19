@@ -11,9 +11,5 @@
       "maintainer": true
     }
   ],
-  "tags": [
-    "api",
-    "collections",
-    "progress"
-  ]
+  "tags": ["api", "collections", "progress"]
 }

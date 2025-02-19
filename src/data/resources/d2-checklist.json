@@ -11,10 +11,5 @@
       "maintainer": true
     }
   ],
-  "tags": [
-    "planning",
-    "progress",
-    "rotations",
-    "stats"
-  ]
+  "tags": ["planning", "progress", "rotations", "stats"]
 }

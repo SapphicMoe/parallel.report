@@ -16,8 +16,5 @@
       "maintainer": false
     }
   ],
-  "tags": [
-    "progress",
-    "stats"
-  ]
+  "tags": ["progress", "stats"]
 }
