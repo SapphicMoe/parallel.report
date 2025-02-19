@@ -32,9 +32,6 @@ export default {
     description: 'Icon of the resource.',
     directory: 'public/images/resources',
     publicPath: '/images/resources',
-    validation: {
-      isRequired: true,
-    },
   }),
 
   link: fields.url({

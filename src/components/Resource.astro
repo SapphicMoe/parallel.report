@@ -1,5 +1,5 @@
 ---
-import { collections } from '@lib/keystatic';
+import { collections } from '@utils/keystatic';
 import Link from '@components/home/Link.astro';
 import type { Resource } from '@utils/types';
 
@@ -11,7 +11,11 @@ const { resource } = Astro.props;
 ---
 
 <span class={`flex flex-col gap-1 rounded-2xl border-[2px] p-6`} style={{ 'border-color': resource.color }}>
-  <img src={resource.icon} width="50" height="50" alt={`Logo of ${resource.title}`} title={`Logo of ${resource.title}`} />
+  {
+    resource.icon && (
+      <img src={resource.icon} width="50" height="50" alt={`Logo of ${resource.title}`} title={`Logo of ${resource.title}`} />
+    )
+  }
 
   <span class="font-display text-3xl font-bold md:text-4xl">
     <a
