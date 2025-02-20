@@ -1,6 +1,6 @@
 ---
-import { collections } from '@utils/keystatic';
 import type { Resource } from '@utils/types';
+import { getCollection } from 'astro:content';
 
 interface Props {
   resource: Resource;
@@ -59,8 +59,8 @@ const { resource } = Astro.props;
     {
       resource.contributors.length > 0 ? (
         resource.contributors.map(async (_) => {
-          const contributorData = await collections.contributors.read(_.contributor);
-          const contributor = { ..._, ...contributorData };
+          const contributorData = (await getCollection('contributors')).filter((contributor) => contributor.data.name === _.contributor)[0];
+          const contributor = { ..._, ...contributorData.data };
 
           return (
             <li class="custom-bullet" style={{ '--bullet-color': resource.color }} class:list={{ 'font-bold': contributor.maintainer }}>

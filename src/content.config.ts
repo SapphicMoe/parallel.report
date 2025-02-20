@@ -4,6 +4,7 @@ import { defineCollection, z } from 'astro:content';
 const loader = (collection: string) => glob({ pattern: '**/[^_]*.json', base: `./src/data/${collection}` });
 
 export const contributorsSchema = z.object({
+  name: z.string(),
   link: z.string(),
 });
 
