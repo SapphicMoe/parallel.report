@@ -64,16 +64,17 @@ const { resource } = Astro.props;
 
           return (
             <li class="custom-bullet" style={{ '--bullet-color': resource.color }} class:list={{ 'font-bold': contributor.maintainer }}>
-              <div class="flex flex-row gap-1.5">
+              <div class="inline-flex flex-wrap gap-1.5">
                 <a
                   style={{ 'color': resource.color }}
                   href={contributor.link}
                   target="_blank"
                   title={`A link to ${contributor.contributor}'s profile`}
+                  class="whitespace-nowrap"
                 >
                   {contributor.contributor}
                 </a>
-                <span>— {contributor.role}</span>
+                <span class="whitespace-normal">— {contributor.role}</span>
               </div>
             </li>
           );
