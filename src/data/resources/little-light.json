@@ -2,12 +2,13 @@
   "title": "Little Light",
   "description": "An item manager for Destiny that will make your Guardian's life a lot easier.",
   "icon": "/images/resources/little-light/icon.png",
+  "inactive": false,
   "link": "https://littlelight.club/",
   "color": "#a492ff",
   "contributors": [
     {
       "contributor": "jaoryuken",
-      "role": "Maintainer",
+      "role": "Founder",
       "maintainer": true
     },
     {
@@ -111,5 +112,10 @@
       "maintainer": false
     }
   ],
-  "tags": ["app", "collections", "inventory", "progress"]
+  "tags": [
+    "app",
+    "collections",
+    "inventory",
+    "progress"
+  ]
 }
