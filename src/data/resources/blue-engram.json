@@ -11,9 +11,5 @@
       "maintainer": true
     }
   ],
-  "tags": [
-    "api",
-    "planning",
-    "stats"
-  ]
+  "tags": ["api", "planning", "stats"]
 }

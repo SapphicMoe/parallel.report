@@ -61,10 +61,5 @@
       "maintainer": false
     }
   ],
-  "tags": [
-    "clan",
-    "discord",
-    "rotations",
-    "stats"
-  ]
+  "tags": ["clan", "discord", "rotations", "stats"]
 }

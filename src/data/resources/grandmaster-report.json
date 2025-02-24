@@ -11,8 +11,5 @@
       "maintainer": true
     }
   ],
-  "tags": [
-    "rotations",
-    "stats"
-  ]
+  "tags": ["rotations", "stats"]
 }

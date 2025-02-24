@@ -11,8 +11,5 @@
       "maintainer": true
     }
   ],
-  "tags": [
-    "app",
-    "stats"
-  ]
+  "tags": ["app", "stats"]
 }

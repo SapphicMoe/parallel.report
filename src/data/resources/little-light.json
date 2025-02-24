@@ -112,10 +112,5 @@
       "maintainer": false
     }
   ],
-  "tags": [
-    "app",
-    "collections",
-    "inventory",
-    "progress"
-  ]
+  "tags": ["app", "collections", "inventory", "progress"]
 }

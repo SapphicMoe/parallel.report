@@ -21,8 +21,5 @@
       "maintainer": false
     }
   ],
-  "tags": [
-    "api",
-    "typescript"
-  ]
+  "tags": ["api", "typescript"]
 }
