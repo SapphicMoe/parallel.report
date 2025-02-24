@@ -11,8 +11,8 @@ export const contributorsSchema = z.object({
 export const resourcesSchema = z.object({
   title: z.string(),
   description: z.string(),
-  icon: z.string().optional(),
-  inactive: z.boolean().optional(),
+  icon: z.string().or(z.null()),
+  inactive: z.boolean().default(false),
   link: z.string(),
   color: z.string(),
   contributors: z.array(

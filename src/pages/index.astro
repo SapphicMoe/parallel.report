@@ -39,7 +39,8 @@ const guardians = await getCollection('contributors');
   >
     {
       resources.map(async (resource) => {
-        const resourceEntry = await getEntry('resources', resource.id)!;
+        const resourceEntry = await getEntry('resources', resource.id);
+        if (!resourceEntry) return;
 
         return <Resource resource={resourceEntry.data} />;
       })
