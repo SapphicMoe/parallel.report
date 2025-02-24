@@ -1,0 +1,16 @@
+{
+  "title": "Lowman Central",
+  "description": "Modernized platform for Lowmanning in Destiny 2. We offer Report pages with collectible badges, Guides and Leaderboards! Lowmanning has never been easier.",
+  "icon": "/images/resources/lowman-central/icon.png",
+  "inactive": false,
+  "link": "https://lowman-central.com",
+  "color": "#9447e7",
+  "contributors": [
+    {
+      "contributor": "Ducko",
+      "role": "Developer",
+      "maintainer": true
+    }
+  ],
+  "tags": ["stats"]
+}
