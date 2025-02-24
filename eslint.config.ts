@@ -4,7 +4,7 @@ import astroPlugin from 'eslint-plugin-astro';
 
 export default tseslint.config(
   {
-    ignores: ['**/node_modules', '.astro', '.output', '**/.env', '**/dist'],
+    ignores: ['**/node_modules', '.astro', '.output', '**/.env', '**/dist', '.vercel'],
   },
 
   tseslint.configs.recommended,
