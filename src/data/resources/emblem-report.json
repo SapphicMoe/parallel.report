@@ -1,7 +1,7 @@
 {
   "title": "emblem.report",
   "description": "Emblem Report is a useful tool for Destiny 2 players who are interested in emblems. It provides an overview of emblem rarity and helps you easily find out who has a specific emblem.",
-  "icon": "/images/resources/emblem-report/icon.png",
+  "icon": "/images/resources/emblem-report/icon.svg",
   "inactive": false,
   "link": "https://emblem.report/",
   "color": "#FFF",
