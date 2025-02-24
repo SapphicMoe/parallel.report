@@ -14,7 +14,9 @@ export interface Credits {
   reason: string;
 }
 
-export type Resource = Entry<(typeof keystaticConfig)['collections']['resources']>;
+type Writeable<T> = { -readonly [P in keyof T]: T[P] };
+
+export type Resource = Writeable<Entry<(typeof keystaticConfig)['collections']['resources']>>;
 
 export interface ResourcesCollection {
   slug: string;
